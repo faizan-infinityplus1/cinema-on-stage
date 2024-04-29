@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
+use App\Http\Controllers\MainController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
@@ -16,7 +17,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
+Route::get('/', [MainController::class, 'index'])->name('home');
+Route::get('/about', [MainController::class, 'about'])->name('about');
+Route::get('/about.show', [MainController::class, 'about.show'])->name('about.show');
 Route::prefix('/adcinema753')->group(function () {
     Route::middleware('guest')->group(function () {
         Route::get('/', [AuthenticatedSessionController::class, 'create'])
@@ -28,9 +31,9 @@ Route::prefix('/adcinema753')->group(function () {
         Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
         Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
     });
-    Route::prefix('/manage-users')->group(function () {
+    Route::prefix('/manage-blogs')->group(function () {
 
-        Route::get('/users', [UserController::class, 'view'])->name('users');
+        Route::get('/', [UserController::class, 'view'])->name('users');
         Route::get('/users/add', [UserController::class, 'create'])->name('users.add');
         Route::post('/users/store', [UserController::class, 'store'])->name('users.store');
         Route::get('/edit/{slug}', [UserController::class, 'edit'])->name('users.edit');
