@@ -1,5 +1,5 @@
 @extends('layouts.admin')
-@section('title', 'Update User')
+@section('title', 'Update Blog')
 <style>
     #namespan {
         color: red;
@@ -38,7 +38,7 @@
 
         <div class="card" ng-app="products">
             <div class="card-header bg-dark text-white-all">
-                <h4>Update  User</h4>
+                <h4>Update  Blog</h4>
             </div>
             <div class="card-body">
                 <form method="POST" action="{{ route('blogs.update',$blogs->id) }}" role="form" class="needs-validation"
@@ -79,7 +79,7 @@
                                     <label>Existing Cover Image</label>
                                     <div>
                                         @if($blogs->image_url)
-                                        <img src="/storage/images/news/{{ $blogs->image_url }}" alt="{{ $blogs->title }}" class="img img-responsive img-thumbnail" width="100%">
+                                        <img src="/storage/images/blogs/{{ $blogs->image_url }}" alt="{{ $blogs->title }}" class="img img-responsive img-thumbnail" width="100%">
                                         @else
                                         <span class="text-danger">No Image Uploaded..</span>
                                         @endif

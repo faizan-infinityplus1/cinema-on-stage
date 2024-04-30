@@ -9,7 +9,7 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Place favicon.ico in the root directory -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicon.png') }}" />
     <!-- CSS here -->
     <link rel="stylesheet" href="{!! asset('assets/css/preloader.css') !!}" />
     <link rel="stylesheet" href="{!! asset('assets/css/bootstrap.min.css') !!}" />
@@ -603,10 +603,10 @@
     <div class="loader">
         <div class="loader__container">
             <div class="loader__film">
-                <img class="loader__film-img" src="assets/img/loader/film.png" alt="img not found" />
-                <img class="loader__film-img" src="assets/img/loader/film-2.png" alt="img not found" />
+                <img class="loader__film-img" src="{{ asset('assets/img/loader/film.png') }}" alt="img not found" />
+                <img class="loader__film-img" src="{{ asset('assets/img/loader/film-2.png') }}" alt="img not found" />
             </div>
-            <img class="loader__camera" src="assets/img/loader/camera.png" alt="img not found" />
+            <img class="loader__camera" src="{{ asset('assets/img/loader/camera.png') }}" alt="img not found" />
         </div>
     </div>
     <div class="floating-button" onclick="toggleSocialMenu()">
@@ -616,14 +616,14 @@
                 <div class="social-icon">
                     <p class="floating-social-title" style="left: -50px;">Whatsapp</p>
                     <div class="social-phone">
-                        <img src="./assets/img/whatsapp.png" alt="whatsapp">
+                        <img src="{{ asset('assets/img/whatsapp.png') }}" alt="whatsapp">
 
                     </div>
 
                 </div>
         </a>
 
-        <a id="fancybox" class="fancyboxEnq fancybox.iframe" href="./quickenquiry1.html">
+        <a id="fancybox" class="fancyboxEnq fancybox.iframe" href="{{route('quick.enquiry')}}">
             <div class="social-icon" style="background-color: #ea5a00;">
                 <p class="floating-social-title">Enquire Now </p>
                 <div class="social-chat">
@@ -645,7 +645,7 @@
                 <div class="header-wrapper">
                     <div class="fm-header-logo-wrapper">
                         <a href="{{route('home')}}" class="fm-header-logo ">
-                            <img class="" src="assets/img/logo (1).png" alt="img not found" />
+                            <img class="" src="{{ asset('assets/img/logo (1).png') }}" alt="img not found" />
                         </a>
 
                         <!-- <span class="separator d-none d-xl-block"></span> -->
@@ -684,7 +684,7 @@
                                     <li class="has-dropdown ">
                                         <a href="{{route('book.now')}}" class="button upper_menu_margin1" id="button-7">
                                             <div id="dub-arrow">Book Now</div>
-                                            <button href="book-now.php">Book Now</button>
+                                            <button href="{route('book.now')}}">Book Now</button>
                                         </a>
                                         <!-- <div id="dub-arrow">Home</div>
                                     <a href="tour-schedule.php"> Book Now </a> -->
@@ -693,13 +693,13 @@
                                     <li class="has-dropdown">
                                         <a href="{{route('past.shows')}}" class="button upper_menu_margin1" id="button-7">
                                             <div id="dub-arrow">Past Shows</div>
-                                            <button href="past-shows.php">Past Shows</button>
+                                            <button href="{{route('past.shows')}}">Past Shows</button>
                                         </a>
                                     </li>
                                     <li class="has-dropdown">
                                         <a href="{{route('contact.us')}}" class="button upper_menu_margin1" id="button-7">
                                             <div id="dub-arrow">Contact Us</div>
-                                            <button href="contact.php">Contact Us</button>
+                                            <button href="{{route('contact.us')}}">Contact Us</button>
                                         </a>
                                     </li>
 
@@ -764,7 +764,7 @@
             <div class="fm-header-sidebar-wrapper">
                 <div class="fm-header-sidebar-action mb-75">
                     <div class="fm-header-sidebar-logo">
-                        <a href="#"><img src="assets/img/logo (1).png" alt="img not found" /></a>
+                        <a href="#"><img src="{{ asset('assets/img/logo (1).png') }}" alt="img not found" /></a>
                     </div>
                     <div class="offcanvas-close">
                         <a class="offcanvas-btn" href="#0">
@@ -813,7 +813,7 @@
                             </div>
                         </li>
                         <li class="d-flex align-items-center gap-2">
-                            <button class="buy_ticket_sidebar"><a href="./book-now.php">Book Now </a></button>
+                            <button class="buy_ticket_sidebar"><a href="{{route('book.now')}}">Book Now </a></button>
 
                         </li>
                     </ul>
@@ -836,10 +836,10 @@
         <!-- sidebar area end -->
 
 
-        <a class=" buy_ticket_sticky" href="./book-now.php">
+        <a class=" buy_ticket_sticky" href="{{route('book.now')}}">
             <button>Book Now</button>
         </a>
-        <!--<a class=" buy_ticket_sticky_2" href="./book-now.php">-->
+        <!--<a class=" buy_ticket_sticky_2" href="{{route('book.now')}}">-->
         <!--    <button>Book Now</button>-->
         <!--</a>-->
     </header>
@@ -859,19 +859,19 @@
                         <div class="fm-contact-wrapper fm-contact-pad">
                             <div class="section-title ibm-plex">
                                 <h2 class="section-main-title text-white ibm-plex" style="letter-spacing: 2px;">
-                                    <a href="./book-now.php">Book Tickets Now </a>
+                                    <a href="{{route('book.now')}}">Book Tickets Now </a>
                                 </h2>
                             </div>
 
                             <div class="fm-contact-btn btn_wrapper">
                                 <div class="btn-featured-wrapper d-flex justify-content-lg-end">
                                     <div class="featured-btn-circle-wrap btn_wrapper" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-                                        <a href="./book-now.php" class="featured-rotate-btn " style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                        <a href="{{route('book.now')}}" class="featured-rotate-btn " style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
                                             <span>
                                                 <i class="flaticon-right-arrow-1"></i>
                                             </span>
                                         </a>
-                                        <img class="image-text" src="assets/img/bg/btn-bg.png" alt="img not found">
+                                        <img class="image-text" src="{{ asset('assets/img/bg/btn-bg.png') }}" alt="img not found">
                                     </div>
                                 </div>
                             </div>
@@ -886,13 +886,13 @@
     </main>
     <footer>
         <div class="footer-area-5 section-spacing-top pos-rel">
-            <div class="footer-bg-3" data-background="assets/img/bg/footer/img-1.jpg"></div>
+            <div class="footer-bg-3" data-background="{{ asset('assets/img/bg/footer/img-1.jpg') }}"></div>
             <div class="container">
 
                 <div class="footer-middle-area">
                     <div class="footer-wrapper footer-widget-about">
                         <div class="footer-logo-2">
-                            <a href="{{ route('home') }}"><img class="w-100 wow zoomInLeft" src="assets/img/footer/logo.png" alt="" /></a>
+                            <a href="{{ route('home') }}"><img class="w-100 wow zoomInLeft" src="{{ asset('assets/img/footer/logo.png') }}" alt="" /></a>
                         </div>
                         <!-- <div class="footer-text">
                         <p style="color: white;">
@@ -912,7 +912,7 @@
                                     </svg>
                                     <span style="color:white">Home</span>
                                 </a></li>
-                            <li><a href="">
+                            <li><a href="{{route('about')}}">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                                         <path fill="none" stroke="#e04b00" stroke-width="2" d="M5 9h7V5.483a.2.2 0 0 1 .341-.142L19 12l-6.659 6.659a.2.2 0 0 1-.341-.142V15H5"></path>
                                     </svg>
@@ -925,13 +925,13 @@
                                     </svg>
                                     <span style="color:white">About Show</span>
                                 </a></li>
-                            <li><a href="/book-now.php">
+                            <li><a href="{{route('book.now')}}">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                                         <path fill="none" stroke="#e04b00" stroke-width="2" d="M5 9h7V5.483a.2.2 0 0 1 .341-.142L19 12l-6.659 6.659a.2.2 0 0 1-.341-.142V15H5"></path>
                                     </svg>
                                     <span style="color:white">Book Now</span>
                                 </a></li>
-                            <li><a href="/blog">
+                            <li><a href="{{route('blog')}}">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                                         <path fill="none" stroke="#e04b00" stroke-width="2" d="M5 9h7V5.483a.2.2 0 0 1 .341-.142L19 12l-6.659 6.659a.2.2 0 0 1-.341-.142V15H5"></path>
                                     </svg>
@@ -973,7 +973,7 @@
                         <div class="footer-bottom-inner">
                             <div class="footer-copyright wow zoomInLeft">
                                 <p style="color: white;">
-                                    © 2024<a href="home-main.html"> Cinema On Stage </a> All Rights
+                                    © 2024<a href="{{route('home')}}"> Cinema On Stage </a> All Rights
                                     Reserved.
                                 </p>
                             </div>

@@ -9,12 +9,10 @@ class Blog extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'username',
-        'email',
-        'password',
-        'avatar',
-        'mobile',
-        'isDeleted',
+        'title',
+        'description',
+        'image_url',
+        
     ];
 
 }

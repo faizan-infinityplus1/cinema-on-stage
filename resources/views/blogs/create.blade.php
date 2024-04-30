@@ -1,5 +1,5 @@
 @extends('layouts.admin')
-@section('title', 'Add User')
+@section('title', 'Add Blog')
 <style>
     #namespan {
         color: red;
@@ -28,7 +28,7 @@
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb bg-dark text-white-all">
             <li class="breadcrumb-item">
-                <a href="{{ route('blogs') }}"><i class="fas fa-home"></i>
+                <a href="{{ route('dashboard') }}"><i class="fas fa-home"></i>
                     Dashboard
                 </a>
             </li>
@@ -38,7 +38,7 @@
 
     <div class="card" ng-app="products">
         <div class="card-header bg-dark text-white-all">
-            <h4>Add New User</h4>
+            <h4>Add New Blog</h4>
         </div>
         <div class="card-body">
             <form method="POST" action="{{ route('blogs.store') }}" role="form" class="needs-validation" id="formAddCustomer" enctype="multipart/form-data" autocomplete="off">

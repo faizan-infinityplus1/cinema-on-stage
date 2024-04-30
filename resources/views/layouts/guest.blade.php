@@ -25,7 +25,7 @@
         <!-- <h1 style="font-size: 30px" >
                     Ram Book Exchange
                 </h1> -->
-        <img src="{{ ('admin/img/RAM BOOK-logo.png') }}" alt="Logo" style="width: 300px; height:100px;">
+        <img src="{{ ('assets/img/logo (1).png') }}" alt="Logo" style="width: 300px; height:100px;">
 
 
         <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white dark:bg-gray-800 shadow-md overflow-hidden sm:rounded-lg">

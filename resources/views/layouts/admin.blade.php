@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <title>@yield('title') || Ram Book Exchange</title>
+    <title>@yield('title') || Cinema On Stage</title>
 
 
 
@@ -74,7 +74,7 @@
                     <div class="sidebar-brand">
                         <a href="{{route('dashboard')}}">
                             <!-- <h4>RAM BOOK EXCHANGE</h4> -->
-                            <img src="{{ asset('admin/img/RAM BOOK-logo.png') }}" alt="Logo" style="width: 200px; height:80px; margin-bottom:20px;">
+                            <img src="{{ asset('assets/img/logo (1).png') }}" alt="Logo" style="width: 200px; height:80px; margin-bottom:20px;">
 
                         </a>
                     </div>
@@ -189,7 +189,7 @@
             <footer class="main-footer bg-dark">
                 <div class="footer-left">
                     Copyright &copy; {{ date('Y') == '2022' ? '2022' : '2022 - ' . date('Y') }}
-                    <div class="bullet"></div> ram book exchange
+                    <div class="bullet"></div>Cinema On Stage
                     {{-- - Designed & Developed By <a href="https://www.sanjaresolutions.com" target="_blank">Sanjar E
                         Solutions</a> --}}
                 </div>
