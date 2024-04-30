@@ -776,7 +776,5 @@
 
 
 
-        <!-- contact-area-start -->
-        <?php include 'assets/includes/contact-area.php' ?>
-        <!-- contact-area-end -->
+       
         @endsection

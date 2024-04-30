@@ -111,10 +111,4 @@
             </div>
          </div>
       </div> -->
-      <!-- fm-contact-map-area-end -->
-
-      <!-- contact-area-start -->
-    
-      <?php include 'assets/includes/contact-area.php' ?>
-      <!-- contact-area-end -->
       @endsection

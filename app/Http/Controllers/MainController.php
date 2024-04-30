@@ -29,4 +29,10 @@ class MainController extends Controller
     public function termsandcondition(){
         return view('terms-condition');
     }
+    public function blog(){
+        return view('blog');
+    }
+    public function blog1(){
+        return view('blog1');
+    }
 }
