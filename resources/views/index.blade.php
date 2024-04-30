@@ -2151,4 +2151,5 @@
         }
       });
     })
-  </script>@endsection
+  </script>
+  @endsection
