@@ -20,4 +20,13 @@ class MainController extends Controller
     public function booknow(){
         return view('book-now');
     }
+    public function pastshows(){
+        return view('past-shows');
+    }
+    public function contactus(){
+        return view('contact-us');
+    }
+    public function termsandcondition(){
+        return view('terms-condition');
+    }
 }

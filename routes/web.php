@@ -21,6 +21,9 @@ Route::get('/', [MainController::class, 'index'])->name('home');
 Route::get('/about', [MainController::class, 'about'])->name('about');
 Route::get('/about-show', [MainController::class, 'aboutshow'])->name('about.show');
 Route::get('/book-now', [MainController::class, 'booknow'])->name('book.now');
+Route::get('/past-shows', [MainController::class, 'pastshows'])->name('past.shows');
+Route::get('/contact-us', [MainController::class, 'contactus'])->name('contact.us');
+Route::get('/terms-and-condition', [MainController::class, 'termsandcondition'])->name('terms.condition');
 Route::prefix('/adcinema753')->group(function () {
     Route::middleware('guest')->group(function () {
         Route::get('/', [AuthenticatedSessionController::class, 'create'])

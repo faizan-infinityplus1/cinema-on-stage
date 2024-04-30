@@ -691,13 +691,13 @@
 
                                 </li>
                                 <li class="has-dropdown">
-                                    <a href="past-shows.php" class="button upper_menu_margin1" id="button-7">
+                                    <a href="{{route('past.shows')}}" class="button upper_menu_margin1" id="button-7">
                                         <div id="dub-arrow">Past Shows</div>
                                         <button href="past-shows.php">Past Shows</button>
                                     </a>
                                 </li>
                                 <li class="has-dropdown">
-                                    <a href="contact.php" class="button upper_menu_margin1" id="button-7">
+                                    <a href="{{route('contact.us')}}" class="button upper_menu_margin1" id="button-7">
                                         <div id="dub-arrow">Contact Us</div>
                                         <button href="contact.php">Contact Us</button>
                                     </a>
@@ -972,7 +972,7 @@
 
                         <div class="footer-rules wow zoomInLeft" style="color: white;">
                             <!-- <a href="Privacy Policy.php">Privacy Policy</a> -->
-                            <a href="Terms & Condition.php">Terms & Condition</a>
+                            <a href="{{route('terms.condition')}}">Terms & Condition</a>
                         </div>
                     </div>
                 </div>
