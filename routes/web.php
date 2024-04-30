@@ -3,7 +3,7 @@
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\UserController;
+use App\Http\Controllers\BlogController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,7 +26,7 @@ Route::prefix('/adcinema753')->group(function () {
         Route::get('/', [AuthenticatedSessionController::class, 'create'])
             ->name('login');
     });
-    Route::get('/dashboard', [UserController::class, 'dashboard'])->middleware(['auth', 'verified'])->name('dashboard');
+    Route::get('/dashboard', [BlogController::class, 'dashboard'])->middleware(['auth', 'verified'])->name('dashboard');
     Route::middleware('auth')->group(function () {
         Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
         Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
@@ -34,12 +34,12 @@ Route::prefix('/adcinema753')->group(function () {
     });
     Route::prefix('/manage-blogs')->group(function () {
 
-        Route::get('/', [UserController::class, 'view'])->name('users');
-        Route::get('/users/add', [UserController::class, 'create'])->name('users.add');
-        Route::post('/users/store', [UserController::class, 'store'])->name('users.store');
-        Route::get('/edit/{slug}', [UserController::class, 'edit'])->name('users.edit');
-        Route::post('/update/{slug}', [UserController::class, 'update'])->name('users.update');
-        Route::post('/users/delete', [UserController::class, 'delete'])->name('users.delete');
+        Route::get('/', [BlogController::class, 'view'])->name('blogs');
+        Route::get('/blogs/add', [BlogController::class, 'create'])->name('blogs.add');
+        Route::post('/blogs/store', [BlogController::class, 'store'])->name('blogs.store');
+        Route::get('/edit/{slug}', [BlogController::class, 'edit'])->name('blogs.edit');
+        Route::post('/update/{slug}', [BlogController::class, 'update'])->name('blogs.update');
+        Route::post('/blogs/delete', [BlogController::class, 'delete'])->name('blogs.delete');
     });
 });
 

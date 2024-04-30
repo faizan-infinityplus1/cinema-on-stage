@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Blog;
 use Illuminate\Http\Request;
 use App\Models\Customer;
 use App\Models\User;
@@ -9,20 +10,21 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
 
-class UserController extends Controller
+class BlogController extends Controller
 {
+
+    public function dashboard(){
+        $users = Blog::count();
+        return view('dashboard',compact('users'));
+    }
     public function view()
     {
-        $users = User::where('isDeleted', false)->where('role', 0)->get();
-        return view('users.index', compact('users'));
-    }
-    public function dashboard(){
-        $users = User::where('role', 0)->count();
-        return view('dashboard',compact('users'));
+        $blogs = Blog::get();
+        return view('blogs.index', compact('blogs'));
     }
     public function create()
     {
-        return view('users.create');
+        return view('blogs.create');
     }
     public function store(Request $request)
     {
@@ -73,8 +75,8 @@ class UserController extends Controller
     }
     public function edit($id)
     {
-        $users = User::where('id', $id)->first();
-        return view('users.edit', compact('users'));
+        $blogs = User::where('id', $id)->first();
+        return view('blogs.edit', compact('blogs'));
     }
 
     public function update(Request $request, $id)

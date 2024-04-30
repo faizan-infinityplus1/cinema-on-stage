@@ -28,11 +28,11 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb bg-dark text-white-all">
                 <li class="breadcrumb-item">
-                    <a href="{{ route('users') }}"><i class="fas fa-home"></i>
+                    <a href="{{ route('blogs') }}"><i class="fas fa-home"></i>
                         Dashboard
                     </a>
                 </li>
-                <li class="breadcrumb-item"><a href="{{ route('users') }}"> All Users</a></li>
+                <li class="breadcrumb-item"><a href="{{ route('blogs') }}"> All blogs</a></li>
             </ol>
         </nav>
 
@@ -41,79 +41,55 @@
                 <h4>Update  User</h4>
             </div>
             <div class="card-body">
-                <form method="POST" action="{{ route('users.update',$users->id) }}" role="form" class="needs-validation"
+                <form method="POST" action="{{ route('blogs.update',$blogs->id) }}" role="form" class="needs-validation"
                     id="formAddCustomer" enctype="multipart/form-data" autocomplete="off">
                     @csrf
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label for="username">User Name <span class="text-danger">*</span></label>
-                                    <input type="text" name="username" id="username"
-                                        class="form-control" placeholder="Enter User Name" value="{{$users->username}}" required>
-                                    <span id="namespan"></span>
-                                </div>
-                            </div>
+                            <div class="col-md-8">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="title">Title <span class="text-danger">*</span></label>
+                                            <input type="text" name="title" id="title" class="form-control"
+                                                placeholder="Enter Title" value="{{ $blogs->title }}" required>
+                                        </div>
+                                    </div>
 
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="image_url">Change Cover Image</label>
+                                            <input type="file" name="image_url" id="image_url" class="form-control">
+                                        </div>
+                                    </div>
 
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label for="mobile">Mobile Number <span class="text-danger">*</span></label>
-                                    <input type="number" name="mobile" id="mobile" class="form-control"
-                                        placeholder="Enter Mobile Number" value="{{$users->mobile}}" >
-                                    <span id="namespan_mobile"></span>
-
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label for="email">Email Id <span class="text-danger">*</span></label>
-                                    <input type="text" name="email" id="email" class="form-control"
-                                        value="{{$users->email}}" placeholder="Enter Email Id " required>
-                                    <span id="namespan_email"></span>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label for="password">Password <span class="text-danger">*</span></label>
-                                    <input type="password" name="password" id="password"
-                                        class="form-control" placeholder="Enter Password"  >
-                                    <span id="namespan"></span>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="description">Description <span class="text-danger">*</span></label>
+                                            <textarea name="description" id="description" class="form-control summernote"
+                                                placeholder="Enter Short Description" rows="10"
+                                                required>{{ $blogs->description }}</textarea>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label for="avatar">Avatar <span class="text-danger"></span></label>
-                                    <input type="file" name="avatar" id="avatar"
-                                        class="form-control" style="padding-bottom: 35px;"  >
-                                    <span id="namespan"></span>
+                                    <label>Existing Cover Image</label>
+                                    <div>
+                                        @if($blogs->image_url)
+                                        <img src="/storage/images/news/{{ $blogs->image_url }}" alt="{{ $blogs->title }}" class="img img-responsive img-thumbnail" width="100%">
+                                        @else
+                                        <span class="text-danger">No Image Uploaded..</span>
+                                        @endif
+                                    </div>
                                 </div>
-                            </div>
-
-                           {{-- <div class="col-md-4">
-                                <div class="form-group">
-                                    <label for="status">Status <span class="text-danger">*</span></label>
-                                    <select name="status" id="status" class="form-control select2" required>
-                                        <option value="1" {{$users->status ==true ? 'selected' : ''}}>Active</option>
-                                        <option value="0" {{$users->status ==false ? 'selected' : ''}}>In Active</option>
-                                    </select>
-                                    <label id="" class="error" for="material_id"></label>
-
-                                </div>
-                            </div> --}}
-
-                            <div class="col-md-12 text-danger">
-                                Note : All * Mark Fields are Compulsory !
                             </div>
 
                             <div class="col-md-12 text-center">
-                                <button type="submit" class="btn btn-primary btnSubmit">
-                                     Update User
-                                </button>
-
+                                <button type="submit" class="btn btn-primary update_button"> <i class="fa fa-send"></i>
+                                    Update</button>
                             </div>
                         </div>
                 </form>

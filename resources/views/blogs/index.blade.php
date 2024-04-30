@@ -91,9 +91,9 @@ enctype="multipart/form-data" id="formImportProduct">
         <ol class="breadcrumb bg-dark text-white-all">
             <li class="breadcrumb-item"><a href=""><i class="fas fa-home"></i>
                     Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page"><i class="fas fa-list"></i> Customers</li>
-            <li class="breadcrumb-item"><a href="{{route('users.add')}}"><i class="fas fa-plus"></i> Add
-                    Users</a></li>
+            <li class="breadcrumb-item active" aria-current="page"><i class="fas fa-list"></i> Blogs</li>
+            <li class="breadcrumb-item"><a href="{{route('blogs.add')}}"><i class="fas fa-plus"></i> Add
+                    Blogs</a></li>
             {{-- <li class="breadcrumb-item">
                 <a href="#importCustomersModel" data-toggle="modal" data-target="#importCustomersModel">
                     <i class="fas fa-plus"></i> Import Customers
@@ -119,7 +119,7 @@ enctype="multipart/form-data" id="formImportProduct">
     <div class="card">
 
         <div class="card-header bg-dark text-white-all">
-            <h4>Manage Users</h4>
+            <h4>Manage Blogs</h4>
 
             {{--<form action="" method="post">
                 @csrf
@@ -156,33 +156,35 @@ enctype="multipart/form-data" id="formImportProduct">
                     <thead>
                         <tr>
                             <th>#</th>
-                            <th>User Name </th>
-                            <th>Mobile Number</th>
+                            <th>Image</th>
+                            <th>Title</th>
+                            <th>Description</th>
                             <th>Added On</th>
                             <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
                         <?php $i = 1 ?>
-                        @forelse ($users as $user)
+                        @forelse ($blogs as $blog)
                         <tr>
-                            <td>{{$i++}}</td>
-                            <td>{{ $user->username }}</td>
-                            <td>{{ $user->email }}</td>
+                            <td>{{ $blog->id }}</td>
+                            <td>@if($blog->image_url)<a href="/storage/images/blogs/{{ $blog->image_url }}" target="_blank" title="View Image">View Image</a>@else "---"  @endif</td>
+
+                            <td>{{ Str::limit($blog->title, 35) }}</td>
+                            <td>{!! $blog->description ? Str::limit($blog->description, 35) : ' --- ' !!}</td>
+                            <td>{{ date('d-M-Y', strtotime($blog->created_at)) }}</td>
 
 
-
-                            <td>{{ date('d-M-Y h:i A', strtotime($user->created_at)) }}</td>
                             <td>
                                 <div class="dropdown d-inline">
                                     <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         Action
                                     </button>
                                     <div class="dropdown-menu">
-                                        <a href="{{ route('users.edit', $user->id) }}" class="dropdown-item has-icon" title="Edit Detail">
+                                        <a href="{{ route('blogs.edit', $blog->id) }}" class="dropdown-item has-icon" title="Edit Detail">
                                             <i class="fa fa-edit"></i> Edit
                                         </a>
-                                        <a href="javascript:void(0)" data-role="delete-obj" data-obj-id="{{ $user->id }}" class="dropdown-item has-icon delete-object" title="Delete Slider">
+                                        <a href="javascript:void(0)" data-role="delete-obj" data-obj-id="{{ $blog->id }}" class="dropdown-item has-icon delete-object" title="Delete Slider">
                                             <i class="fa fa-trash text-danger"></i> Delete
                                         </a>
                                     </div>
@@ -200,8 +202,9 @@ enctype="multipart/form-data" id="formImportProduct">
                     <tfoot>
                         <tr>
                             <th>#</th>
-                            <th>User Name </th>
-                            <th>Mobile Number</th>
+                            <th>Image</th>
+                            <th>Title</th>
+                            <th>Description</th>
                             <th>Added On</th>
                             <th>Action</th>
                         </tr>
@@ -210,7 +213,7 @@ enctype="multipart/form-data" id="formImportProduct">
             </div>
         </div>
     </div>
-    <form id="formDelete" method="POST" action="{{ route('users.delete') }}">
+    <form id="formDelete" method="POST" action="{{ route('blogs.delete') }}">
         @csrf
         <input type="hidden" name="user_id" id="user_id">
     </form>

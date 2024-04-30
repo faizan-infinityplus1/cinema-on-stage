@@ -28,11 +28,11 @@
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb bg-dark text-white-all">
             <li class="breadcrumb-item">
-                <a href="{{ route('users') }}"><i class="fas fa-home"></i>
+                <a href="{{ route('blogs') }}"><i class="fas fa-home"></i>
                     Dashboard
                 </a>
             </li>
-            <li class="breadcrumb-item"><a href="{{ route('users') }}"> All Users</a></li>
+            <li class="breadcrumb-item"><a href="{{ route('blogs') }}"> All Blogs</a></li>
         </ol>
     </nav>
 
@@ -41,73 +41,43 @@
             <h4>Add New User</h4>
         </div>
         <div class="card-body">
-            <form method="POST" action="{{ route('users.store') }}" role="form" class="needs-validation" id="formAddCustomer" enctype="multipart/form-data" autocomplete="off">
+            <form method="POST" action="{{ route('blogs.store') }}" role="form" class="needs-validation" id="formAddCustomer" enctype="multipart/form-data" autocomplete="off">
                 @csrf
                 <div class="card-body">
                     <div class="row">
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="username">User Name <span class="text-danger">*</span></label>
-                                <input type="text" name="username" id="username" class="form-control" placeholder="Enter User Name" required>
-                                <span id="namespan"></span>
-                            </div>
-                        </div>
-
-
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="mobile">Mobile Number <span class="text-danger">*</span></label>
-                                <input type="number" name="mobile" id="mobile" class="form-control" placeholder="Enter Mobile Number" value="{{ old('mobile') }}">
-                                <span id="namespan_mobile"></span>
-
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="email">Email Id <span class="text-danger">*</span></label>
-                                <input type="text" name="email" id="email" class="form-control" value="{{ old('email') }}" placeholder="Enter Email Id ">
-                                <span id="namespan_email"></span>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="password">Password <span class="text-danger">*</span></label>
-                                <input type="password" name="password" id="password" class="form-control" placeholder="Enter Password" required>
-                                <span id="namespan"></span>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="avatar">Avatar <span class="text-danger"></span></label>
-                                <input type="file" name="avatar" id="avatar" class="form-control" style="padding-bottom: 35px;">
-                                <span id="namespan"></span>
-                            </div>
-                        </div>
-
-                        {{-- <div class="col-md-4">
-                                <div class="form-group">
-                                    <label for="status">Status <span class="text-danger">*</span></label>
-                                    <select name="status" id="status" class="form-control select2" required>
-                                        <option value="1">Active</option>
-                                        <option value="0">In Active</option>
-                                    </select>
-                                    <label id="" class="error" for="material_id"></label>
-
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="title">Title <span class="text-danger">*</span></label>
+                                        <input type="text" name="title" id="title" class="form-control"
+                                            placeholder="Enter Title"  required>
+                                    </div>
                                 </div>
-                            </div> --}}
 
-                        <div class="col-md-12 text-danger">
-                            Note : All * Mark Fields are Compulsory !
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="image_url">Change Cover Image</label>
+                                        <input type="file" name="image_url" id="image_url" class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="description">Description <span class="text-danger">*</span></label>
+                                        <textarea name="description" id="description" class="form-control summernote"
+                                            placeholder="Enter Short Description" rows="10"
+                                            required></textarea>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+
+
 
                         <div class="col-md-12 text-center">
-                            <button type="submit" class="btn btn-primary btnSubmit">
-                                <i class="fa fa-plus"></i> Add User
-                            </button>
-
+                            <button type="submit" class="btn btn-primary update_button"> <i class="fa fa-send"></i>
+                                Submit</button>
                         </div>
                     </div>
             </form>

@@ -50,9 +50,9 @@
                         </a>
                         <div class="dropdown-menu dropdown-menu-right pullDown">
                             <div class="dropdown-title">Hello</div>
-                            <a href="{{route('profile.edit')}}" class="dropdown-item has-icon">
+                            {{-- <a href="{{route('profile.edit')}}" class="dropdown-item has-icon">
                                 <i class="far fa-user"></i> Profile
-                            </a>
+                            </a> --}}
                             <div class="dropdown-divider"></div>
                             <form method="POST" action="{{ route('logout') }}">
                                 @csrf
@@ -81,7 +81,7 @@
                     <ul class="sidebar-menu">
                         <li class="menu-header">Manage Menu</li>
                         <li class="dropdown">
-                            <a href="{{route('users')}}" class="nav-link"><i data-feather="monitor"></i><span>Users</span></a>
+                            <a href="{{route('blogs')}}" class="nav-link"><i data-feather="monitor"></i><span>Blogs</span></a>
                         </li>
 
 
