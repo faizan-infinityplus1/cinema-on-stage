@@ -14,5 +14,10 @@ class MainController extends Controller
         return view('about');
 
     }
-
+    public function aboutshow(){
+        return view('about-show');
+    }
+    public function booknow(){
+        return view('book-now');
+    }
 }

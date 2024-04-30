@@ -675,14 +675,14 @@
                                 </li>
 
                                 <li class="has-dropdown">
-                                    <a href="about-show.php" class="button upper_menu_margin1" id="button-7">
+                                    <a href="{{route('about.show')}}" class="button upper_menu_margin1" id="button-7">
                                         <div id="dub-arrow">About show</div>
-                                        <button href="about-show.php">About Show </button>
+                                        <button href="{{route('about.show')}}">About Show </button>
                                     </a>
 
 
                                 <li class="has-dropdown ">
-                                    <a href="book-now.php" class="button upper_menu_margin1" id="button-7">
+                                    <a href="{{route('book.now')}}" class="button upper_menu_margin1" id="button-7">
                                         <div id="dub-arrow">Book Now</div>
                                         <button href="book-now.php">Book Now</button>
                                     </a>
@@ -723,7 +723,7 @@
 
                                 </li>
                                 <li class="has-dropdown">
-                                    <a href="about-show.php">About show</a>
+                                    <a href="{{route('about.show')}}">About show</a>
 
                                 </li>
                                 <li class="has-dropdown">
@@ -917,7 +917,8 @@
                                 </svg>
                                 <span style="color:white">About Us</span>
                             </a></li>
-                        <li><a href="./about-show.php">
+                            <!-- .php remove kiya bas -->
+                        <li><a href="{{route('about.show')}}"> 
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                                     <path fill="none" stroke="#e04b00" stroke-width="2" d="M5 9h7V5.483a.2.2 0 0 1 .341-.142L19 12l-6.659 6.659a.2.2 0 0 1-.341-.142V15H5"></path>
                                 </svg>
