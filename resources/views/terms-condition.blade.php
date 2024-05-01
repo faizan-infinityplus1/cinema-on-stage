@@ -344,6 +344,10 @@
                             <button class="buy_ticket_sidebar"><a href="{{route('book.now')}}">Book Now </a></button>
 
                         </li>
+                        <li class="d-flex align-items-center gap-2">
+                            <button class="buy_ticket_sidebar"><a href="{{route('blog')}}">Blog  </a></button>
+
+                        </li>
                     </ul>
 
                 </div>
@@ -470,6 +474,12 @@
                                     <path fill="none" stroke="#e04b00" stroke-width="2" d="M5 9h7V5.483a.2.2 0 0 1 .341-.142L19 12l-6.659 6.659a.2.2 0 0 1-.341-.142V15H5"></path>
                                 </svg>
                                 <span style="color:white">Book Now</span>
+                            </a></li>
+                            <li><a href="{{route('blog')}}">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                    <path fill="none" stroke="#e04b00" stroke-width="2" d="M5 9h7V5.483a.2.2 0 0 1 .341-.142L19 12l-6.659 6.659a.2.2 0 0 1-.341-.142V15H5"></path>
+                                </svg>
+                                <span style="color:white">Blog</span>
                             </a></li>
                     </ul>
 

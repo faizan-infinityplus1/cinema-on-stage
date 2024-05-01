@@ -33,7 +33,7 @@
   margin-bottom: 0.8rem;
 }
 .home-blog-card:hover .home-blog-card-content .home-blog-card-heading {
-  color: #ff0b87;
+  color: #FD7202;
 }
 .home-blog-card-info {
   color: #969696;
@@ -46,7 +46,7 @@
   text-align: center;
   padding: 10px 30px 10px 30px;
   border-radius: 4px;
-  background-color: #ff0b87;
+  background-color:#FD7202 ;
   color: #ffffff;
   margin-top: 10px;
   font-weight: 700;
@@ -56,6 +56,9 @@
 .home-blog-card-read-more-btn:hover {
   color: #fff;
 }
+.card-hover{
+
+}
 
 </style>
 <div class="container mt-80 mb-80">
@@ -63,7 +66,7 @@
       <div class="row">
       @forelse($blog as $nw)
 
-        <div class="col-md-4 col-12 home-blog-card">
+        <div class="col-md-4 col-12 home-blog-card card-hover">
           <div class="home-blog-card-img-container">
             <a href="{{ route('blogs.show', ['title' => Str::slug($nw->title, '_'), 'id' => $nw->id]) }}">
             <img src="/storage/images/blogs/{{ $nw->image_url }}" alt="{{ $nw->title }}" >

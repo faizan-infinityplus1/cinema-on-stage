@@ -99,7 +99,7 @@
                   <a href="#" class="director-about-nam" style="color: #fd6500;">Cinema On Stage</a>
                 </div> -->
               <div style="margin-top: 30px;" class="about-btn">
-                <a href="about.php" class=" monstarat " style=" padding:10px; color:white; border-radius: 0.375rem; border-radius:2px; background-color:#f35c00;letter-spacing:2px;">Read More <i class="fa-light fa-arrow-right-long"></i></a>
+                <a href="{{route('about')}}" class=" monstarat " style=" padding:10px; color:white; border-radius: 0.375rem; border-radius:2px; background-color:#f35c00;letter-spacing:2px;">Read More <i class="fa-light fa-arrow-right-long"></i></a>
               </div>
             </div>
           </div>
@@ -404,7 +404,7 @@
             <p class="title-anim1 monstarat" style="margin-top: 15px;">Don't miss your chance to witness the first Indian Broadway-style musical, where romance and royalty meet in a grand spectacle of music, dance, and drama.
             </p>
             <div style="margin-top: 30px;" class="about-btn">
-              <a href="about-show.php" class=" monstarat " style=" padding:10px; color:white; border-radius: 0.375rem; border-radius:2px; background-color:#f35c00;letter-spacing:2px;">Read More <i class="fa-light fa-arrow-right-long"></i></a>
+              <a href="{{route('about')}}" class=" monstarat " style=" padding:10px; color:white; border-radius: 0.375rem; border-radius:2px; background-color:#f35c00;letter-spacing:2px;">Read More <i class="fa-light fa-arrow-right-long"></i></a>
             </div>
           </div>
         </div>
@@ -1091,12 +1091,12 @@
       <div class="col-lg-4">
         <div class="btn-featured-wrapper d-flex justify-content-lg-end">
           <div class="featured-btn-circle-wrap btn_wrapper">
-            <a href="book-now.php" class="featured-rotate-btn btn__item-move">
+            <a href="{{route('book.now')}}" class="featured-rotate-btn btn__item-move">
               <span>
                 <i class="flaticon-right-arrow-1"></i>
               </span>
             </a>
-            <img class="image-text" src="assets/img/bg/btn-bg.png" alt="img not found">
+            <img class="image-text" src="{{route('book.now')}}" alt="img not found">
           </div>
         </div>
       </div>
@@ -2034,7 +2034,7 @@
 
               </div>
               <div class="col-md-4 col-sm-6 mb-30">
-                <a href="book-now.php">
+                <a href="{{route('book.now')}}">
                   <h3 class="text-center" style="margin-bottom: 0;padding: 15px;z-index: 99;background:#f35c00;color:white;    font-size: 20px;font-weight: 600;">
                     Book Ticket</h3>
                   <img width="100%" height="400" src="assets/img/book-ticket-feed.png" alt="social">
