@@ -60,24 +60,30 @@
 
 }
 
+
+.page-link{
+  font-size: 3rem;
+  margin-top : 1rem
+}
+
 </style>
 <div class="container mt-80 mb-80">
       
       <div class="row">
       @forelse($blog as $nw)
 
-        <div class="col-md-4 col-12 home-blog-card card-hover">
+        <div class="col-md-4 col-12 home-blog-card mb-20 card-hover">
           <div class="home-blog-card-img-container">
             <a href="{{ route('blogs.show', ['title' => Str::slug($nw->title, '_'), 'id' => $nw->id]) }}">
-            <img src="/storage/images/blogs/{{ $nw->image_url }}" alt="{{ $nw->title }}" >
+            <!-- <img src="/storage/images/blogs/{{ $nw->image_url }}" alt="{{ $nw->title }}" > -->
             </a>
           </div>
           <div class="home-blog-card-content p-20">
             <h2 class="home-blog-card-heading">
-              {{ Str::limit($nw->title,50) }}
+              {{ Str::limit($nw->title,20) }}
             </h2>
             <p class="home-blog-card-info">
-            {!! Str::limit(strip_tags($nw->description), 130) !!} 
+            {!! Str::limit(strip_tags($nw->description), 91) !!} 
 
             </p>
             <div class="home-blog-card-btn">

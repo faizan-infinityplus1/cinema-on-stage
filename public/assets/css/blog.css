@@ -950,3 +950,6 @@ text-align: left;
 .course__figure_img img{
     width: 90%;
 }
+.home-blog-card {
+    margin-bottom: 3rem;
+}

@@ -696,6 +696,13 @@
                                             <button href="{{route('past.shows')}}">Past Shows</button>
                                         </a>
                                     </li>
+                                    <!-- abdul edited -->
+                                    <li class="has-dropdown">
+                                        <a href="{{route('blog')}}" class="button upper_menu_margin1" id="button-7">
+                                            <div id="dub-arrow">Blog</div>
+                                            <button href="{{route('blog')}}">Blog</button>
+                                        </a>
+                                    </li>
                                     <li class="has-dropdown">
                                         <a href="{{route('contact.us')}}" class="button upper_menu_margin1" id="button-7">
                                             <div id="dub-arrow">Contact Us</div>

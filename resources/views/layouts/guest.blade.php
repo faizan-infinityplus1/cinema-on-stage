@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Ram Online Book</title>
+    <title>Cinema On Stage</title>
 
     <link rel="icon" type="image/x-icon" href="{{ ('admin/img/favicon.ico') }}">
+    <!-- <link rel="icon" type="image/x-icon" href="{{ ('admin/img/favicon.png') }}"> -->
+
 
 
 
