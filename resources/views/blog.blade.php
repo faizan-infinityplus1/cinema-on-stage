@@ -59,13 +59,35 @@
 .card-hover{
 
 }
-
-
-.page-link{
-  font-size: 3rem;
-  margin-top : 1rem
+.pagination{
+  display: flex;
+  align-items : center;
+  justify-content: center;
 }
-
+.page-item:hover .page-link{
+  background-color : #fd6500;
+  padding : .5rem 1.5rem;
+  border-radius : 5px;
+  color : white;
+}
+.page-link{
+  font-size: 4rem;
+  margin-top : 1rem;
+  /* background-color : black; */
+  color: black;
+  border : none !important;
+  padding : .5rem 1.5rem;
+  border-radius : 5px
+}
+.page-item.active .page-link {
+  background-color : #fd6500;
+  padding : .5rem 1.5rem;
+  border-radius : 5px
+}
+.page-item.disabled .page-link{
+  color: black;
+  background-color : white;
+}
 </style>
 <div class="container mt-80 mb-80">
 
@@ -80,10 +102,10 @@
           </div>
           <div class="home-blog-card-content p-20">
             <h2 class="home-blog-card-heading">
-              {{ Str::limit($nw->title,20) }}
+              {{ Str::limit($nw->title,32) }}
             </h2>
             <p class="home-blog-card-info">
-            {!! Str::limit(strip_tags($nw->description), 91) !!}
+            {!! Str::limit(strip_tags($nw->description), 90) !!}
 
             </p>
             <div class="home-blog-card-btn">
