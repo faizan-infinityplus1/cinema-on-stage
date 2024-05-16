@@ -169,9 +169,47 @@
                                     <p style="color: black;">Click on the show date and time of your choice to proceed for
                                         Booking.</p>
                                 </div>
-                                <div class="i-title  mb-4"
-                                    style="background-color: #fff; padding:10px; border-radius: 0.375em; ">
-                                    <p style="color: black;">Tickets go on sale - 20th May 2024</p>
+                                <div class="i-title"
+                                    style="background-color: #fff; border-radius: 0.375em; ">
+                                    <style>
+                                        .text_anim{
+										    height: 45px;
+                                            animation: textscale 3s infinite;
+                                        }
+
+                                        @keyframes textscale {
+
+                                            0% {
+                                                color: #f36500;
+                                                text-shadow: 0 0 50px #f36500;
+                                            }
+                                            50% {
+                                                color: #f36500;
+                                                text-shadow: 0 0 50px #f36500;
+                                                font-size: 25px;
+                                            }
+                                            100% {
+                                                color: black;
+                                                text-shadow: 0 0 50px black;
+                                            }
+                                        
+                                        }
+                                        /* .text_anim{
+                                            animation: textscale 1s infinite;
+                                        }
+
+                                        @keyframes textscale {
+                                            0% {
+                                                color: #f36500;
+                                                text-shadow: 0 0 50px #f36500;
+                                            }
+                                            100% {
+                                                color: black;
+                                                text-shadow: 0 0 50px black;
+                                            }
+                                        } */
+                                    </style>
+                                    <p class="text_anim" style="color: black;">Tickets go on sale - 20th May 2024</p>
                                 </div>
                                 <div class="i-dates i-dates-all mt-5"
                                     style="background-color: #f36500; padding:10px; border-radius: 0.375em;">
@@ -309,8 +347,8 @@
                                         Booking.</p>
                                 </div>
                                 <div class="i-title  mb-4"
-                                    style="background-color: #fff; padding:10px; border-radius: 0.375em; ">
-                                    <p style="color: black;">Tickets go on sale 24th May 2024</p>
+                                    style="background-color: #fff; border-radius: 0.375em; ">
+                                    <p class="text_anim" style="color: black;">Tickets go on sale 24th May 2024</p>
                                 </div>
                                 <div class="i-dates i-dates-all mt-5"
                                     style="background-color: #f36500; padding:10px; border-radius: 0.375em;">
@@ -471,7 +509,7 @@
                                 </div>
                                 <div class="i-title  mb-4"
                                     style="background-color: #fff; padding:10px; border-radius: 0.375em; ">
-                                    <p style="color: black;">Booking open now</p>
+                                    <p class="text_anim" style="color: black;">Booking open now</p>
                                 </div>
                                 <div class="i-dates i-dates-all mt-5"
                                     style="background-color: #f36500; padding:10px; border-radius: 0.375em;">
@@ -603,7 +641,7 @@
                                 </div>
                                 <div class="i-title  mb-4"
                                     style="background-color: #fff; padding:10px; border-radius: 0.375em; ">
-                                    <p style="color: black;">Tickets go on sale 28th May 2024</p>
+                                    <p class="text_anim" style="color: black;">Tickets go on sale 28th May 2024</p>
                                 </div>
                                 <div class="i-dates i-dates-all mt-5"
                                     style="background-color: #f36500; padding:10px; border-radius: 0.375em;">
@@ -739,7 +777,7 @@
                                 </div>
                                 <div class="i-title  mb-4"
                                     style="background-color: #fff; padding:10px; border-radius: 0.375em; ">
-                                    <p style="color: black;">Tickets go on sale 20th May 2024</p>
+                                    <p class="text_anim" style="color: black;">Tickets go on sale 20th May 2024</p>
                                 </div>
                                 <div class="i-dates i-dates-all mt-5"
                                     style="background-color: #f36500; padding:10px; border-radius: 0.375em;">
@@ -887,7 +925,7 @@
                                 </div>
                                 <div class="i-title  mb-4"
                                     style="background-color: #fff; padding:10px; border-radius: 0.375em; ">
-                                    <p style="color: black;">Tickets go on sale 20th May 2024</p>
+                                    <p class="text_anim" style="color: black;">Tickets go on sale 20th May 2024</p>
                                 </div>
                                 <div class="i-dates i-dates-all mt-5"
                                     style="background-color: #f36500; padding:10px; border-radius: 0.375em;">
