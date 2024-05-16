@@ -169,8 +169,8 @@
                                     <p style="color: black;">Click on the show date and time of your choice to proceed for
                                         Booking.</p>
                                 </div>
-                                <div class="i-title mb-4"
-                                    style="background-color: #fff; border-radius: 0.375em; ">
+                                <div class="i-title container-anim"
+                                    style="background-color: #fff; padding:10px; border-radius: 0.375em; ">
                                     <style>
                                         .text_anim{
 										    height: 45px;
@@ -208,6 +208,12 @@
                                                 text-shadow: 0 0 50px black;
                                             }
                                         } */
+
+                                        @media screen and (max-width: 512px) {
+                                            .container-anim{
+                                                margin-bottom: 35px;
+                                            }
+                                        }
                                     </style>
                                     <p class="text_anim" style="color: black;">Tickets go on sale - 20th May 2024</p>
                                 </div>
@@ -346,8 +352,8 @@
                                     <p style="color: black;">Click on the show date and time of your choice to proceed for
                                         Booking.</p>
                                 </div>
-                                <div class="i-title  mb-4"
-                                    style="background-color: #fff; border-radius: 0.375em; ">
+                                <div class="i-title container-anim"
+                                    style="background-color: #fff; padding:10px; border-radius: 0.375em; ">
                                     <p class="text_anim" style="color: black;">Tickets go on sale 24th May 2024</p>
                                 </div>
                                 <div class="i-dates i-dates-all mt-5"
@@ -507,7 +513,7 @@
                                     <p style="color: black;">Click on the show date and time Of your choice to proceed for
                                         Booking.</p>
                                 </div>
-                                <div class="i-title  mb-4"
+                                <div class="i-title container-anim"
                                     style="background-color: #fff; padding:10px; border-radius: 0.375em; ">
                                     <p class="text_anim" style="color: black;">Booking open now</p>
                                 </div>
@@ -639,7 +645,7 @@
                                     <p style="color: black;">Click on the show date and time Of your choice to proceed for
                                         Booking.</p>
                                 </div>
-                                <div class="i-title  mb-4"
+                                <div class="i-title container-anim"
                                     style="background-color: #fff; padding:10px; border-radius: 0.375em; ">
                                     <p class="text_anim" style="color: black;">Tickets go on sale 28th May 2024</p>
                                 </div>
@@ -775,7 +781,7 @@
                                     <p style="color: black;">Click on the show date and time Of your choice to proceed for
                                         Booking.</p>
                                 </div>
-                                <div class="i-title  mb-4"
+                                <div class="i-title container-anim"
                                     style="background-color: #fff; padding:10px; border-radius: 0.375em; ">
                                     <p class="text_anim" style="color: black;">Tickets go on sale 20th May 2024</p>
                                 </div>
@@ -923,7 +929,7 @@
                                     <p style="color: black;">Click on the show date and time Of your choice to proceed for
                                         Booking.</p>
                                 </div>
-                                <div class="i-title  mb-4"
+                                <div class="i-title container-anim"
                                     style="background-color: #fff; padding:10px; border-radius: 0.375em; ">
                                     <p class="text_anim" style="color: black;">Tickets go on sale 20th May 2024</p>
                                 </div>
