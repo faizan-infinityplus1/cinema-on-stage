@@ -11,6 +11,8 @@
     <meta name="description" content="@yield('description')">
     <meta name="keywords" content="@yield('keyword')">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- verification code  -->
+    <meta name="google-site-verification" content="_7En7MJwLW__XKlHyMbAIhIH_rLnHc--c-QMKDe1kBQ" />
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1Y7WGKJ5KK"></script>
     <script>
