@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'Book Now')
+@section('page', 'Book Now')
 @section('content')
 <h1 class="section-main-title text-white  ibm-plex" style="    color: #fd6500;
     margin-top: 70px;

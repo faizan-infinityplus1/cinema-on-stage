@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'About Show')
+@section('page', 'About Show')
 @section('content')
 <!-- <div class="adjust-header-space bg-common-black"></div> -->
 
@@ -134,7 +134,7 @@
 
                 </div>
                 <div class="about-thumb-wrapper">
-                   
+
                     <div class="about-thumb">
                         <img src="assets/img/about-show.jpg" alt="img not found" data-speed="auto">
 
@@ -257,7 +257,7 @@
 
                                 </p>
 
-                               
+
 
                             </div>
                         </div>
@@ -776,5 +776,5 @@
 
 
 
-       
+
         @endsection

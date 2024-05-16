@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'Book Now')
+@section('page', 'Book Now')
 @section('extracss')
 
 

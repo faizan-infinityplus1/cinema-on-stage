@@ -1,5 +1,9 @@
 @extends('layouts.master')
-@section('title', 'Home')
+@section('page', 'Home')
+@section('title', 'Mughal-e-Azam Tickets in Los Angeles & New York | Stage Cinema Shows')
+@section('canonical', 'https://cinemaonstage.com/')
+@section('description', 'Get your tickets for Mughal-e-Azam shows in Los Angeles, New York, and Houston at Cinema on Stage. Experience the grandeur of the stage and cinema. Book now for an unforgettable experience!')
+@section('keyword', 'cinemaonstage, cinema on stage mughal e azam, mughal e azam show tickets, mughal e azam show los angeles, mughal e azam musical tickets, mughal e azam show new york, stage cinema movies, stage and cinema, mughal e azam houston tickets')
 @section('content')
 <!-- carousel slider start here -->
 <div id="carouselExampleControls" class="carousel slide carousel_home" data-ride="carousel" data-interval="3000">
@@ -44,7 +48,7 @@
                   <span class="fm-director-years-text" style="color: #fd6500;">Years <br />
                     Experience</span>
                 </span>
-              </div> 
+              </div>
             </div>
           </div>
           <div class="col-xl-6 col-lg-6">
@@ -57,7 +61,7 @@
                 With a combined experience of over 450 national and international projects, Cinema On Stage has always been at par with the highest benchmarks in the quality of work and setting our own goals with unrivaled standards.
               </p>
 
-         
+
               <p class="title-anim" style="color:#6e777d">
                 Working alongside the most respected companies in the events business and broadcasters such as Star, Sony, Viacom 1 8, Zee, Times of India on their renowned projects, Cinema On Stage has efficiently managed a plethora of events of varying magnitude and genre.</p>
               <div class=" about-btn" style="margin-top: 25px;">
@@ -68,7 +72,7 @@
               </div>
 
             </div>
-          </div> 
+          </div>
         </div>
       </div>
     </div> -->
@@ -606,7 +610,7 @@
                     <div class="fm-director-about-name mt-55">
                       <a href="#" class="director-about-nam" style="color: #fd6500;">Cinema On Stage</a>
                     </div>
-                    
+
                   </div>
                 </div>
               </div>
@@ -625,7 +629,7 @@
                     <div class="fm-director-about-name mt-55">
                       <a href="#" class="director-about-nam" style="color: #fd6500;">Cinema On Stage</a>
                     </div>
-                   
+
                   </div>
                 </div>
               </div>
@@ -654,7 +658,7 @@
                     <div class="fm-director-about-name mt-55">
                       <a href="#" class="director-about-nam" style="color: #fd6500;">Cinema On Stage</a>
                     </div>
-                   
+
                   </div>
                 </div>
               </div>
@@ -673,7 +677,7 @@
                     <div class="fm-director-about-name mt-55">
                       <a href="#" class="director-about-nam" style="color: #fd6500;">Cinema On Stage</a>
                     </div>
-                   
+
                   </div>
                 </div>
               </div>
@@ -702,7 +706,7 @@
                     <div class="fm-director-about-name mt-55">
                       <a href="#" class="director-about-nam" style="color: #fd6500;">Cinema On Stage</a>
                     </div>
-                   
+
                   </div>
                 </div>
               </div>
@@ -721,7 +725,7 @@
                     <div class="fm-director-about-name mt-55">
                       <a href="#" class="director-about-nam" style="color: #fd6500;">Cinema On Stage</a>
                     </div>
-                   
+
                   </div>
                 </div>
               </div>
@@ -1307,7 +1311,7 @@
                   <h3>india </h3>
                   <p class="txt" style="font-size: 0.9rem;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo nostrum voluptatibus aspernatur labore rerum laudantium accusantium libero aliquam</p>
               </div>
-             
+
             </div>
           </div>
           <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
@@ -1320,7 +1324,7 @@
                 <h3>india </h3>
                 <p class="txt" style="font-size: 0.9rem;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo nostrum voluptatibus aspernatur labore rerum laudantium accusantium libero aliquam</p>
             </div>
-           
+
           </div></div>
           <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
             <div class="row align-items-end text-center " >
@@ -1332,9 +1336,9 @@
                 <h3>india </h3>
                 <p class="txt" style="font-size: 0.9rem;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo nostrum voluptatibus aspernatur labore rerum laudantium accusantium libero aliquam</p>
             </div>
-           
+
           </div></div>
-          <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab"> 
+          <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
             <div class="row align-items-end text-center " >
             <div class="col-12 col-lg-4">
               <img src="assets/img/hq.jpg">
@@ -1344,7 +1348,7 @@
                 <h3>india </h3>
                 <p class="txt" style="font-size: 0.9rem;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo nostrum voluptatibus aspernatur labore rerum laudantium accusantium libero aliquam</p>
             </div>
-           
+
           </div></div>
         </div>
       </div> -->
@@ -1992,7 +1996,7 @@
           <div class="poweredby-google">
             <img src="assets/img/power.png" alt="powered by google">
           </div>
-          <a href="" class="review-us">review us on 
+          <a href="" class="review-us">review us on
           <svg viewBox="0 0 512 512" height="18" width="18"><g fill="none" fill-rule="evenodd"><path d="M482.56 261.36c0-16.73-1.5-32.83-4.29-48.27H256v91.29h127.01c-5.47 29.5-22.1 54.49-47.09 71.23v59.21h76.27c44.63-41.09 70.37-101.59 70.37-173.46z" fill="#4285f4"></path><path d="M256 492c63.72 0 117.14-21.13 156.19-57.18l-76.27-59.21c-21.13 14.16-48.17 22.53-79.92 22.53-61.47 0-113.49-41.51-132.05-97.3H45.1v61.15c38.83 77.13 118.64 130.01 210.9 130.01z" fill="#34a853"></path><path d="M123.95 300.84c-4.72-14.16-7.4-29.29-7.4-44.84s2.68-30.68 7.4-44.84V150.01H45.1C29.12 181.87 20 217.92 20 256c0 38.08 9.12 74.13 25.1 105.99l78.85-61.15z" fill="#fbbc05"></path><path d="M256 113.86c34.65 0 65.76 11.91 90.22 35.29l67.69-67.69C373.03 43.39 319.61 20 256 20c-92.25 0-172.07 52.89-210.9 130.01l78.85 61.15c18.56-55.78 70.59-97.3 132.05-97.3z" fill="#ea4335"></path><path d="M20 20h472v472H20V20z"></path></g></svg>
           </a>
         </div>
