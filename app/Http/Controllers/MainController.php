@@ -23,6 +23,10 @@ class MainController extends Controller
     {
         return view('book-now');
     }
+    public function booknowhidden(){
+        return view('book-now-hidden');
+
+    }
     public function pastshows()
     {
         return view('past-shows');
