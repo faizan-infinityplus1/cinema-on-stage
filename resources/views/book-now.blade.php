@@ -192,7 +192,7 @@
                                                 color: black;
                                                 text-shadow: 0 0 50px black;
                                             }
-                                        
+
                                         }
                                         /* .text_anim{
                                             animation: textscale 1s infinite;
@@ -522,27 +522,27 @@
 
                                     <div class="row">
                                         <div class="col-lg-4 col-md-4 col-12">
-                                            <button class="dates   nav-tic active mt-4"><a href="">5th SEP 2024 |
+                                            <button class="dates   nav-tic active mt-4"><a href="https://tickets.davidhkochtheater.com/syos/performance/8776">5th SEP 2024 |
                                                     THUR | 7:30 PM</a></button>
 
                                         </div>
                                         <div class="col-lg-4 col-md-4 col-12">
-                                            <button class="dates   nav-tic active mt-4"><a href="">6th SEP 2024 |
+                                            <button class="dates   nav-tic active mt-4"><a href="https://tickets.davidhkochtheater.com/syos/performance/8777">6th SEP 2024 |
                                                     FRI | 7:30 PM</a></button>
 
                                         </div>
                                         <div class="col-lg-4 col-md-4 col-12">
-                                            <button class="dates   nav-tic active mt-4"><a href="">7th SEP 2024 |
+                                            <button class="dates   nav-tic active mt-4"><a href="https://tickets.davidhkochtheater.com/syos/performance/8778">7th SEP 2024 |
                                                     SAT | 2:00 PM </a></button>
 
                                         </div>
                                         <div class="col-lg-4 col-md-4 col-12">
-                                            <button class="dates   nav-tic active mt-4"><a href="">7th SEP 2024 |
+                                            <button class="dates   nav-tic active mt-4"><a href="https://tickets.davidhkochtheater.com/syos/performance/8780">7th SEP 2024 |
                                                     SAT |7:30 PM</a></button>
 
                                         </div>
                                         <div class="col-lg-4 col-md-4 col-12">
-                                            <button class="dates   nav-tic active mt-4"><a href="">8th SEP 2024 |
+                                            <button class="dates   nav-tic active mt-4"><a href="https://tickets.davidhkochtheater.com/syos/performance/8781">8th SEP 2024 |
                                                     SUN | 2:00 PM</a></button>
 
                                         </div>

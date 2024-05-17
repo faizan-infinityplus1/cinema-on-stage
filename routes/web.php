@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [MainController::class, 'index'])->name('home');
 Route::get('/about', [MainController::class, 'about'])->name('about');
 Route::get('/about-show', [MainController::class, 'aboutshow'])->name('about.show');
-Route::get('/book-now', [MainController::class, 'booknow'])->name('book.now');
+Route::get('/book-now.php', [MainController::class, 'booknow'])->name('book.now');
 Route::get('/book-now-hidden', [MainController::class, 'booknowhidden'])->name('book.now.hidden');
 Route::get('/past-shows', [MainController::class, 'pastshows'])->name('past.shows');
 Route::get('/contact-us', [MainController::class, 'contactus'])->name('contact.us');
