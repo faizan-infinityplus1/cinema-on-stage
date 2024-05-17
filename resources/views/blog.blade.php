@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'Blog')
+@section('page', 'Blog')
 @section('content')
 <style>
   .p-20 {

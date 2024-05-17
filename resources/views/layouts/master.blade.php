@@ -5,9 +5,26 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>@yield('title') || Cinema On Stage</title>
-    <meta name="description" content="" />
+    <title>@yield('page') || Cinema On Stage</title>
+    <meta name="title" content="@yield('title')">
+    <link rel="canonical" href="@yield('canonical')">
+    <meta name="description" content="@yield('description')">
+    <meta name="keywords" content="@yield('keyword')">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- verification code  -->
+    <meta name="google-site-verification" content="siSA-XIq0trjG29MdsE2rYrVbGgFP9XtrsyNzmwxfXY" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1Y7WGKJ5KK"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-1Y7WGKJ5KK');
+    </script>
     <!-- Place favicon.ico in the root directory -->
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/img/favicon.png') }}" />
     <!-- CSS here -->
@@ -17,7 +34,7 @@
     <link rel="stylesheet" href="{!! asset('assets/css/animate.min.css') !!}" />
     <link rel="stylesheet" href="{!! asset('assets/css/swiper-bundle.css') !!}" />
     <link rel="stylesheet" href="{!! asset('assets/css/slick.css') !!}" />
-    <link rel="stylesheet" href="{!! asset('assets/css/magnific-popup.css')!!}" />
+    <link rel="stylesheet" href="{!! asset('assets/css/magnific-popup.css') !!}" />
     <link rel="stylesheet" href="{!! asset('assets/css/nice-select.css') !!}" />
     <link rel="stylesheet" href="{!! asset('assets/css/ui-range-slider.css') !!}" />
     <link rel="stylesheet" href="{!! asset('assets/css/flaticon_faime.css') !!}" />
@@ -186,7 +203,7 @@
 
         }
     </style>
-    <link rel="stylesheet" href="{!! asset('assets/css/client-review.css')!!}">
+    <link rel="stylesheet" href="{!! asset('assets/css/client-review.css') !!}">
     <style>
         .card-review-container {
             height: 150px;
@@ -611,7 +628,8 @@
     </div>
     <div class="floating-button" onclick="toggleSocialMenu()">
         <!-- <span class="floating_icon_plus">+</span> -->
-        <a href="https://api.whatsapp.com/send?phone=+18552674636&amp;text=I would like to know more about Cinema On Stage" target="_blank" style="border:0px;">
+        <a href="https://api.whatsapp.com/send?phone=+18552674636&amp;text=I would like to know more about Cinema On Stage"
+            target="_blank" style="border:0px;">
             <div class="social-icons">
                 <div class="social-icon">
                     <p class="floating-social-title" style="left: -50px;">Whatsapp</p>
@@ -623,13 +641,16 @@
                 </div>
         </a>
 
-        <a id="fancybox" class="fancyboxEnq fancybox.iframe" href="{{route('quick.enquiry')}}">
+        <a id="fancybox" class="fancyboxEnq fancybox.iframe" href="{{ route('quick.enquiry') }}">
             <div class="social-icon" style="background-color: #ea5a00;">
                 <p class="floating-social-title">Enquire Now </p>
                 <div class="social-chat">
 
                     <svg width="40" height="40" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4 18L9 12M20 18L15 12M3 8L10.225 12.8166C10.8665 13.2443 11.1872 13.4582 11.5339 13.5412C11.8403 13.6147 12.1597 13.6147 12.4661 13.5412C12.8128 13.4582 13.1335 13.2443 13.775 12.8166L21 8M6.2 19H17.8C18.9201 19 19.4802 19 19.908 18.782C20.2843 18.5903 20.5903 18.2843 20.782 17.908C21 17.4802 21 16.9201 21 15.8V8.2C21 7.0799 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V15.8C3 16.9201 3 17.4802 3.21799 17.908C3.40973 18.2843 3.71569 18.5903 4.09202 18.782C4.51984 19 5.07989 19 6.2 19Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+                        <path
+                            d="M4 18L9 12M20 18L15 12M3 8L10.225 12.8166C10.8665 13.2443 11.1872 13.4582 11.5339 13.5412C11.8403 13.6147 12.1597 13.6147 12.4661 13.5412C12.8128 13.4582 13.1335 13.2443 13.775 12.8166L21 8M6.2 19H17.8C18.9201 19 19.4802 19 19.908 18.782C20.2843 18.5903 20.5903 18.2843 20.782 17.908C21 17.4802 21 16.9201 21 15.8V8.2C21 7.0799 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V15.8C3 16.9201 3 17.4802 3.21799 17.908C3.40973 18.2843 3.71569 18.5903 4.09202 18.782C4.51984 19 5.07989 19 6.2 19Z"
+                            stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            fill="none" />
                     </svg>
 
                 </div>
@@ -644,7 +665,7 @@
             <div class="row align-items-center justify-content-lg-between">
                 <div class="header-wrapper">
                     <div class="fm-header-logo-wrapper">
-                        <a href="{{route('home')}}" class="fm-header-logo ">
+                        <a href="{{ route('home') }}" class="fm-header-logo ">
                             <img class="" src="{{ asset('assets/img/logo (1).png') }}" alt="img not found" />
                         </a>
 
@@ -661,28 +682,32 @@
                                 <ul>
 
                                     <li class="has-dropdown" id="home_mobile">
-                                        <a href="{{route('home')}}" class="button upper_menu_margin1" id="button-7">
+                                        <a href="{{ route('home') }}" class="button upper_menu_margin1"
+                                            id="button-7">
                                             <div id="dub-arrow">Home</div>
                                             <button href="{{ route('home') }}">Home</button>
                                         </a>
                                     </li>
 
                                     <li class="active has-dropdown">
-                                        <a href="{{route('about')}}" class="button upper_menu_margin1" id="button-7">
+                                        <a href="{{ route('about') }}" class="button upper_menu_margin1"
+                                            id="button-7">
                                             <div id="dub-arrow">About Us</div>
-                                            <button href="{{route('about')}}">About Us</button>
+                                            <button href="{{ route('about') }}">About Us</button>
                                         </a>
                                     </li>
 
                                     <li class="has-dropdown">
-                                        <a href="{{route('about.show')}}" class="button upper_menu_margin1" id="button-7">
+                                        <a href="{{ route('about.show') }}" class="button upper_menu_margin1"
+                                            id="button-7">
                                             <div id="dub-arrow">About show</div>
-                                            <button href="{{route('about.show')}}">About Show </button>
+                                            <button href="{{ route('about.show') }}">About Show </button>
                                         </a>
 
 
                                     <li class="has-dropdown ">
-                                        <a href="{{route('book.now')}}" class="button upper_menu_margin1" id="button-7">
+                                        <a href="{{ route('book.now') }}" class="button upper_menu_margin1"
+                                            id="button-7">
                                             <div id="dub-arrow">Book Now</div>
                                             <button href="{route('book.now')}}">Book Now</button>
                                         </a>
@@ -691,22 +716,25 @@
 
                                     </li>
                                     <li class="has-dropdown">
-                                        <a href="{{route('past.shows')}}" class="button upper_menu_margin1" id="button-7">
+                                        <a href="{{ route('past.shows') }}" class="button upper_menu_margin1"
+                                            id="button-7">
                                             <div id="dub-arrow">Past Shows</div>
-                                            <button href="{{route('past.shows')}}">Past Shows</button>
+                                            <button href="{{ route('past.shows') }}">Past Shows</button>
                                         </a>
                                     </li>
                                     <!-- abdul edited -->
                                     <li class="has-dropdown">
-                                        <a href="{{route('blog')}}" class="button upper_menu_margin1" id="button-7">
+                                        <a href="{{ route('blog') }}" class="button upper_menu_margin1"
+                                            id="button-7">
                                             <div id="dub-arrow">Blog</div>
-                                            <button href="{{route('blog')}}">Blog</button>
+                                            <button href="{{ route('blog') }}">Blog</button>
                                         </a>
                                     </li>
                                     <li class="has-dropdown">
-                                        <a href="{{route('contact.us')}}" class="button upper_menu_margin1" id="button-7">
+                                        <a href="{{ route('contact.us') }}" class="button upper_menu_margin1"
+                                            id="button-7">
                                             <div id="dub-arrow">Contact Us</div>
-                                            <button href="{{route('contact.us')}}">Contact Us</button>
+                                            <button href="{{ route('contact.us') }}">Contact Us</button>
                                         </a>
                                     </li>
 
@@ -722,15 +750,15 @@
                             <nav class="mobile_menu" id="mobile-menu">
                                 <ul>
                                     <li class="has-dropdown">
-                                        <a href="{{route('home')}}">Home</a>
+                                        <a href="{{ route('home') }}">Home</a>
 
                                     </li>
                                     <li class=" has-dropdown">
-                                        <a href="{{route('about')}}">About Us</a>
+                                        <a href="{{ route('about') }}">About Us</a>
 
                                     </li>
                                     <li class="has-dropdown">
-                                        <a href="{{route('about.show')}}">About show</a>
+                                        <a href="{{ route('about.show') }}">About show</a>
 
                                     </li>
                                     <li class="has-dropdown">
@@ -771,7 +799,8 @@
             <div class="fm-header-sidebar-wrapper">
                 <div class="fm-header-sidebar-action mb-75">
                     <div class="fm-header-sidebar-logo">
-                        <a href="#"><img src="{{ asset('assets/img/logo (1).png') }}" alt="img not found" /></a>
+                        <a href="#"><img src="{{ asset('assets/img/logo (1).png') }}"
+                                alt="img not found" /></a>
                     </div>
                     <div class="offcanvas-close">
                         <a class="offcanvas-btn" href="#0">
@@ -815,12 +844,14 @@
                                 <a><i class="fal fa-envelope"></i></a>
                             </div>
                             <div class="offcanvas-contact-text" style="color: black;">
-                                <a href="mailto:info@cinemaonstage.com"><span class="__cf_email__" data-cfemail="cfa7aaa3a3a08fa9aea6a2aaa2aaaba6aee1aca0a2">info@cinemaonstage.com</span></a>
+                                <a href="mailto:info@cinemaonstage.com"><span class="__cf_email__"
+                                        data-cfemail="cfa7aaa3a3a08fa9aea6a2aaa2aaaba6aee1aca0a2">info@cinemaonstage.com</span></a>
 
                             </div>
                         </li>
                         <li class="d-flex align-items-center gap-2">
-                            <button class="buy_ticket_sidebar"><a href="{{route('book.now')}}">Book Now </a></button>
+                            <button class="buy_ticket_sidebar"><a href="{{ route('book.now') }}">Book Now
+                                </a></button>
 
                         </li>
                     </ul>
@@ -830,10 +861,14 @@
                     <div class="fm-offcanvas-social">
                         <span class="social-text">Follow :</span>
                         <div class="fm-offcanvas-social-icon" style="color: black;">
-                            <a href="https://www.facebook.com/MughalEAzamPlay/" target="_blank" style="color: black;"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="https://twitter.com/mughaleazamplay" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                            <a href="https://www.instagram.com/mughaleazamplay/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="https://www.youtube.com/channel/UCyptcakFN2xlKUrju_RxiMw/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="https://www.facebook.com/MughalEAzamPlay/" target="_blank"
+                                style="color: black;"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://twitter.com/mughaleazamplay" target="_blank"><i
+                                    class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/mughaleazamplay/" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/channel/UCyptcakFN2xlKUrju_RxiMw/" target="_blank"><i
+                                    class="fa-brands fa-youtube"></i></a>
                         </div>
                     </div>
                 </div>
@@ -843,10 +878,10 @@
         <!-- sidebar area end -->
 
 
-        <a class=" buy_ticket_sticky" href="{{route('book.now')}}">
+        <a class=" buy_ticket_sticky" href="{{ route('book.now') }}">
             <button>Book Now</button>
         </a>
-        <!--<a class=" buy_ticket_sticky_2" href="{{route('book.now')}}">-->
+        <!--<a class=" buy_ticket_sticky_2" href="{{ route('book.now') }}">-->
         <!--    <button>Book Now</button>-->
         <!--</a>-->
     </header>
@@ -866,19 +901,22 @@
                         <div class="fm-contact-wrapper fm-contact-pad">
                             <div class="section-title ibm-plex">
                                 <h2 class="section-main-title text-white ibm-plex" style="letter-spacing: 2px;">
-                                    <a href="{{route('book.now')}}">Book Tickets Now </a>
+                                    <a href="{{ route('book.now') }}">Book Tickets Now </a>
                                 </h2>
                             </div>
 
                             <div class="fm-contact-btn btn_wrapper">
                                 <div class="btn-featured-wrapper d-flex justify-content-lg-end">
-                                    <div class="featured-btn-circle-wrap btn_wrapper" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-                                        <a href="{{route('book.now')}}" class="featured-rotate-btn " style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                                    <div class="featured-btn-circle-wrap btn_wrapper"
+                                        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                                        <a href="{{ route('book.now') }}" class="featured-rotate-btn "
+                                            style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
                                             <span>
                                                 <i class="flaticon-right-arrow-1"></i>
                                             </span>
                                         </a>
-                                        <img class="image-text" src="{{ asset('assets/img/bg/btn-bg.png') }}" alt="img not found">
+                                        <img class="image-text" src="{{ asset('assets/img/bg/btn-bg.png') }}"
+                                            alt="img not found">
                                     </div>
                                 </div>
                             </div>
@@ -899,7 +937,8 @@
                 <div class="footer-middle-area">
                     <div class="footer-wrapper footer-widget-about">
                         <div class="footer-logo-2">
-                            <a href="{{ route('home') }}"><img class="w-100 wow zoomInLeft" src="{{ asset('assets/img/footer/logo.png') }}" alt="" /></a>
+                            <a href="{{ route('home') }}"><img class="w-100 wow zoomInLeft"
+                                    src="{{ asset('assets/img/footer/logo.png') }}" alt="" /></a>
                         </div>
                         <!-- <div class="footer-text">
                         <p style="color: white;">
@@ -913,34 +952,49 @@
                             <h4>Useful Links</h4>
                         </div>
                         <ul class="wow zoomInLeft">
-                            <li><a href="{{route('home')}}">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-                                        <path fill="none" stroke="#e04b00" stroke-width="2" d="M5 9h7V5.483a.2.2 0 0 1 .341-.142L19 12l-6.659 6.659a.2.2 0 0 1-.341-.142V15H5"></path>
+                            <li><a href="{{ route('home') }}">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                        viewBox="0 0 24 24">
+                                        <path fill="none" stroke="#e04b00" stroke-width="2"
+                                            d="M5 9h7V5.483a.2.2 0 0 1 .341-.142L19 12l-6.659 6.659a.2.2 0 0 1-.341-.142V15H5">
+                                        </path>
                                     </svg>
                                     <span style="color:white">Home</span>
                                 </a></li>
-                            <li><a href="{{route('about')}}">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-                                        <path fill="none" stroke="#e04b00" stroke-width="2" d="M5 9h7V5.483a.2.2 0 0 1 .341-.142L19 12l-6.659 6.659a.2.2 0 0 1-.341-.142V15H5"></path>
+                            <li><a href="{{ route('about') }}">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                        viewBox="0 0 24 24">
+                                        <path fill="none" stroke="#e04b00" stroke-width="2"
+                                            d="M5 9h7V5.483a.2.2 0 0 1 .341-.142L19 12l-6.659 6.659a.2.2 0 0 1-.341-.142V15H5">
+                                        </path>
                                     </svg>
                                     <span style="color:white">About Us</span>
                                 </a></li>
                             <!-- .php remove kiya bas -->
-                            <li><a href="{{route('about.show')}}">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-                                        <path fill="none" stroke="#e04b00" stroke-width="2" d="M5 9h7V5.483a.2.2 0 0 1 .341-.142L19 12l-6.659 6.659a.2.2 0 0 1-.341-.142V15H5"></path>
+                            <li><a href="{{ route('about.show') }}">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                        viewBox="0 0 24 24">
+                                        <path fill="none" stroke="#e04b00" stroke-width="2"
+                                            d="M5 9h7V5.483a.2.2 0 0 1 .341-.142L19 12l-6.659 6.659a.2.2 0 0 1-.341-.142V15H5">
+                                        </path>
                                     </svg>
                                     <span style="color:white">About Show</span>
                                 </a></li>
-                            <li><a href="{{route('book.now')}}">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-                                        <path fill="none" stroke="#e04b00" stroke-width="2" d="M5 9h7V5.483a.2.2 0 0 1 .341-.142L19 12l-6.659 6.659a.2.2 0 0 1-.341-.142V15H5"></path>
+                            <li><a href="{{ route('book.now') }}">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                        viewBox="0 0 24 24">
+                                        <path fill="none" stroke="#e04b00" stroke-width="2"
+                                            d="M5 9h7V5.483a.2.2 0 0 1 .341-.142L19 12l-6.659 6.659a.2.2 0 0 1-.341-.142V15H5">
+                                        </path>
                                     </svg>
                                     <span style="color:white">Book Now</span>
                                 </a></li>
-                            <li><a href="{{route('blog')}}">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-                                        <path fill="none" stroke="#e04b00" stroke-width="2" d="M5 9h7V5.483a.2.2 0 0 1 .341-.142L19 12l-6.659 6.659a.2.2 0 0 1-.341-.142V15H5"></path>
+                            <li><a href="{{ route('blog') }}">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                        viewBox="0 0 24 24">
+                                        <path fill="none" stroke="#e04b00" stroke-width="2"
+                                            d="M5 9h7V5.483a.2.2 0 0 1 .341-.142L19 12l-6.659 6.659a.2.2 0 0 1-.341-.142V15H5">
+                                        </path>
                                     </svg>
                                     <span style="color:white">Blog</span>
                                 </a></li>
@@ -962,16 +1016,22 @@
                             <li>
                                 <i class="fa-sharp fa-solid fa-envelope"></i>
                                 <p style="color: white;">
-                                    <a href="mailto:info@cinemaonstage.com" class="text-lowercase"><span class="__cf_email__" data-cfemail="cfa7aaa3a3a08fa9aea6a2aaa2aaaba6aee1aca0a2">info@cinemaonstage.com</span></a>
+                                    <a href="mailto:info@cinemaonstage.com" class="text-lowercase"><span
+                                            class="__cf_email__"
+                                            data-cfemail="cfa7aaa3a3a08fa9aea6a2aaa2aaaba6aee1aca0a2">info@cinemaonstage.com</span></a>
                                 </p>
                             </li>
 
                         </ul>
                         <div class="fm-social-2 footer-social-3">
-                            <a href="https://www.facebook.com/cinemaonstage" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="https://www.instagram.com/cinemaonstage/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="https://www.youtube.com/@cinemaonstage" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                            <a href="https://api.whatsapp.com/send?phone=+18552674636&amp;text=I would like to know more about Cinema On Stage" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="https://www.facebook.com/cinemaonstage" target="_blank"><i
+                                    class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/cinemaonstage/" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/@cinemaonstage" target="_blank"><i
+                                    class="fa-brands fa-youtube"></i></a>
+                            <a href="https://api.whatsapp.com/send?phone=+18552674636&amp;text=I would like to know more about Cinema On Stage"
+                                target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
                         </div>
                     </div>
                 </div>
@@ -980,14 +1040,14 @@
                         <div class="footer-bottom-inner">
                             <div class="footer-copyright wow zoomInLeft">
                                 <p style="color: white;">
-                                    © 2024<a href="{{route('home')}}"> Cinema On Stage </a> All Rights
+                                    © 2024<a href="{{ route('home') }}"> Cinema On Stage </a> All Rights
                                     Reserved.
                                 </p>
                             </div>
 
                             <div class="footer-rules wow zoomInLeft" style="color: white;">
                                 <!-- <a href="Privacy Policy.php">Privacy Policy</a> -->
-                                <a href="{{route('terms.condition')}}">Terms & Condition</a>
+                                <a href="{{ route('terms.condition') }}">Terms & Condition</a>
                             </div>
                         </div>
                     </div>
@@ -997,31 +1057,31 @@
     </footer>
     <!-- JS here -->
     <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-    <script src="{!! asset('assets/js/jquery-3.6.0.min.js')!!}"></script>
-    <script src="{!! asset('assets/js/bootstrap.bundle.min.js')!!}"></script>
-    <script src="{!! asset('assets/js/meanmenu.js')!!}"></script>
-    <script src="{!! asset('assets/js/swiper-bundle.min.js')!!}"></script>
-    <script src="{!! asset('assets/js/slick.min.js')!!}"></script>
-    <script src="{!! asset('assets/js/magnific-popup.min.js')!!}"></script>
-    <script src="{!! asset('assets/js/parallax.min.js')!!}"></script>
-    <script src="{!! asset('assets/js/gsap.min.js')!!}"></script>
-    <script src="{!! asset('assets/js/ScrollTrigger.min.js')!!}"></script>
-    <script src="{!! asset('assets/js/ScrollToPlugin.min.js')!!}"></script>
-    <script src="{!! asset('assets/js/SplitText.min.js')!!}"></script>
-    <script src="{!! asset('assets/js/vanilla-tils.js')!!}"></script>
-    <script src="{!! asset('assets/js/appair.min.js')!!}"></script>
-    <script src="{!! asset('assets/js/knob.min.js')!!}"></script>
-    <script src="{!! asset('assets/js/nice-select.min.js')!!}"></script>
-    <script src="{!! asset('assets/js/ajax-form.js')!!}"></script>
-    <script src="{!! asset('assets/js/wow.min.js')!!}"></script>
-    <script src="{!! asset('assets/js/imagesloaded.pkgd.min.js')!!}"></script>
-    <script src="{!! asset('assets/js/isotope.pkgd.min.js')!!}"></script>
-    <script src="{!! asset('assets/js/fontawesome.min.js')!!}"></script>
-    <script src="{!! asset('assets/js/ui-range-slider.js')!!}"></script>
-    <script src="{!! asset('assets/js/main.js')!!}"></script>
-    <script src="{!! asset('assets/js/sidebar.js')!!}"></script>
-    <script src="{!! asset('assets/js/fancybox.js')!!}"></script>
-    <script src="{!! asset('assets/js/custom.js')!!}"></script>
+    <script src="{!! asset('assets/js/jquery-3.6.0.min.js') !!}"></script>
+    <script src="{!! asset('assets/js/bootstrap.bundle.min.js') !!}"></script>
+    <script src="{!! asset('assets/js/meanmenu.js') !!}"></script>
+    <script src="{!! asset('assets/js/swiper-bundle.min.js') !!}"></script>
+    <script src="{!! asset('assets/js/slick.min.js') !!}"></script>
+    <script src="{!! asset('assets/js/magnific-popup.min.js') !!}"></script>
+    <script src="{!! asset('assets/js/parallax.min.js') !!}"></script>
+    <script src="{!! asset('assets/js/gsap.min.js') !!}"></script>
+    <script src="{!! asset('assets/js/ScrollTrigger.min.js') !!}"></script>
+    <script src="{!! asset('assets/js/ScrollToPlugin.min.js') !!}"></script>
+    <script src="{!! asset('assets/js/SplitText.min.js') !!}"></script>
+    <script src="{!! asset('assets/js/vanilla-tils.js') !!}"></script>
+    <script src="{!! asset('assets/js/appair.min.js') !!}"></script>
+    <script src="{!! asset('assets/js/knob.min.js') !!}"></script>
+    <script src="{!! asset('assets/js/nice-select.min.js') !!}"></script>
+    <script src="{!! asset('assets/js/ajax-form.js') !!}"></script>
+    <script src="{!! asset('assets/js/wow.min.js') !!}"></script>
+    <script src="{!! asset('assets/js/imagesloaded.pkgd.min.js') !!}"></script>
+    <script src="{!! asset('assets/js/isotope.pkgd.min.js') !!}"></script>
+    <script src="{!! asset('assets/js/fontawesome.min.js') !!}"></script>
+    <script src="{!! asset('assets/js/ui-range-slider.js') !!}"></script>
+    <script src="{!! asset('assets/js/main.js') !!}"></script>
+    <script src="{!! asset('assets/js/sidebar.js') !!}"></script>
+    <script src="{!! asset('assets/js/fancybox.js') !!}"></script>
+    <script src="{!! asset('assets/js/custom.js') !!}"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
 
@@ -1093,7 +1153,9 @@
         //     }
         if ($(window).width() < 768) {
             // Array of IDs for elements to scroll to
-            var tabIDs = ["#v-pills-home-tab", "#v-pills-profile-tab", "#v-pills-messages-tab", "#v-pills-settings-tab", "#v-pills-la-tab", "#v-pills-new-tab", "#v-pills-tabContent"];
+            var tabIDs = ["#v-pills-home-tab", "#v-pills-profile-tab", "#v-pills-messages-tab", "#v-pills-settings-tab",
+                "#v-pills-la-tab", "#v-pills-new-tab", "#v-pills-tabContent"
+            ];
 
             // Loop through each tab ID
             tabIDs.forEach(function(tabID) {

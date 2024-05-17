@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'Blog')
+@section('page', 'Blog')
 @section('extracss')
 
 <link rel="stylesheet" href="{!! asset('assets/css/blog.css')!!}">

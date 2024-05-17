@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'Past Shows')
+@section('page', 'Past Shows')
 @section('content')
 
 
@@ -32,7 +32,7 @@
         <!-- <section class="parallax-background-container" style="margin-top: 100px;margin-bottom:100px">
             <div class="section-bg parallax-object1" style="background-image: url('assets/img/banner/shows.png');" data-breakpoint="768" data-speed="0.5"></div>
         </section> -->
-        <!-- 
+        <!--
         <div >
 
             <img src="assets/img/banner/shows.jpg" alt="past shows" style="    max-width: 100%;

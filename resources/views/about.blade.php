@@ -1,5 +1,9 @@
 @extends('layouts.master')
-@section('title', 'Manage Users')
+@section('page', 'About Us')
+@section('title', 'Experience the Magic of Mughal-E-Azam at Times Square | Get Your Show Tickets Now!')
+@section('canonical', 'https://cinemaonstage.com/about')
+@section('description', 'Step into the enchanting world of Mughal-E-Azam at Times Square. Secure your tickets to this captivating show and immerse yourself in the timeless tale of love and drama. Book now!')
+@section('keyword', 'Timesquare Mughal E Azam, Mughal E Azam Timesquare, mughal e azam show tickets')
 @section('content')
 
   <!-- <div class="adjust-header-space bg-common-black"></div> -->
@@ -269,10 +273,10 @@
             <div class="row g-50 align-items-center justify-content-between">
                <div class="col-xl-6 col-lg-6  order-0 order-lg-1 padding_zero" >
                   <div class="fm-achievement-content ">
-                    
+
                      <p class="achieve-text-clr title-anim1 monstarat" style="margin-bottom: 20px; color:#6e777d">Whether you're seeking a thrilling Bollywood show, expert technical execution, or seamless event management, Cinema On Stage is your trusted partner for unforgettable entertainment experiences. Join us as we continue to push the boundaries of creativity and production quality, delivering extraordinary shows that captivate hearts and minds around the world.</p>
-                 
-                    
+
+
                   </div>
                </div>
                <div class="col-xl-6 col-lg-6 order-0 order-lg-1">
