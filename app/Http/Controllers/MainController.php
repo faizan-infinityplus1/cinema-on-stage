@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Blog;
 use Illuminate\Http\Request;
+use PHPMailer\PHPMailer\PHPMailer;
 
 class MainController extends Controller
 {
@@ -23,9 +24,9 @@ class MainController extends Controller
     {
         return view('book-now');
     }
-    public function booknowhidden(){
+    public function booknowhidden()
+    {
         return view('book-now-hidden');
-
     }
     public function pastshows()
     {
@@ -61,5 +62,80 @@ class MainController extends Controller
     public function quickenquiry()
     {
         return view('quickenquiry');
+    }
+    public function mail(Request $request)
+    {
+        $name = $request->name;
+        $email = $request->email;
+        $phone = $request->contact;
+        $city = $request->city;
+        $message = $request->message;
+
+        $html = "
+    <table style='width: 100%;border: 2px solid black;border-collapse: collapse;'>
+    <tr style='width: 100%;border: 2px solid black;'>
+    <th style='width: 20%;border: 2px solid black;'>Enter your Name</th>
+    <th style='width: 20%;border: 2px solid black;'>Enter your Email</th>
+    <th style='width: 20%;border: 2px solid black;'>Enter your Mobile Number</th>
+    <th style='width: 20%;border: 2px solid black;'>Enter your City</th>
+ <th style='width: 20%;border: 2px solid black;'>Enter your Message</th>
+
+
+    </tr>
+    <tr style='width: 100%;border: 2px solid black;'>
+    <th style='width: 20%;border: 2px solid black;'>$name</th>
+    <th style='width: 20%;border: 2px solid black;'>$email</th>
+    <th style='width: 20%;border: 2px solid black;'>$phone</th>
+    <th style='width: 20%;border: 2px solid black;'>$city</th>
+     <th style='width: 20%;border: 2px solid black;'>$message</th>
+            </tr>
+            </table>";
+        $mail = new PHPMailer();
+
+        $mail->SMTPDebug = 0;
+        $mail->Host = "mail.cinemaonstage.com";
+
+        $mail->Port = 465;
+        $mail->IsHTML(true);
+
+        //Set who the message is to be sent from
+        $mail->setFrom('info@cinemaonstage.com', 'Cinema On Stage');
+
+        //Set who the message is to be sent to
+        $mail->addAddress('info@cinemaonstage.com', 'Cinema On Stage');
+
+        $mail->addBCC('mirzafaizan1931@gmail.com', 'Faizan');
+
+
+        //Set the subject line
+        $mail->Subject = 'Cinema On Stage Contact Form';
+        $mail->Body = $html;
+
+
+        if (!$mail->send()) {
+            return redirect()->route('home');
+        } else {
+            $curl = curl_init();
+            curl_setopt_array($curl, array(
+              CURLOPT_RETURNTRANSFER => 1,
+              CURLOPT_URL => 'https://sanjarcrm.com/api/leads/submit',
+              CURLOPT_POST => 1,
+              CURLOPT_POSTFIELDS => array(
+                'name' => $name,
+                'contact' => $phone,
+                'email' => $email,
+                'message' => $message,
+                'location' => $city,
+                'table_alias' => 'cinemaonstage_com_',
+                'api_key' => '3c97a03bf567aa7ade93f52110a11652'
+              )
+            ));
+
+            // Send the request & save response to $resp
+            $resp = curl_exec($curl);
+            // Close request to clear up some resources
+            curl_close($curl);
+            return redirect()->route('home');
+        }
     }
 }

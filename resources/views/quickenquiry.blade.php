@@ -103,7 +103,7 @@
 			color: #fff;
 			text-decoration: none;
 		}
-		
+
 
 		.BookNow {
 			background-color: #e10a7e;
@@ -120,7 +120,7 @@
 		.anchor_tag:hover{
 			color: #fff !important;
 			text-decoration: underline;
-			
+
 		}
 
 		@media only screen and (max-width: 480px) {
@@ -159,8 +159,8 @@
     display: block;
     margin-bottom: 10px;" />
 	<center>
-		<form method="POST" action="email.php">
-
+		<form method="POST" action="{{ route('email') }}">
+@csrf
 			<input type="text" name="name"
 				style="padding:9px 7px 10px; width:95%; background-color:#fff; margin-bottom:10px; border:0px; margin-left:-3px;"
 				placeholder="Enter Your Name">

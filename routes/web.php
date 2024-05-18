@@ -28,6 +28,7 @@ Route::get('/blog', [MainController::class, 'blog'])->name('blog');
 Route::get('/blog/{title}/{id}', [MainController::class, 'blog1'])->name('blogs.show');
 Route::get('/terms-and-condition', [MainController::class, 'termsandcondition'])->name('terms.condition');
 Route::get('/quick-enquiry', [MainController::class, 'quickenquiry'])->name('quick.enquiry');
+Route::post('/email', [MainController::class, 'mail'])->name('email');
 Route::prefix('/adcinema753')->group(function () {
     Route::middleware('guest')->group(function () {
         Route::get('/', [AuthenticatedSessionController::class, 'create'])
