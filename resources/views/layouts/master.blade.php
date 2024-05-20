@@ -13,6 +13,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- verification code  -->
     <meta name="google-site-verification" content="siSA-XIq0trjG29MdsE2rYrVbGgFP9XtrsyNzmwxfXY" />
+    <!-- Facebook Pixel Code -->
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '316601501322339');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1"
+            src="https://www.facebook.com/tr?id=316601501322339&ev=PageView
+    &noscript=1" />
+    </noscript>
+    <!-- End Facebook Pixel Code -->
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1Y7WGKJ5KK"></script>
     <script>
@@ -761,10 +790,10 @@
                                         <a href="{{ route('about.show') }}">About show</a>
 
                                     </li>
-                                    <li class="has-dropdown">
+                                    <!-- <li class="has-dropdown">
                                         <a href="tour-schedule.php"> Tour Schedule </a>
 
-                                    </li>
+                                    </li> -->
                                     <li class="has-dropdown">
                                         <a href="past-shows.php">Past Shows</a>
 
@@ -1056,7 +1085,7 @@
         </div>
     </footer>
     <!-- JS here -->
-    <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <!-- <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script> -->
     <script src="{!! asset('assets/js/jquery-3.6.0.min.js') !!}"></script>
     <script src="{!! asset('assets/js/bootstrap.bundle.min.js') !!}"></script>
     <script src="{!! asset('assets/js/meanmenu.js') !!}"></script>
@@ -1076,7 +1105,7 @@
     <script src="{!! asset('assets/js/wow.min.js') !!}"></script>
     <script src="{!! asset('assets/js/imagesloaded.pkgd.min.js') !!}"></script>
     <script src="{!! asset('assets/js/isotope.pkgd.min.js') !!}"></script>
-    <script src="{!! asset('assets/js/fontawesome.min.js') !!}"></script>
+    <!-- <script src="{!! asset('assets/js/fontawesome.min.js') !!}"></script> -->
     <script src="{!! asset('assets/js/ui-range-slider.js') !!}"></script>
     <script src="{!! asset('assets/js/main.js') !!}"></script>
     <script src="{!! asset('assets/js/sidebar.js') !!}"></script>
