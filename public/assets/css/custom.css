@@ -31,7 +31,6 @@
 .padding_zero{
   padding: 0px;
 }
-
 #button-7 {
   display: inline-flex;
   width: 150px;
@@ -306,12 +305,17 @@
   }
 }
 @media (max-width: 992px) {
+  
   .desktop_menu {
     display: none;
   }
   .mobile_menu {
     display: block;
   }
+  /* #v-pills-tab{
+    width: 100%;
+    overflow: visible;
+  } */
   #button-7 {
     display: unset;
     width: 100%;
@@ -354,6 +358,7 @@
   .buy_ticket_sticky_2{
     display: block !important;
   }
+  
 }
 /* feed start here */
 .feed_facebook {
