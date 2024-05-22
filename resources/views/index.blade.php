@@ -2009,25 +2009,23 @@
 <!--  Cliet Review End here  -->
 
 <!-- feed start here -->
-<div class="container">
+<!-- <div class="container">
   <div class="row row-fluid home-album">
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
           <div class="noo-shortcode-events grid">
-            <!-- xyz -->
             <div class="col-md-12 mb-30">
               <span class="  ibm-plex contact_us">
                 Cinema On Stage On Digital Media</span>
-              <!-- <h1 class=" ibm-plex " style="visibility: visible;">
+              <h1 class=" ibm-plex " style="visibility: visible;">
                     Like, Follow, Share and Subscribe.
-                  </h1> -->
+                  </h1>
             </div>
-            <!-- xyz -->
-            <!-- <p class="sh-ds">
+            <p class="sh-ds">
                                 Like, Follow, Share and Subscribe to be a part of our memorable journey and to get all
                                 the updates on upcoming events.
-                            </p> -->
+                            </p>
             <div class="noo-sh-event-content row mt-5">
               <div class="col-md-4 col-sm-6 mb-30">
 
@@ -2053,7 +2051,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 </div>
 
 <!-- feed end here -->

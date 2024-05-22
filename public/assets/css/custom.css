@@ -31,7 +31,44 @@
 .padding_zero{
   padding: 0px;
 }
+.has-dropdown.mobile-menu{
+  display: none !important;
+}
+.nav-link{
+  width: 150px;
+  margin: auto;
+  /* margin: 0 auto; */
+}
+#button-7:hover + #v-pills-tab .nav-link{
+  width: 150px;
+  margin: auto;
+  /* margin: 0 auto; */
+}
+#v-pills-tab{
+  display: block;
+  height: 0;
+  width: 300px;
+  overflow: hidden;
+  position: absolute;
+  content: "";
+  top: 55px;
+  margin-left: -75px;
+  background: var(--clr-common-black);
+  padding: 0px;
+  transition: all 0.5s ease-in-out;
+}
+#v-pills-tab:hover{
+  height: 430px;
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+}
+#button-7:hover + #v-pills-tab {
+  height: 430px;
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+}
 #button-7 {
+  position: relative;
   display: inline-flex;
   width: 150px;
   color: #bfc0c0;
@@ -68,12 +105,12 @@
 .header-menu-spc ul li:nth-child(4) button {
   background-color: #f17600;
 }
-.header-menu-spc ul li:nth-child(4) a {
+/* .header-menu-spc ul li:nth-child(4) a.book-now {
   border: 10px solid;
   border-image-slice: 1;
   border-width: 2px;
   border-image-source: linear-gradient(to left, #e9c553, #b73510) !important;
-}
+} */
 
 #button-7:hover #dub-arrow {
   left: 0;
@@ -358,7 +395,23 @@
   .buy_ticket_sticky_2{
     display: block !important;
   }
-  
+  li.has-dropdown.mobile-menu{
+    display: block !important;
+    margin-bottom: 0px;
+    padding: 10px 30px;
+    /* padding-left: 30px; */
+    font-weight: 500;
+    border-top: 4px solid;
+    /* border-top: 2px solid; */
+    border-image-slice: 2;
+    border-image-source: linear-gradient(to left, #b73510, #e9c553) !important;
+    background: linear-gradient(to left, #e9c553, #b73510);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  li.has-dropdown.mobile-menu{
+    background-color: red;
+  }
 }
 /* feed start here */
 .feed_facebook {
@@ -440,4 +493,27 @@ width: 100%;
     .instagram-media {
       height: 425px !important;
   }
+}
+
+
+/* =========================================== */
+.desktop-city-name-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.desktop-city-name-container .city-name{
+  padding: 15px 0px !important;
+  width: 150px;
+  text-align: center;
+  color: #df4f06 !important;
+  font-weight: 600 !important;
+  border: 2px solid #df4f06;
+  border-radius: 3.5px;
+}
+.desktop-city-name-container .city-name:hover{
+  background-color: #df4f06;
+  color: white !important;
 }

@@ -13,6 +13,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- verification code  -->
     <meta name="google-site-verification" content="siSA-XIq0trjG29MdsE2rYrVbGgFP9XtrsyNzmwxfXY" />
+    <!-- Facebook Pixel Code -->
+    <script>
+        ! function (f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '316601501322339');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" src="https://www.facebook.com/tr?id=316601501322339&ev=PageView
+    &noscript=1" />
+    </noscript>
+    <!-- End Facebook Pixel Code -->
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1Y7WGKJ5KK"></script>
     <script>
@@ -603,6 +631,52 @@
                 margin-left: 10px;
             }
         }
+        .desktop-book-now{
+            font-weight: 900 !important;
+            font-size: 17px;
+            color: white !important;
+            padding: 10px 0 !important;
+            top: -15px;
+            width: 150px;
+            text-align: center;
+            border-radius: 3.5px;
+            background-color: #f35c00;
+        }
+        .book-now {
+            position: relative;
+        }
+        .book-now:hover ~.city-name-container{
+            height: 460px;
+        }
+        .city-name-container {
+            transition: all 0.5s ease-in-out;
+            position: absolute;
+            content: "";
+            background-color: white;
+            width: 250px;
+            left: -50px;
+            top: 50px;
+            box-shadow: 0px 0px 10px black;
+            height: 0px;
+            overflow: hidden;
+        }
+        .city-name-container:hover{
+            height: 460px;
+        }
+        .city-name-container .city-name {
+            padding: 15px 0px !important;
+            margin: 20px auto;
+            width: 150px;
+            text-align: center;
+            color: #df4f06 !important;
+            font-weight: 600 !important;
+            border: 2px solid #df4f06;
+            border-radius: 3.5px;
+        }
+        .city-name-container .city-name:hover{
+            background-color: #df4f06;
+            color: white !important;
+        }
     </style>
 </head>
 
@@ -703,53 +777,90 @@
                                         </a>
                                     </li>
                                     <li class="has-dropdown ">
-                                        <a href="{{ route('book.now') }}" class="button upper_menu_margin1"
+                                        <a href="{{ route('book.now') }}" class="book-now desktop-book-now">Book Now</a>
+                                        <!-- <a href="{{ route('book.now') }}" class="button upper_menu_margin1 book-now"
                                             id="button-7">
+                                            Book Now
+                                            <button href="{{ route('book.now') }}">About Show </button>
                                             <div id="dub-arrow">Book Now</div>
                                             <button href="{route('book.now')}}">Book Now</button>
-                                        </a>
+                                        </a> -->
                                         <!-- <div id="dub-arrow">Home</div>
                                     <a href="tour-schedule.php"> Book Now </a> -->
 
-                                        <div class="nav flex-column  nav-pills me-3" id="v-pills-tab"
-                                            role="tablist" aria-orientation="vertical">
-                                            <button class="nav-link   nav-tic active" id="v-pills-home-tab"
+                                        <!-- <div class="nav flex-column  nav-pills me-3" id="v-pills-tab" role="tablist"
+                                            aria-orientation="vertical">
+                                            <style>
+                                                .nav.flex-column.nav-pills.me-3 button:hover{
+                                                    background-color: transparent;
+                                                }
+                                            </style>
+                                            <button class="nav-link nav-tic active" id="v-pills-home-tab"
                                                 data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button"
-                                                role="tab" aria-controls="v-pills-home" aria-selected="true"
-                                                style=" padding:15px; color: #df4f06; background-color:white; border:2px solid #df4f06; font-size:1.6rem; font-weight:600;"><a href="{{ route('houston') }}">Houston</a></button>
+                                                role="tab" aria-controls="v-pills-home" aria-selected="true" style=""><a
+                                                    href="{{ route('houston') }}" style="background-color: transparent; width:150px;">Houston</a></button>
                                             <button class="nav-link  nav-tic new_jersey" id="v-pills-profile-tab"
                                                 data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button"
                                                 role="tab" aria-controls="v-pills-profile" aria-selected="false"
-                                                style=" padding:15px; margin-top: 20px; color: #df4f06; background-color:white; border:2px solid #df4f06; font-size:1.6rem; font-weight:600;">
-                                            New Jersey
+                                                style="background-color: transparent;"><a href="{{ route('new.jersey') }}" style="background-color: white;
+padding: 15px;
+width:150px;
+margin-top: 20px;
+color: #df4f06;
+border: 2px solid #df4f06;
+font-size: 1.6rem;
+font-weight: 600;">New Jersey</a>
                                             </button>
                                             <button class="nav-link nav-tic new_york " id="v-pills-messages-tab"
                                                 data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button"
                                                 role="tab" aria-controls="v-pills-messages" aria-selected="false"
-                                                style=" padding:15px; margin-top: 20px; color: #df4f06; background-color:white; border:2px solid #df4f06; font-size:1.6rem; font-weight:600;"><a href="{{ route('new.york') }}">New York</a></button>
+                                                style="background-color: transparent;"><a href="{{ route('new.york') }}" style="background-color: white; width:150px; margin-top: 20px;
+color: #df4f06;
+border: 2px solid #df4f06;
+font-size: 1.6rem;
+font-weight: 600;">New York</a></button>
                                             <button class="nav-link nav-tic dallas " id="v-pills-settings-tab"
                                                 data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button"
                                                 role="tab" aria-controls="v-pills-settings" aria-selected="false"
-                                                style=" padding:15px; margin-top: 20px; color: #df4f06; background-color:white; border:2px solid #df4f06; font-size:1.6rem; font-weight:600;"><a href="{{ route('dallas') }}">Dallas</a></button>
+                                                style="background-color: transparent;"><a href="{{ route('dallas') }}" style="background-color: white; width:150px; margin-top: 20px;
+color: #df4f06;
+border: 2px solid #df4f06;
+font-size: 1.6rem;
+font-weight: 600;">Dallas</a></button>
                                             <button class="nav-link nav-tic san_jose " id="v-pills-la-tab"
                                                 data-bs-toggle="pill" data-bs-target="#v-pills-la" type="button"
                                                 role="tab" aria-controls="v-pills-settings" aria-selected="false"
-                                                style=" padding:15px; margin-top: 20px; color: #df4f06; background-color:white; border:2px solid #df4f06; font-size:1.6rem; font-weight:600;">San
-                                                Jose</button>
+                                                style="background-color: transparent;"><a href="{{ route('san.jose') }}" style="background-color: white; width:150px; margin-top: 20px;
+color: #df4f06;
+border: 2px solid #df4f06;
+font-size: 1.6rem;
+font-weight: 600;">San Jose</a>
+                                                </button>
                                             <button class="nav-link nav-tic l_a " id="v-pills-new-tab"
                                                 data-bs-toggle="pill" data-bs-target="#v-pills-new" type="button"
                                                 role="tab" aria-controls="v-pills-settings" aria-selected="false"
-                                                style=" padding:15px; margin-top: 20px; color: #df4f06; background-color:white; border:2px solid #df4f06; font-size:1.6rem; font-weight:600;">LA</button>
+                                                style="background-color: transparent;"><a href="{{ route('los.angeles') }}" style="background-color: white; width:150px; margin-top: 20px;
+color: #df4f06;
+border: 2px solid #df4f06;
+font-size: 1.6rem;
+font-weight: 600;">LA</a></button>
+                                        </div> -->
 
+                                        <div class="city-name-container">
+                                            <a href="{{ route('houston') }}" class="city-name">Houston</a>
+                                            <a href="{{ route('new.jersey') }}" class="city-name">New Jersey</a>
+                                            <a href="{{ route('new.york') }}" class="city-name">New York</a>
+                                            <a href="{{ route('dallas') }}" class="city-name">Dallas</a>
+                                            <a href="{{ route('san.jose') }}" class="city-name">San Jose</a>
+                                            <a href="{{ route('los.angeles') }}" class="city-name">LA</a>
                                         </div>
-                                        
                                     </li>
-                                    <li class="has-dropdown mobile-menu" >Houston</li>
-                                    <li class="has-dropdown mobile-menu" >New Jersey</li>
-                                    <li class="has-dropdown mobile-menu" >New York</li>
-                                    <li class="has-dropdown mobile-menu" >Dallas</li>
-                                    <li class="has-dropdown mobile-menu" >San Jose</li>
-                                    <li class="has-dropdown mobile-menu" >LA</li>
+                                    <li class="has-dropdown mobile-menu">Houston</li>
+                                    <li class="has-dropdown mobile-menu">New Jersey</li>
+                                    <li class="has-dropdown mobile-menu">New York</li>
+                                    <li class="has-dropdown mobile-menu">Dallas</li>
+                                    <li class="has-dropdown mobile-menu">San Jose</li>
+                                    <li class="has-dropdown mobile-menu">LA</li>
                                     <li class="has-dropdown">
                                         <a href="{{ route('past.shows') }}" class="button upper_menu_margin1"
                                             id="button-7">
@@ -793,20 +904,20 @@
                                     </li>
                                     <li class="has-dropdown">
                                         <a href="{{ route('about.show') }}">About show</a>
-                                        
+
                                     </li>
-                                    
+
                                     <li class="has-dropdown" id="button-7">Houston</li>
                                     <li class="has-dropdown" id="button-7">New Jersey</li>
                                     <li class="has-dropdown" id="button-7">New York</li>
                                     <li class="has-dropdown" id="button-7">Dallas</li>
                                     <li class="has-dropdown" id="button-7">San Jose</li>
                                     <li class="has-dropdown" id="button-7">LA</li>
-                                
+
                                     <li class="has-dropdown">
                                         <a href="tour-schedule.php"> Tour Schedule </a>
 
-                                    </li>
+                                    </li> -->
                                     <li class="has-dropdown">
                                         <a href="past-shows.php">Past Shows</a>
 
@@ -1092,7 +1203,7 @@
         </div>
     </footer>
     <!-- JS here -->
-    <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <!-- <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script> -->
     <script src="{!! asset('assets/js/jquery-3.6.0.min.js') !!}"></script>
     <script src="{!! asset('assets/js/bootstrap.bundle.min.js') !!}"></script>
     <script src="{!! asset('assets/js/meanmenu.js') !!}"></script>
@@ -1112,7 +1223,7 @@
     <script src="{!! asset('assets/js/wow.min.js') !!}"></script>
     <script src="{!! asset('assets/js/imagesloaded.pkgd.min.js') !!}"></script>
     <script src="{!! asset('assets/js/isotope.pkgd.min.js') !!}"></script>
-    <script src="{!! asset('assets/js/fontawesome.min.js') !!}"></script>
+    <!-- <script src="{!! asset('assets/js/fontawesome.min.js') !!}"></script> -->
     <script src="{!! asset('assets/js/ui-range-slider.js') !!}"></script>
     <script src="{!! asset('assets/js/main.js') !!}"></script>
     <script src="{!! asset('assets/js/sidebar.js') !!}"></script>

@@ -110,7 +110,7 @@
 <div id="carouselExampleControls" class="carousel slide carousel_home" data-ride="carousel" data-interval="3000">
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img class="d-block w-100 lazy" src="assets/img/banner/banner4.png" alt="First slide">
+            <img class="d-block w-100 lazy" src="/assets/img/banner/banner4.png" alt="First slide">
         </div>
     </div>
 </div>
@@ -169,6 +169,50 @@
                         </div>
                         <div class="i-title container-anim"
                             style="background-color: #fff; padding:10px; border-radius: 0.375em; ">
+                            <style>
+                                        .text_anim{
+										    height: 45px;
+                                            animation: textscale 3s infinite;
+                                        }
+
+                                        @keyframes textscale {
+
+                                            0% {
+                                                color: #f36500;
+                                                text-shadow: 0 0 50px #f36500;
+                                            }
+                                            50% {
+                                                color: #f36500;
+                                                text-shadow: 0 0 50px #f36500;
+                                                font-size: 25px;
+                                            }
+                                            100% {
+                                                color: black;
+                                                text-shadow: 0 0 50px black;
+                                            }
+
+                                        }
+                                        /* .text_anim{
+                                            animation: textscale 1s infinite;
+                                        }
+
+                                        @keyframes textscale {
+                                            0% {
+                                                color: #f36500;
+                                                text-shadow: 0 0 50px #f36500;
+                                            }
+                                            100% {
+                                                color: black;
+                                                text-shadow: 0 0 50px black;
+                                            }
+                                        } */
+
+                                        @media screen and (max-width: 512px) {
+                                            .container-anim{
+                                                margin-bottom: 35px;
+                                            }
+                                        }
+                                    </style>
                             <p class="text_anim" style="color: black;">Tickets go on sale 20th May 2024</p>
                         </div>
                         <div class="i-dates i-dates-all mt-5"
@@ -223,9 +267,9 @@
                             <div class="swiper-container">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <a href="assets/img/book-ticket/san-jose/1.png" data-fancybox="gallery">
+                                        <a href="/assets/img/book-ticket/san-jose/1.png" data-fancybox="gallery">
                                             <div class="image"
-                                                style=" background-image: url(assets/img/book-ticket/san-jose/1.png);               ">
+                                                style=" background-image: url(/assets/img/book-ticket/san-jose/1.png);               ">
                                                 <div class="overlay">
                                                     <em class="mdi mdi-magnify-plus"></em>
                                                 </div>
@@ -236,9 +280,9 @@
 
                                     </div>
                                     <div class="swiper-slide">
-                                        <a href="assets/img/book-ticket/san-jose/2.png" data-fancybox="gallery">
+                                        <a href="/assets/img/book-ticket/san-jose/2.png" data-fancybox="gallery">
                                             <div class="image"
-                                                style="background-image: url(assets/img/book-ticket/san-jose/2.png);">
+                                                style="background-image: url(/assets/img/book-ticket/san-jose/2.png);">
                                                 <div class="overlay">
                                                     <em class="mdi mdi-magnify-plus"></em>
                                                 </div>
@@ -252,9 +296,9 @@
 
 
 
-                                        <a href="assets/img/book-ticket/san-jose/3.png" data-fancybox="gallery">
+                                        <a href="/assets/img/book-ticket/san-jose/3.png" data-fancybox="gallery">
                                             <div class="image"
-                                                style="background-image: url(assets/img/book-ticket/san-jose/3.png);">
+                                                style="background-image: url(/assets/img/book-ticket/san-jose/3.png);">
                                                 <div class="overlay">
                                                     <em class="mdi mdi-magnify-plus"></em>
                                                 </div>
@@ -265,9 +309,9 @@
 
 
 
-                                        <a href="assets/img/book-ticket/san-jose/4.png" data-fancybox="gallery">
+                                        <a href="/assets/img/book-ticket/san-jose/4.png" data-fancybox="gallery">
                                             <div class="image"
-                                                style="background-image: url(assets/img/book-ticket/san-jose/4.png);">
+                                                style="background-image: url(/assets/img/book-ticket/san-jose/4.png);">
                                                 <div class="overlay">
                                                     <em class="mdi mdi-magnify-plus"></em>
                                                 </div>

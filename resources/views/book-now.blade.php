@@ -120,10 +120,19 @@
         <!-- fm-ticket-past-show-start -->
         <div class="fm-movie-details-area soft-greybg section-spacing" style="padding-top: 14px;">
             <div class="container navs-bars p-5" style="background-color: white;">
-                <div class="nav-main d-flex align-items-start " id="nav_flex">
-                    <div class=" col-lg-2   col-12 nav flex-column  nav-pills me-3" id="v-pills-tab" role="tablist"
-                        aria-orientation="vertical">
-                        <button class="nav-link   nav-tic active" id="v-pills-home-tab" data-bs-toggle="pill"
+                <!-- <div class="nav-main d-flex align-items-start " id="nav_flex"> -->
+                    <!-- <div class=" col-lg-2   col-12 nav flex-column  nav-pills me-3" id="v-pills-tab" role="tablist"
+                        aria-orientation="vertical"> -->
+                        
+                        <div class="desktop-city-name-container">
+                            <a href="{{ route('houston') }}" class="city-name">Houston</a>
+                            <a href="{{ route('new.jersey') }}" class="city-name">New Jersey</a>
+                            <a href="{{ route('new.york') }}" class="city-name">New York</a>
+                            <a href="{{ route('dallas') }}" class="city-name">Dallas</a>
+                            <a href="{{ route('san.jose') }}" class="city-name">San Jose</a>
+                            <a href="{{ route('los.angeles') }}" class="city-name">LA</a>
+                        </div>
+                        <!-- <button class="nav-link   nav-tic active" id="v-pills-home-tab" data-bs-toggle="pill"
                             data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
                             aria-selected="true"
                             style=" padding:15px; color: #df4f06; background-color:white; border:2px solid #df4f06; font-size:1.6rem; font-weight:600;">Houston</button>
@@ -150,9 +159,8 @@
                             data-bs-target="#v-pills-new" type="button" role="tab" aria-controls="v-pills-settings"
                             aria-selected="false"
                             style=" padding:15px; margin-top: 20px; color: #df4f06; background-color:white; border:2px solid #df4f06; font-size:1.6rem; font-weight:600;">LA</button>
-
-                    </div>
-                    <div class="col-lg-10  col-12 tab-content text-center" id="v-pills-tabContent">
+                     -->
+                    <!-- <div class="col-lg-10 col-12 tab-content text-center" id="v-pills-tabContent">
                         <div class="tab-pane fade show active " id="v-pills-home" role="tabpanel"
                             aria-labelledby="v-pills-home-tab">
                             <div class="i-tab">
@@ -193,20 +201,6 @@
                                             }
 
                                         }
-                                        /* .text_anim{
-                                            animation: textscale 1s infinite;
-                                        }
-
-                                        @keyframes textscale {
-                                            0% {
-                                                color: #f36500;
-                                                text-shadow: 0 0 50px #f36500;
-                                            }
-                                            100% {
-                                                color: black;
-                                                text-shadow: 0 0 50px black;
-                                            }
-                                        } */
 
                                         @media screen and (max-width: 512px) {
                                             .container-anim{
@@ -220,12 +214,7 @@
                                     style="background-color: #f36500; padding:10px; border-radius: 0.375em;">
                                     <div style="display: flex;justify-content: center;align-items: center;">
 
-                                        <!-- <div class="offical-main">
-                                                  <p class="mb-4 official"> Official partner xyz</p>
-                                                  <i class="fa fa-arrow-down down-arrow"></i>
-
-                                              </div> -->
-
+                                      
                                     </div>
                                     <div class="row">
                                         <div class="col-lg-4 col-md-4 col-12  ">
@@ -249,14 +238,10 @@
                                                     SUN | 2:00 PM</a></button>
 
                                         </div>
-                                        <!-- <div class="col-lg-4 col-md-4 col-12">
-                                                  <button class="dates   nav-tic active mt-4" style=" padding:15px; color:#df4f06; border:1px solid #df4f06;  background-color:white"><a href="">17th AUG 2024 | 2:00 PM</a></button>
-
-                                              </div> -->
+                                        
                                     </div>
 
                                 </div>
-                                <!--Carousel Gallery-->
 
 
                                 <div class="carousel-gallery">
@@ -310,14 +295,13 @@
                                         <div class="swiper-pagination"></div>
                                     </div>
                                 </div>
-                                <!--#Carousel Gallery-->
+                                #Carousel Gallery
 
                                 <div class="i-dates mt-60">
                                     <div class="row">
 
 
                                         <div class="col-12 col-lg-6">
-                                            <!-- <img src="assets/img/ABOUT2.png"> -->
                                             <iframe class="w-100 "
                                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3133.419062978805!2d-85.76007228904712!3d38.24658577175289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886972ae13cafe67%3A0xe6c34987daad31ab!2sThe%20Brown%20Theatre!5e0!3m2!1sen!2sin!4v1710573626148!5m2!1sen!2sin"
                                                 width="400" height="300" style="border:0;" allowfullscreen=""
@@ -328,9 +312,7 @@
                                             <h6 class="pt-30">Brown Theatre</h6>
                                             <p class="pt-30">Houston, TX 77002, United States</p>
 
-                                            <!-- <div class="pt-30">
-                                                      <img src="assets/img/Group-383.jpg">
-                                                  </div> -->
+                                            
                                         </div>
 
                                     </div>
@@ -376,22 +358,7 @@
                                                     SUN | 2:00 PM</a></button>
 
                                         </div>
-                                        <!-- <div class="col-lg-4 col-md-4 col-12">
-                                                  <button class="dates   nav-tic active mt-4"><a href="">26TH AUG 2024 | MON | 0:00 PM </a></button>
-
-                                              </div>
-                                              <div class="col-lg-4 col-md-4 col-12">
-                                                  <button class="dates   nav-tic active mt-4"><a href="">27TH AUG 2024 | TUE | 0:00 PM </a></button>
-
-                                              </div>
-                                              <div class="col-lg-4 col-md-4 col-12">
-                                                  <button class="dates   nav-tic active mt-4"><a href="">28TH AUG 2024 | WED | 0:00 PM </a></button>
-
-                                              </div>
-                                              <div class="col-lg-4 col-md-4 col-12">
-                                                  <button class="dates   nav-tic active mt-4"><a href="">29TH AUG 2024 | THUR | 0:00 PM</a></button>
-
-                                              </div> -->
+                                        
                                         <div class="col-lg-4 col-md-4 col-12">
                                             <button class="dates   nav-tic active mt-4"><a href="">30th AUG 2024 |
                                                     FRI | 7:30 PM</a></button>
@@ -414,7 +381,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!--Carousel Gallery-->
                                 <div class="carousel-gallery" id="carousel-gallery-1">
                                     <div class="swiper-container">
                                         <div class="swiper-wrapper">
@@ -472,13 +438,11 @@
                                         <div class="swiper-pagination"></div>
                                     </div>
                                 </div>
-                                <!--#Carousel Gallery-->
 
                                 <div class="i-dates mt-60">
 
                                     <div class="row">
                                         <div class="col-12 col-lg-6">
-                                            <!-- <img src="assets/img/ABOUT2.png"> -->
                                             <iframe class="w-100"
                                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.0118318109076!2d-74.16988738890691!3d40.73976517127009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25380f669c769%3A0xd2b4264a03e28aec!2sNew%20Jersey%20Performing%20Arts%20Center!5e0!3m2!1sen!2sin!4v1710574346103!5m2!1sen!2sin"
                                                 width="400" height="300" style="border:0;" allowfullscreen=""
@@ -489,9 +453,7 @@
                                             <h6 class="pt-30">New Jersey Performing Arts Center</h6>
                                             <p class="pt-30">1 Center St, Newark, NJ 07102, United States</p>
 
-                                            <!-- <div class="pt-30">
-                                                      <img src="assets/img/Group-383.jpg">
-                                                  </div> -->
+                                            
                                         </div>
 
                                     </div>
@@ -547,7 +509,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!--Carousel Gallery-->
                                 <div class="carousel-gallery" id="carousel-gallery-2">
                                     <div class="swiper-container">
                                         <div class="swiper-wrapper">
@@ -602,14 +563,14 @@
                                         <div class="swiper-pagination"></div>
                                     </div>
                                 </div>
-                                <!--#Carousel Gallery-->
+                                 
 
                                 <div class="i-dates mt-60">
 
 
                                     <div class="row">
                                         <div class="col-12 col-lg-6">
-                                            <!-- <img src="assets/img/ABOUT2.png"> -->
+                                              
                                             <iframe class="w-100"
                                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.552160555367!2d-73.98619868890513!3d40.77187367126523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2585f7a9c42ef%3A0x5eb15f9cbf314562!2sDavid%20H.%20Koch%20Theater!5e0!3m2!1sen!2sin!4v1710574775709!5m2!1sen!2sin"
                                                 width="400" height="300" style="border:0;" allowfullscreen=""
@@ -621,9 +582,7 @@
                                             <p class="pt-30">20 Lincoln Center Plaza, New York, NY 10023, United States
                                             </p>
 
-                                            <!-- <div class="pt-30">
-                                                      <img src="assets/img/Group-383.jpg">
-                                                  </div> -->
+                                           
                                         </div>
 
                                     </div>
@@ -672,13 +631,9 @@
                                                     SUN | 2:00 PM</a></button>
 
                                         </div>
-                                        <!-- <div class="col-lg-4 col-md-4 col-12">
-                                                  <button class="dates   nav-tic active mt-4" style=" padding:15px; color:#df4f06; border:1px solid #df4f06;  background-color:white"><a href="">17th SEP 2024 | 2:00 PM</a></button>
-
-                                              </div> -->
+                                        
                                     </div>
                                 </div>
-                                <!--Carousel Gallery-->
                                 <div class="carousel-gallery" id="carousel-gallery-3">
                                     <div class="swiper-container">
                                         <div class="swiper-wrapper">
@@ -738,14 +693,14 @@
                                         <div class="swiper-pagination"></div>
                                     </div>
                                 </div>
-                                <!--#Carousel Gallery-->
+                                 
 
                                 <div class="i-dates  mt-60">
                                     <div class="row">
 
 
                                         <div class="col-12 col-lg-6">
-                                            <!-- <img src="assets/img/ABOUT2.png"> -->
+                                              
                                             <iframe class="w-100"
                                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3354.448296750531!2d-96.76849002433711!3d32.78037067366227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c209d0e5a77b9%3A0xf253e082d38e23d5!2sMusic%20Hall%20at%20Fair%20Park!5e0!3m2!1sen!2sin!4v1710575330815!5m2!1sen!2sin"
                                                 width="400" height="300" style="border:0;" allowfullscreen=""
@@ -757,9 +712,7 @@
                                             <h6 class="pt-30">Music Hall at Fairpark</h6>
                                             <p class="pt-30"> 909 1st Ave, Dallas, TX 75210, United States</p>
 
-                                            <!-- <div class="pt-30">
-                                                      <img src="assets/img/Group-383.jpg">
-                                                  </div> -->
+                                            
                                         </div>
 
                                     </div>
@@ -829,7 +782,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!--Carousel Gallery-->
+                                   
                                 <div class="carousel-gallery" id="carousel-gallery-4">
                                     <div class="swiper-container">
                                         <div class="swiper-wrapper">
@@ -889,13 +842,13 @@
                                         <div class="swiper-pagination"></div>
                                     </div>
                                 </div>
-                                <!--#Carousel Gallery-->
+                                 
 
                                 <div class="i-dates mt-60">
                                     <div class="row">
 
                                         <div class="col-12 col-lg-6">
-                                            <!-- <img src="assets/img/ABOUT2.png"> -->
+                                              
                                             <iframe class="w-100"
                                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3172.543182622489!2d-121.8949448241372!3d37.32964717210092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fcca5703c3cc3%3A0x59278466c97cc6e0!2s255%20S%20Almaden%20Blvd%2C%20San%20Jose%2C%20CA%2095113%2C%20USA!5e0!3m2!1sen!2sin!4v1710575449663!5m2!1sen!2sin"
                                                 width="400" height="300" style="border:0;" allowfullscreen=""
@@ -906,9 +859,7 @@
                                             <h6 class="pt-30">San Jose Centre For Performing Art </h6>
                                             <p class="pt-30">255 S Almaden Blvd, San Jose, CA 95113, United</p>
 
-                                            <!-- <div class="pt-30">
-                                                      <img src="assets/img/Group-383.jpg">
-                                                  </div> -->
+                                            
                                         </div>
 
                                     </div>
@@ -958,7 +909,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!--Carousel Gallery-->
+                                   
                                 <div class="carousel-gallery" id="carousel-gallery-5">
                                     <div class="swiper-container">
                                         <div class="swiper-wrapper">
@@ -1026,13 +977,13 @@
                                         <div class="swiper-pagination"></div>
                                     </div>
                                 </div>
-                                <!--#Carousel Gallery-->
+                                 
 
                                 <div class="i-dates  mt-60">
                                     <div class="row">
 
                                         <div class="col-12 col-lg-6">
-                                            <!-- <img src="assets/img/ABOUT2.png"> -->
+                                              
                                             <iframe class="w-100"
                                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.7234681825935!2d-118.34287722428137!3d34.1022239231382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bf23c3bb14c7%3A0xf5f01d0d3b59ab76!2sDolby%20Theatre!5e0!3m2!1sen!2sin!4v1710575701379!5m2!1sen!2sin"
                                                 width="400" height="300" style="border:0;" allowfullscreen=""
@@ -1044,9 +995,7 @@
                                             <h6 class="pt-30">Dolby Theater</h6>
                                             <p class="pt-30">6801 Hollywood Blvd, Hollywood, CA 90028, United States</p>
 
-                                            <!-- <div class="pt-30">
-                                                      <img src="assets/img/Group-383.jpg">
-                                                  </div> -->
+                                            
                                         </div>
 
                                     </div>
@@ -1055,17 +1004,15 @@
                             </div>
                         </div>
 
-                    </div>
-                </div>
+                    </div> -->
+                <!-- </div> -->
 
-                <!-- <div class="container"> -->
-                <div class="about-ticket term_condition mt-60">
+                <!-- <div class="about-ticket term_condition mt-60">
                     <h5 style="color: #fc6703;">Why should you attend?</h5>
                     <p class="mt-20">Mughal-e-Azam: The Musical" is a captivating theatrical experience that brings to
                         life the opulence, romance, and drama of one of Bollywood's most iconic films. </p>
                     <ul>
-                        <!-- <li style="list-style-type: circle;">
-                              </li> -->
+                        
                         <li style="margin-top: 20px;"><strong> Spectacular Production:</strong>&nbsp;The musical boasts
                             lavish sets, extravagant costumes, and stunning visual effects that transport the audience to
                             the grandeur of the Indian heritage.</li>
@@ -1099,9 +1046,9 @@
                         Overall, "Mughal-e-Azam: The Musical" is a must-see production that promises to transport you into a
                         world of romance, grandeur and timeless beauty - making it a cultural experience not to be missed.
                     </p>
-                </div>
-                <hr class="mt-30">
-                <div class="about-ticket mt-60">
+                </div> -->
+                <!-- <hr class="mt-30"> -->
+                <!-- <div class="about-ticket mt-60">
                     <h5 style="color: #fc6703;">About The Show</h5>
                     <p class="mt-20">Experience the grandeur of Mughal-e-Azam: The Musical - presented in North American
                         by Cinema on Stage, an entertainment company dedicated to bringing world-class productions to
@@ -1116,22 +1063,12 @@
                     </p>
                     <p class="mt-20">Don't miss your chance to witness the first Indian Broadway-style musical, where
                         romance and royalty meet in a grand spectacle of music, dance, and drama. </p>
-                </div>
-                <hr class="mt-30">
-                <div class="about-ticket mt-60 term_condition">
+                </div> -->
+                <!-- <hr class="mt-30"> -->
+                <!-- <div class="about-ticket mt-60 term_condition">
                     <h5 style="color: #fc6703;">Terms & Conditions</h5>
-                    <!-- <p class="mt-20">1. Tickets once booked cannot be exchanged or refunded</p>
-                          <p class="mt-20">2. An Internet handling fee per ticket may be levied. Please check the total amount before payment</p>
-                          <p class="mt-20">3. We recommend that you arrive at-least 30 minutes prior at the venue for a seamless entry</p>
-                          <p class="mt-20">4. It is mandatory to wear masks at all times and follow social distancing norms</p>
-                          <p class="mt-20">5. Please do not purchase tickets if you feel sick</p>
-                          <p class="mt-20">6. Unlawful resale (or attempted unlawful resale) of a ticket would lead to seizure or cancellation of that ticket without refund or other compensation</p>
-                          <p class="mt-20">7. Rights of admission reserved
-                          </p>
-                          <p class="mt-20">8. These terms and conditions are subject to change from time to time at the discretion of the organizer</p> -->
+                    
                     <ul>
-                        <!-- <li style="list-style-type: circle;">
-                              </li> -->
                         <li style="margin-top: 20px;"><strong>Ticket Purchase:</strong>&nbsp;By purchasing a ticket, you
                             agree to abide by all terms and conditions outlined herein.</li>
                         <li><strong>Refunds and Exchanges:</strong>&nbsp;All ticket sales are final. No refunds or exchanges
@@ -1164,9 +1101,9 @@
                         <li><strong>Changes to Terms and Conditions:</strong>&nbsp;The organizer reserves the right to amend
                             or update these terms and conditions at any time without prior notice.</li>
                     </ul>
-                </div>
-                <hr class="mt-30">
-                <div class="about-ticket mt-60">
+                </div> -->
+                <!-- <hr class="mt-30"> -->
+                <!-- <div class="about-ticket mt-60">
                     <h5>FAQS</h5>
                     <div class="accordion mt-20" id="accordionExample">
                         <div class="accordion-item">
@@ -1569,8 +1506,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <hr class="mt-30">
+                </div> -->
+                <!-- <hr class="mt-30"> -->
 
                 <!-- </div> -->
             </div>

@@ -110,7 +110,7 @@
     <div id="carouselExampleControls" class="carousel slide carousel_home" data-ride="carousel" data-interval="3000">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100 lazy" src="assets/img/banner/banner4.png" alt="First slide">
+                <img class="d-block w-100 lazy" src="/assets/img/banner/banner4.png" alt="First slide">
             </div>
         </div>
     </div>
@@ -264,10 +264,10 @@
                                     <div class="swiper-container">
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
-                                                <a href="assets/img/book-ticket/houston/houston-1.png"
+                                                <a href="/assets/img/book-ticket/houston/houston-1.png"
                                                     data-fancybox="gallery">
                                                     <div class="image"
-                                                        style=" background-image: url(assets/img/book-ticket/houston/houston-1.png);">
+                                                        style=" background-image: url(/assets/img/book-ticket/houston/houston-1.png);">
                                                         <div class="overlay">
                                                             <em class="mdi mdi-magnify-plus"></em>
                                                         </div>
@@ -275,10 +275,10 @@
                                                 </a>
                                             </div>
                                             <div class="swiper-slide">
-                                                <a href="assets/img/book-ticket/houston/houston-2.png"
+                                                <a href="/assets/img/book-ticket/houston/houston-2.png"
                                                     data-fancybox="gallery">
                                                     <div class="image"
-                                                        style="background-image: url(assets/img/book-ticket/houston/houston-2.png);">
+                                                        style="background-image: url(/assets/img/book-ticket/houston/houston-2.png);">
                                                         <div class="overlay">
                                                             <em class="mdi mdi-magnify-plus"></em>
                                                         </div>
@@ -286,10 +286,10 @@
                                                 </a>
                                             </div>
                                             <div class="swiper-slide">
-                                                <a href="assets/img/book-ticket/houston/houston-3.png"
+                                                <a href="/assets/img/book-ticket/houston/houston-3.png"
                                                     data-fancybox="gallery">
                                                     <div class="image"
-                                                        style=" background-image: url(assets/img/book-ticket/houston/houston-3.png); ">
+                                                        style=" background-image: url(/assets/img/book-ticket/houston/houston-3.png); ">
                                                         <div class="overlay">
                                                             <em class="mdi mdi-magnify-plus"></em>
                                                         </div>
@@ -297,10 +297,10 @@
                                                 </a>
                                             </div>
                                             <div class="swiper-slide">
-                                                <a href="assets/img/book-ticket/houston/houston-4.png"
+                                                <a href="/assets/img/book-ticket/houston/houston-4.png"
                                                     data-fancybox="gallery">
                                                     <div class="image"
-                                                        style=" background-image: url(assets/img/book-ticket/houston/houston-4.png); ">
+                                                        style=" background-image: url(/assets/img/book-ticket/houston/houston-4.png); ">
                                                         <div class="overlay">
                                                             <em class="mdi mdi-magnify-plus"></em>
                                                         </div>
