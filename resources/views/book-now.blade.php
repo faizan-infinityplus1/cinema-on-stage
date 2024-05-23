@@ -6,7 +6,6 @@
     <!-- gallery -->
     <link rel="stylesheet" href="//cdn.materialdesignicons.com/2.1.99/css/materialdesignicons.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/css/swiper.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
 
     <style>
         .iframe {
@@ -215,7 +214,7 @@
                                             }
                                         }
                                     </style>
-                                    <p class="text_anim" style="color: black;">Tickets go on sale - 20th May 2024</p>
+                                    <p class="text_anim" style="color: black;">Tickets go on sale - 24th May 2024</p>
                                 </div>
                                 <div class="i-dates i-dates-all mt-5"
                                     style="background-color: #f36500; padding:10px; border-radius: 0.375em;">
@@ -654,22 +653,22 @@
 
                                     <div class="row">
                                         <div class="col-lg-4 col-md-4 col-12">
-                                            <button class="dates   nav-tic active mt-4"><a href="">13th SEP 2024 |
+                                            <button class="dates   nav-tic active mt-4"><a href="https://www.ticketmaster.com/event/0C0060B1A40725A4">13th SEP 2024 |
                                                     FRI | 7:30 PM</a></button>
 
                                         </div>
                                         <div class="col-lg-4 col-md-4 col-12">
-                                            <button class="dates   nav-tic active mt-4"><a href="">14th SEP 2024 |
+                                            <button class="dates   nav-tic active mt-4"><a href="https://www.ticketmaster.com/event/0C0060B1A40A25A7">14th SEP 2024 |
                                                     SAT | 2:00 PM </a></button>
 
                                         </div>
                                         <div class="col-lg-4 col-md-4 col-12">
-                                            <button class="dates   nav-tic active mt-4"><a href="">14th SEP 2024 |
+                                            <button class="dates   nav-tic active mt-4"><a href="https://www.ticketmaster.com/event/0C0060B1A40D25B0">14th SEP 2024 |
                                                     SAT |7:30 PM</a></button>
 
                                         </div>
                                         <div class="col-lg-4 col-md-4 col-12">
-                                            <button class="dates   nav-tic active mt-4"><a href="">15th SEP 2024 |
+                                            <button class="dates   nav-tic active mt-4"><a href="https://www.ticketmaster.com/event/0C0060B1A41125C1">15th SEP 2024 |
                                                     SUN | 2:00 PM</a></button>
 
                                         </div>
@@ -783,7 +782,7 @@
                                 </div>
                                 <div class="i-title container-anim"
                                     style="background-color: #fff; padding:10px; border-radius: 0.375em; ">
-                                    <p class="text_anim" style="color: black;">Tickets go on sale 20th May 2024</p>
+                                    <p class="text_anim" style="color: black;">Tickets go on sale 24th May 2024</p>
                                 </div>
                                 <div class="i-dates i-dates-all mt-5"
                                     style="background-color: #f36500; padding:10px; border-radius: 0.375em;">
@@ -931,29 +930,29 @@
                                 </div>
                                 <div class="i-title container-anim"
                                     style="background-color: #fff; padding:10px; border-radius: 0.375em; ">
-                                    <p class="text_anim" style="color: black;">Tickets go on sale 20th May 2024</p>
+                                    <p class="text_anim" style="color: black;">Booking open now </p>
                                 </div>
                                 <div class="i-dates i-dates-all mt-5"
                                     style="background-color: #f36500; padding:10px; border-radius: 0.375em;">
 
                                     <div class="row">
                                         <div class="col-lg-4 col-md-4 col-12">
-                                            <button class="dates   nav-tic active mt-4"><a href="">4th OCT 2024 |
+                                            <button class="dates   nav-tic active mt-4"><a href="https://www.ticketmaster.com/event/090060AEADB928AB">4th OCT 2024 |
                                                     FRI | 7:30 PM</a></button>
 
                                         </div>
                                         <div class="col-lg-4 col-md-4 col-12">
-                                            <button class="dates   nav-tic active mt-4"><a href="">5th OCT 2024 |
+                                            <button class="dates   nav-tic active mt-4"><a href="https://www.ticketmaster.com/event/090060B1900224DC">5th OCT 2024 |
                                                     SAT | 1:30 PM </a></button>
 
                                         </div>
                                         <div class="col-lg-4 col-md-4 col-12">
-                                            <button class="dates   nav-tic active mt-4"><a href="">5th OCT 2024 |
+                                            <button class="dates   nav-tic active mt-4"><a href="https://www.ticketmaster.com/event/090060B1900D24EB">5th OCT 2024 |
                                                     SAT | 7:30 PM</a></button>
 
                                         </div>
                                         <div class="col-lg-4 col-md-4 col-12">
-                                            <button class="dates   nav-tic active mt-4"><a href="">6th OCT 2024 |
+                                            <button class="dates   nav-tic active mt-4"><a href="https://www.ticketmaster.com/event/090060B1901724FD">6th OCT 2024 |
                                                     SUN 2:00 PM</a></button>
 
                                         </div>
@@ -1579,7 +1578,6 @@
         </div>
     @endsection
     @section('extrajs')
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/js/swiper.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
         <!-- Swiper CSS -->

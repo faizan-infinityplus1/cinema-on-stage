@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html class="no-js" lang="zxx">
-<!-- Mirrored from html.bdevs.net/faime-prev/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 05 Mar 2024 10:43:47 GMT -->
 
 <head>
     <meta charset="utf-8" />
@@ -1116,33 +1115,6 @@
 
     <script>
         $(document).ready(function() {
-            $(".fancybox").fancybox({
-                'width': 1000,
-                fitToView: true,
-                autoSize: false,
-                closeClick: false,
-
-                helpers: {
-                    overlay: {
-                        locked: false,
-
-                    }
-                }
-            });
-            $(".fancybox1").fancybox({
-                'width': 1000,
-                'height': 700,
-                fitToView: true,
-                autoSize: true,
-                closeClick: false,
-
-                helpers: {
-                    overlay: {
-                        locked: false,
-
-                    }
-                }
-            });
 
 
             $(".fancyboxEnq").fancybox({
