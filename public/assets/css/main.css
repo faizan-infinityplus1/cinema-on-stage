@@ -2796,8 +2796,9 @@ only screen and (min-width: 576px) and (max-width: 767px) {
   position: absolute;
   inset-inline-end: 0;
   top: 20px;
+  margin-right: 10px;
   transform: translateY(-50%);
-  background: transparent;
+  background: white;
   font-size: 14px !important;
   border: 1px solid #888888 !important;
   line-height: 22px;
@@ -2811,7 +2812,8 @@ only screen and (min-width: 576px) and (max-width: 767px) {
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -o-transform: rotate(45deg);
-  color: var(--clr-common-white);
+  color: var(--clr-theme-1);
+  /* color: var(--clr-common-white); */
 }
 
 [dir="rtl"] .mobile-menu.mean-container .mean-nav ul li a.mean-expand {
@@ -2849,7 +2851,8 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 }
 
 .mean-container .mean-nav ul li a.mean-expand.mean-clicked {
-  background: var(--clr-theme-1);
+  /* background: var(--clr-theme-1); */
+  background: white;
   color: var(--clr-common-white);
   border-color: var(--clr-theme-1) !important;
 }

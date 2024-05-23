@@ -210,6 +210,7 @@
                                             }
                                         }
                                     </style>
+                            <!-- <p class="text_anim" style="color: black;">Tickets go on sale 28th May 2024</p> -->
                             <p class="text_anim" style="color: black;">Tickets go on sale 28th May 2024</p>
                         </div>
                         <div class="i-dates i-dates-all mt-5"
@@ -217,22 +218,22 @@
 
                             <div class="row">
                                 <div class="col-lg-4 col-md-4 col-12">
-                                    <button class="dates   nav-tic active mt-4"><a href="">13th SEP 2024 |
+                                    <button class="dates   nav-tic active mt-4"><a href="https://www.ticketmaster.com/event/0C0060B1A40725A4">13th SEP 2024 |
                                             FRI | 7:30 PM</a></button>
 
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-12">
-                                    <button class="dates   nav-tic active mt-4"><a href="">14th SEP 2024 |
+                                    <button class="dates   nav-tic active mt-4"><a href="https://www.ticketmaster.com/event/0C0060B1A40A25A7">14th SEP 2024 |
                                             SAT | 2:00 PM </a></button>
 
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-12">
-                                    <button class="dates   nav-tic active mt-4"><a href="">14th SEP 2024 |
+                                    <button class="dates   nav-tic active mt-4"><a href="https://www.ticketmaster.com/event/0C0060B1A40D25B0">14th SEP 2024 |
                                             SAT |7:30 PM</a></button>
 
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-12">
-                                    <button class="dates   nav-tic active mt-4"><a href="">15th SEP 2024 |
+                                    <button class="dates   nav-tic active mt-4"><a href="https://www.ticketmaster.com/event/0C0060B1A41125C1">15th SEP 2024 |
                                             SUN | 2:00 PM</a></button>
 
                                 </div>

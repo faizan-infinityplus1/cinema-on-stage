@@ -102,6 +102,9 @@
 
 
         }
+        .mobile-menu.mean-container .mean-nav ul li a.mean-expand{
+            background: white !important;
+        }
     </style>
 @endsection
 @section('content')
