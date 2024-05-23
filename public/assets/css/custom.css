@@ -398,19 +398,14 @@
   li.has-dropdown.mobile-menu{
     display: block !important;
     margin-bottom: 0px;
-    padding: 10px 30px;
-    /* padding-left: 30px; */
+    padding: 0px 30px;
     font-weight: 500;
     border-top: 4px solid;
-    /* border-top: 2px solid; */
     border-image-slice: 2;
     border-image-source: linear-gradient(to left, #b73510, #e9c553) !important;
     background: linear-gradient(to left, #e9c553, #b73510);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  }
-  li.has-dropdown.mobile-menu{
-    background-color: red;
   }
 }
 /* feed start here */

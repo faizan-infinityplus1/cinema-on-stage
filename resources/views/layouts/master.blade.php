@@ -677,6 +677,58 @@
             background-color: #df4f06;
             color: white !important;
         }
+        @media(max-width:1199px) {
+            .desktop-book-now{
+                background-color: white !important;
+                color: #bb4015 !important;
+                font-weight: 500 !important;
+                top: 0;
+                border-radius: 0px;
+                border-bottom: 10px solid;
+                border-image-slice: 1;
+                border-width: 2px;
+                border-image-source: linear-gradient(to left, #b73510, #e9c553) !important;
+                background: linear-gradient(to left, #e9c553, #b73510);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            .city-name-container{
+                display: none;
+            }
+            .mean-expand{
+                margin-top: -38px !important;
+            }
+
+            li.has-dropdown.mobile-menu{
+                display: block !important;
+                margin-bottom: 0px;
+                padding: 10px 30px;
+                font-weight: 500;
+                border: 10px solid;
+                border-width: 2px;
+                border-left: 0;
+                border-image-slice: 2;
+                border-image-source: linear-gradient(to left, #b73510, #e9c553) !important;
+                background: linear-gradient(to left, #e9c553, #b73510);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            .mean-container .mean-nav ul li li a{
+                padding: 0;
+                width: 100%;
+            }
+            .mobile-menu.mean-container .mean-nav ul li a{
+                border-top: none;
+            }
+            li.has-dropdown.book-now-container{
+                background-color: #f35c00;
+            }
+            li.has-dropdown.book-now-container a.book-now{
+                color: white !important;
+                -webkit-text-fill-color: unset;
+                padding: 10px 14px !important;
+            }
+        }
     </style>
 </head>
 
@@ -776,7 +828,7 @@
                                             <button href="{{ route('about.show') }}">About Show </button>
                                         </a>
                                     </li>
-                                    <li class="has-dropdown ">
+                                    <li class="has-dropdown book-now-container">
                                         <a href="{{ route('book.now') }}" class="book-now desktop-book-now">Book Now</a>
                                         <!-- <a href="{{ route('book.now') }}" class="button upper_menu_margin1 book-now"
                                             id="button-7">
@@ -855,12 +907,23 @@ font-weight: 600;">LA</a></button>
                                             <a href="{{ route('los.angeles') }}" class="city-name">LA</a>
                                         </div>
                                     </li>
-                                    <li class="has-dropdown mobile-menu">Houston</li>
-                                    <li class="has-dropdown mobile-menu">New Jersey</li>
-                                    <li class="has-dropdown mobile-menu">New York</li>
-                                    <li class="has-dropdown mobile-menu">Dallas</li>
-                                    <li class="has-dropdown mobile-menu">San Jose</li>
-                                    <li class="has-dropdown mobile-menu">LA</li>
+                                    <li class="mobile-menu-container">
+                                        <ul>
+                                            <li class="has-dropdown mobile-menu"><a href="{{ route('houston') }}" style="    background: linear-gradient(to left, #e9c553, #b73510);-webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;"> Houston</a></li>
+                                            <li class="has-dropdown mobile-menu"><a href="{{ route('new.jersey') }}" style="    background: linear-gradient(to left, #e9c553, #b73510);-webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;">New Jersey</a></li>
+                                            <li class="has-dropdown mobile-menu"><a href="{{ route('new.york') }}" style="    background: linear-gradient(to left, #e9c553, #b73510);-webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;"> New York</a></li>
+                                            <li class="has-dropdown mobile-menu"><a href="{{ route('dallas') }} " style="    background: linear-gradient(to left, #e9c553, #b73510);-webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;"> Dallas</a></li>
+                                            <li class="has-dropdown mobile-menu"><a href="{{ route('san.jose') }}" style="    background: linear-gradient(to left, #e9c553, #b73510);-webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;">San Jose </a> </li>
+                                            <li class="has-dropdown mobile-menu"><a href="{{ route('los.angeles') }}" style="    background: linear-gradient(to left, #e9c553, #b73510);-webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;">LA </a></li>
+                                        </ul>
+                                    </li>
+                                    
                                     <li class="has-dropdown">
                                         <a href="{{ route('past.shows') }}" class="button upper_menu_margin1"
                                             id="button-7">
