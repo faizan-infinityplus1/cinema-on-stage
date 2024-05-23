@@ -24,6 +24,30 @@ class MainController extends Controller
     {
         return view('book-now');
     }
+    public function houston()
+    {
+        return view('houston');
+    }
+    public function newjersey()
+    {
+        return view('new-jersey');
+    }
+    public function newyork()
+    {
+        return view('new-york');
+    }
+    public function dallas()
+    {
+        return view('dallas');
+    }
+    public function sanjose()
+    {
+        return view('san-jose');
+    }
+    public function losangeles()
+    {
+        return view('los-angeles');
+    }
     public function booknowhidden()
     {
         return view('book-now-hidden');

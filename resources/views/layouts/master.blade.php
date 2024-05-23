@@ -14,9 +14,9 @@
     <meta name="google-site-verification" content="siSA-XIq0trjG29MdsE2rYrVbGgFP9XtrsyNzmwxfXY" />
     <!-- Facebook Pixel Code -->
     <script>
-        ! function(f, b, e, v, n, t, s) {
+        ! function (f, b, e, v, n, t, s) {
             if (f.fbq) return;
-            n = f.fbq = function() {
+            n = f.fbq = function () {
                 n.callMethod ?
                     n.callMethod.apply(n, arguments) : n.queue.push(arguments)
             };
@@ -36,8 +36,7 @@
         fbq('track', 'PageView');
     </script>
     <noscript>
-        <img height="1" width="1"
-            src="https://www.facebook.com/tr?id=316601501322339&ev=PageView
+        <img height="1" width="1" src="https://www.facebook.com/tr?id=316601501322339&ev=PageView
     &noscript=1" />
     </noscript>
     <!-- End Facebook Pixel Code -->
@@ -631,6 +630,104 @@
                 margin-left: 10px;
             }
         }
+        .desktop-book-now{
+            font-weight: 900 !important;
+            font-size: 17px;
+            color: white !important;
+            padding: 10px 0 !important;
+            top: -15px;
+            width: 150px;
+            text-align: center;
+            border-radius: 3.5px;
+            background-color: #f35c00;
+        }
+        .book-now {
+            position: relative;
+        }
+        .book-now:hover ~.city-name-container{
+            height: 460px;
+        }
+        .city-name-container {
+            transition: all 0.5s ease-in-out;
+            position: absolute;
+            content: "";
+            background-color: white;
+            width: 250px;
+            left: -50px;
+            top: 50px;
+            box-shadow: 0px 0px 10px black;
+            height: 0px;
+            overflow: hidden;
+        }
+        .city-name-container:hover{
+            height: 460px;
+        }
+        .city-name-container .city-name {
+            padding: 15px 0px !important;
+            margin: 20px auto;
+            width: 150px;
+            text-align: center;
+            color: #df4f06 !important;
+            font-weight: 600 !important;
+            border: 2px solid #df4f06;
+            border-radius: 3.5px;
+        }
+        .city-name-container .city-name:hover{
+            background-color: #df4f06;
+            color: white !important;
+        }
+        @media(max-width:1199px) {
+            .desktop-book-now{
+                background-color: white !important;
+                color: #bb4015 !important;
+                font-weight: 500 !important;
+                top: 0;
+                border-radius: 0px;
+                border-bottom: 10px solid;
+                border-image-slice: 1;
+                border-width: 2px;
+                border-image-source: linear-gradient(to left, #b73510, #e9c553) !important;
+                background: linear-gradient(to left, #e9c553, #b73510);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            .city-name-container{
+                display: none;
+            }
+            .mean-expand{
+                margin-top: -38px !important;
+            }
+
+            li.has-dropdown.mobile-menu{
+                display: block !important;
+                margin-bottom: 0px;
+                padding: 10px 30px;
+                font-weight: 500;
+                border: 10px solid;
+                border-width: 2px;
+                border-left: 0;
+                border-image-slice: 2;
+                border-image-source: linear-gradient(to left, #b73510, #e9c553) !important;
+                background: linear-gradient(to left, #e9c553, #b73510);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            .mean-container .mean-nav ul li li a{
+                padding: 0;
+                width: 100%;
+            }
+            .mobile-menu.mean-container .mean-nav ul li a{
+                border-top: none;
+            }
+            li.has-dropdown.book-now-container{
+                background-color: #f35c00;
+            }
+            li.has-dropdown.book-now-container a.book-now{
+                color: white !important;
+                -webkit-text-fill-color: unset;
+                padding: 10px 14px !important;
+            }
+        }
     </style>
 </head>
 
@@ -710,16 +807,14 @@
                                 <ul>
 
                                     <li class="has-dropdown" id="home_mobile">
-                                        <a href="{{ route('home') }}" class="button upper_menu_margin1"
-                                            id="button-7">
+                                        <a href="{{ route('home') }}" class="button upper_menu_margin1" id="button-7">
                                             <div id="dub-arrow">Home</div>
                                             <button href="{{ route('home') }}">Home</button>
                                         </a>
                                     </li>
 
                                     <li class="active has-dropdown">
-                                        <a href="{{ route('about') }}" class="button upper_menu_margin1"
-                                            id="button-7">
+                                        <a href="{{ route('about') }}" class="button upper_menu_margin1" id="button-7">
                                             <div id="dub-arrow">About Us</div>
                                             <button href="{{ route('about') }}">About Us</button>
                                         </a>
@@ -731,18 +826,103 @@
                                             <div id="dub-arrow">About show</div>
                                             <button href="{{ route('about.show') }}">About Show </button>
                                         </a>
-
-
-                                    <li class="has-dropdown ">
-                                        <a href="{{ route('book.now') }}" class="button upper_menu_margin1"
+                                    </li>
+                                    <li class="has-dropdown book-now-container">
+                                        <a href="{{ route('book.now') }}" class="book-now desktop-book-now">Book Now</a>
+                                        <!-- <a href="{{ route('book.now') }}" class="button upper_menu_margin1 book-now"
                                             id="button-7">
+                                            Book Now
+                                            <button href="{{ route('book.now') }}">About Show </button>
                                             <div id="dub-arrow">Book Now</div>
                                             <button href="{route('book.now')}}">Book Now</button>
-                                        </a>
+                                        </a> -->
                                         <!-- <div id="dub-arrow">Home</div>
                                     <a href="tour-schedule.php"> Book Now </a> -->
 
+                                        <!-- <div class="nav flex-column  nav-pills me-3" id="v-pills-tab" role="tablist"
+                                            aria-orientation="vertical">
+                                            <style>
+                                                .nav.flex-column.nav-pills.me-3 button:hover{
+                                                    background-color: transparent;
+                                                }
+                                            </style>
+                                            <button class="nav-link nav-tic active" id="v-pills-home-tab"
+                                                data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button"
+                                                role="tab" aria-controls="v-pills-home" aria-selected="true" style=""><a
+                                                    href="{{ route('houston') }}" style="background-color: transparent; width:150px;">Houston</a></button>
+                                            <button class="nav-link  nav-tic new_jersey" id="v-pills-profile-tab"
+                                                data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button"
+                                                role="tab" aria-controls="v-pills-profile" aria-selected="false"
+                                                style="background-color: transparent;"><a href="{{ route('new.jersey') }}" style="background-color: white;
+padding: 15px;
+width:150px;
+margin-top: 20px;
+color: #df4f06;
+border: 2px solid #df4f06;
+font-size: 1.6rem;
+font-weight: 600;">New Jersey</a>
+                                            </button>
+                                            <button class="nav-link nav-tic new_york " id="v-pills-messages-tab"
+                                                data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button"
+                                                role="tab" aria-controls="v-pills-messages" aria-selected="false"
+                                                style="background-color: transparent;"><a href="{{ route('new.york') }}" style="background-color: white; width:150px; margin-top: 20px;
+color: #df4f06;
+border: 2px solid #df4f06;
+font-size: 1.6rem;
+font-weight: 600;">New York</a></button>
+                                            <button class="nav-link nav-tic dallas " id="v-pills-settings-tab"
+                                                data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button"
+                                                role="tab" aria-controls="v-pills-settings" aria-selected="false"
+                                                style="background-color: transparent;"><a href="{{ route('dallas') }}" style="background-color: white; width:150px; margin-top: 20px;
+color: #df4f06;
+border: 2px solid #df4f06;
+font-size: 1.6rem;
+font-weight: 600;">Dallas</a></button>
+                                            <button class="nav-link nav-tic san_jose " id="v-pills-la-tab"
+                                                data-bs-toggle="pill" data-bs-target="#v-pills-la" type="button"
+                                                role="tab" aria-controls="v-pills-settings" aria-selected="false"
+                                                style="background-color: transparent;"><a href="{{ route('san.jose') }}" style="background-color: white; width:150px; margin-top: 20px;
+color: #df4f06;
+border: 2px solid #df4f06;
+font-size: 1.6rem;
+font-weight: 600;">San Jose</a>
+                                                </button>
+                                            <button class="nav-link nav-tic l_a " id="v-pills-new-tab"
+                                                data-bs-toggle="pill" data-bs-target="#v-pills-new" type="button"
+                                                role="tab" aria-controls="v-pills-settings" aria-selected="false"
+                                                style="background-color: transparent;"><a href="{{ route('los.angeles') }}" style="background-color: white; width:150px; margin-top: 20px;
+color: #df4f06;
+border: 2px solid #df4f06;
+font-size: 1.6rem;
+font-weight: 600;">LA</a></button>
+                                        </div> -->
+
+                                        <div class="city-name-container">
+                                            <a href="{{ route('houston') }}" class="city-name">Houston</a>
+                                            <a href="{{ route('new.jersey') }}" class="city-name">New Jersey</a>
+                                            <a href="{{ route('new.york') }}" class="city-name">New York</a>
+                                            <a href="{{ route('dallas') }}" class="city-name">Dallas</a>
+                                            <a href="{{ route('san.jose') }}" class="city-name">San Jose</a>
+                                            <a href="{{ route('los.angeles') }}" class="city-name">LA</a>
+                                        </div>
                                     </li>
+                                    <li class="mobile-menu-container">
+                                        <ul>
+                                            <li class="has-dropdown mobile-menu"><a href="{{ route('houston') }}" style="    background: linear-gradient(to left, #e9c553, #b73510);-webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;"> Houston</a></li>
+                                            <li class="has-dropdown mobile-menu"><a href="{{ route('new.jersey') }}" style="    background: linear-gradient(to left, #e9c553, #b73510);-webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;">New Jersey</a></li>
+                                            <li class="has-dropdown mobile-menu"><a href="{{ route('new.york') }}" style="    background: linear-gradient(to left, #e9c553, #b73510);-webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;"> New York</a></li>
+                                            <li class="has-dropdown mobile-menu"><a href="{{ route('dallas') }} " style="    background: linear-gradient(to left, #e9c553, #b73510);-webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;"> Dallas</a></li>
+                                            <li class="has-dropdown mobile-menu"><a href="{{ route('san.jose') }}" style="    background: linear-gradient(to left, #e9c553, #b73510);-webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;">San Jose </a> </li>
+                                            <li class="has-dropdown mobile-menu"><a href="{{ route('los.angeles') }}" style="    background: linear-gradient(to left, #e9c553, #b73510);-webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;">LA </a></li>
+                                        </ul>
+                                    </li>
+
                                     <li class="has-dropdown">
                                         <a href="{{ route('past.shows') }}" class="button upper_menu_margin1"
                                             id="button-7">
@@ -752,8 +932,7 @@
                                     </li>
                                     <!-- abdul edited -->
                                     <li class="has-dropdown">
-                                        <a href="{{ route('blog') }}" class="button upper_menu_margin1"
-                                            id="button-7">
+                                        <a href="{{ route('blog') }}" class="button upper_menu_margin1" id="button-7">
                                             <div id="dub-arrow">Blog</div>
                                             <button href="{{ route('blog') }}">Blog</button>
                                         </a>
@@ -789,7 +968,15 @@
                                         <a href="{{ route('about.show') }}">About show</a>
 
                                     </li>
-                                    <!-- <li class="has-dropdown">
+
+                                    <li class="has-dropdown" id="button-7">Houston</li>
+                                    <li class="has-dropdown" id="button-7">New Jersey</li>
+                                    <li class="has-dropdown" id="button-7">New York</li>
+                                    <li class="has-dropdown" id="button-7">Dallas</li>
+                                    <li class="has-dropdown" id="button-7">San Jose</li>
+                                    <li class="has-dropdown" id="button-7">LA</li>
+
+                                    <li class="has-dropdown">
                                         <a href="tour-schedule.php"> Tour Schedule </a>
 
                                     </li> -->
@@ -827,8 +1014,7 @@
             <div class="fm-header-sidebar-wrapper">
                 <div class="fm-header-sidebar-action mb-75">
                     <div class="fm-header-sidebar-logo">
-                        <a href="#"><img src="{{ asset('assets/img/logo (1).png') }}"
-                                alt="img not found" /></a>
+                        <a href="#"><img src="{{ asset('assets/img/logo (1).png') }}" alt="img not found" /></a>
                     </div>
                     <div class="offcanvas-close">
                         <a class="offcanvas-btn" href="#0">
@@ -889,8 +1075,8 @@
                     <div class="fm-offcanvas-social">
                         <span class="social-text">Follow :</span>
                         <div class="fm-offcanvas-social-icon" style="color: black;">
-                            <a href="https://www.facebook.com/MughalEAzamPlay/" target="_blank"
-                                style="color: black;"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://www.facebook.com/MughalEAzamPlay/" target="_blank" style="color: black;"><i
+                                    class="fa-brands fa-facebook-f"></i></a>
                             <a href="https://twitter.com/mughaleazamplay" target="_blank"><i
                                     class="fa-brands fa-twitter"></i></a>
                             <a href="https://www.instagram.com/mughaleazamplay/" target="_blank"><i
@@ -981,8 +1167,7 @@
                         </div>
                         <ul class="wow zoomInLeft">
                             <li><a href="{{ route('home') }}">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                        viewBox="0 0 24 24">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                                         <path fill="none" stroke="#e04b00" stroke-width="2"
                                             d="M5 9h7V5.483a.2.2 0 0 1 .341-.142L19 12l-6.659 6.659a.2.2 0 0 1-.341-.142V15H5">
                                         </path>
@@ -990,8 +1175,7 @@
                                     <span style="color:white">Home</span>
                                 </a></li>
                             <li><a href="{{ route('about') }}">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                        viewBox="0 0 24 24">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                                         <path fill="none" stroke="#e04b00" stroke-width="2"
                                             d="M5 9h7V5.483a.2.2 0 0 1 .341-.142L19 12l-6.659 6.659a.2.2 0 0 1-.341-.142V15H5">
                                         </path>
@@ -1000,8 +1184,7 @@
                                 </a></li>
                             <!-- .php remove kiya bas -->
                             <li><a href="{{ route('about.show') }}">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                        viewBox="0 0 24 24">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                                         <path fill="none" stroke="#e04b00" stroke-width="2"
                                             d="M5 9h7V5.483a.2.2 0 0 1 .341-.142L19 12l-6.659 6.659a.2.2 0 0 1-.341-.142V15H5">
                                         </path>
@@ -1009,8 +1192,7 @@
                                     <span style="color:white">About Show</span>
                                 </a></li>
                             <li><a href="{{ route('book.now') }}">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                        viewBox="0 0 24 24">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                                         <path fill="none" stroke="#e04b00" stroke-width="2"
                                             d="M5 9h7V5.483a.2.2 0 0 1 .341-.142L19 12l-6.659 6.659a.2.2 0 0 1-.341-.142V15H5">
                                         </path>
@@ -1018,8 +1200,7 @@
                                     <span style="color:white">Book Now</span>
                                 </a></li>
                             <li><a href="{{ route('blog') }}">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                        viewBox="0 0 24 24">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                                         <path fill="none" stroke="#e04b00" stroke-width="2"
                                             d="M5 9h7V5.483a.2.2 0 0 1 .341-.142L19 12l-6.659 6.659a.2.2 0 0 1-.341-.142V15H5">
                                         </path>
@@ -1159,8 +1340,8 @@
             ];
 
             // Loop through each tab ID
-            tabIDs.forEach(function(tabID) {
-                $(tabID).on('click', function() {
+            tabIDs.forEach(function (tabID) {
+                $(tabID).on('click', function () {
                     // Find the element with both id "dynamictabstrp" and class "active"
                     var $target = $(".tab-pane.active");
 
