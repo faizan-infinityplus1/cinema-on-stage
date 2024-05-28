@@ -214,7 +214,7 @@
                                             }
                                         }
                                     </style>
-                                    <p class="text_anim" style="color: black;">Tickets go on sale - 24th May 2024</p>
+                                    <p class="text_anim" style="color: black;">Tickets go on sale - 28th May 2024</p>
                                 </div>
                                 <div class="i-dates i-dates-all mt-5"
                                     style="background-color: #f36500; padding:10px; border-radius: 0.375em;">
