@@ -214,7 +214,8 @@
                                             }
                                         }
                                     </style>
-                                    <p class="text_anim" style="color: black;">Tickets go on sale - 28th May 2024</p>
+                                    {{-- <p class="text_anim" style="color: black;">Tickets go on sale - 28th May 2024</p> --}}
+                                    <p class="text_anim" style="color: black;">Booking open now</p>
                                 </div>
                                 <div class="i-dates i-dates-all mt-5"
                                     style="background-color: #f36500; padding:10px; border-radius: 0.375em;">
@@ -230,22 +231,22 @@
                                     <div class="row">
                                         <div class="col-lg-4 col-md-4 col-12  ">
                                             <button class="dates    nav-tic active mt-4">
-                                                <a href="">16th AUG 2024 | FRI | 7:30 PM</a>
+                                                <a href="https://www.goticketspro.com/product-category/brown-theater/?showtime=16-08-2024-730pm">16th AUG 2024 | FRI | 7:30 PM</a>
                                             </button>
 
                                         </div>
                                         <div class="col-lg-4 col-md-4 col-12">
-                                            <button class="dates   nav-tic active mt-4"><a href="">17th AUG 2024 |
+                                            <button class="dates   nav-tic active mt-4"><a href="https://www.goticketspro.com/product-category/brown-theater/?showtime=17-08-2024-2pm">17th AUG 2024 |
                                                     SAT | 2:00 PM</a></button>
 
                                         </div>
                                         <div class="col-lg-4 col-md-4 col-12">
-                                            <button class="dates   nav-tic active mt-4"><a href="">17th AUG 2024 |
+                                            <button class="dates   nav-tic active mt-4"><a href="https://www.goticketspro.com/product-category/brown-theater/?showtime=17-08-2024-730pm">17th AUG 2024 |
                                                     SAT | 7:30 PM</a></button>
 
                                         </div>
                                         <div class="col-lg-4 col-md-4 col-12">
-                                            <button class="dates   nav-tic active mt-4"><a href="">18th AUG 2024 |
+                                            <button class="dates   nav-tic active mt-4"><a href="https://www.goticketspro.com/product-category/brown-theater/?showtime=18-08-2024-2pm">18th AUG 2024 |
                                                     SUN | 2:00 PM</a></button>
 
                                         </div>

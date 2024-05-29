@@ -212,7 +212,9 @@
                                             }
                                         }
                                     </style>
-                            <p class="text_anim" style="color: black;">Tickets go on sale 28th May 2024</p>
+                            {{-- <p class="text_anim" style="color: black;">Tickets go on sale 28th May 2024</p> --}}
+                            <p class="text_anim" style="color: black;">Booking open now </p>
+
                         </div>
                         <div class="i-dates i-dates-all mt-5"
                             style="background-color: #f36500; padding:10px; border-radius: 0.375em;">
@@ -220,7 +222,7 @@
                             <div class="row">
 
                                 <div class="col-lg-4 col-md-4 col-12">
-                                    <button class="dates   nav-tic active mt-4"><a href="">20th SEP 2024 |
+                                    <button class="dates   nav-tic active mt-4"><a href="https://www.goticketspro.com/product-category/san-jose-performing-art-center/?showtime=20-sep-2024-730pm/">20th SEP 2024 |
                                             FRI | 7:30 PM</a></button>
                                 </div>
                                 {{-- <div class="col-lg-4 col-md-4 col-12">
@@ -229,33 +231,33 @@
 
                                 </div> --}}
                                 <div class="col-lg-4 col-md-4 col-12">
-                                    <button class="dates   nav-tic active mt-4"><a href="">21st SEP 2024 | SAT | 7:30
+                                    <button class="dates   nav-tic active mt-4"><a href="https://www.goticketspro.com/product-category/san-jose-performing-art-center/?showtime=21-09-2024-730pm">21st SEP 2024 | SAT | 7:30
                                             PM</a></button>
 
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-12">
-                                    <button class="dates   nav-tic active mt-4"><a href="">22nd SEP 2024 |
+                                    <button class="dates   nav-tic active mt-4"><a href="https://www.goticketspro.com/product-category/san-jose-performing-art-center/?showtime=22-09-2024-2pm">22nd SEP 2024 |
                                             SUN | 2:00 PM</a></button>
 
                                 </div>
 
                                 <div class="col-lg-4 col-md-4 col-12">
-                                    <button class="dates   nav-tic active mt-4"><a href="">27th SEP 2024 |
+                                    <button class="dates   nav-tic active mt-4"><a href="https://www.goticketspro.com/product-category/san-jose-performing-art-center/?showtime=27-09-2024-730pm">27th SEP 2024 |
                                             FRI | 7:30 PM</a></button>
 
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-12">
-                                    <button class="dates   nav-tic active mt-4"><a href="">28th SEP 2024 |
+                                    <button class="dates   nav-tic active mt-4"><a href="https://www.goticketspro.com/product-category/san-jose-performing-art-center/?showtime=28-09-2024-2pm">28th SEP 2024 |
                                             SAT | 2:00 PM </a></button>
 
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-12">
-                                    <button class="dates   nav-tic active mt-4"><a href="">28th SEP 2024 |
+                                    <button class="dates   nav-tic active mt-4"><a href="https://www.goticketspro.com/product-category/san-jose-performing-art-center/?showtime=28-09-2024-730pm">28th SEP 2024 |
                                             SAT | 7:30 PM</a></button>
 
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-12">
-                                    <button class="dates   nav-tic active mt-4"><a href="">29th SEP 2024 |
+                                    <button class="dates   nav-tic active mt-4"><a href="https://www.goticketspro.com/product-category/san-jose-performing-art-center/?showtime=29-09-2024-2pm">29th SEP 2024 |
                                             SUN | 2:00 PM</a></button>
 
                                 </div>
