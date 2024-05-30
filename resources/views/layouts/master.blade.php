@@ -976,7 +976,7 @@ font-weight: 600;">LA</a></button>
                                     <li class="has-dropdown" id="button-7">San Jose</li>
                                     <li class="has-dropdown" id="button-7">LA</li>
 
-                                    <li class="has-dropdown">
+                                    <!-- <li class="has-dropdown">
                                         <a href="tour-schedule.php"> Tour Schedule </a>
 
                                     </li> -->
