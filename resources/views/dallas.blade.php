@@ -153,7 +153,8 @@
 
                     </div> -->
             <div class="col-12 tab-content text-center" id="v-pills-tabContent">
-                <div class="tab-pane fade active show" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                <div class="tab-pane fade active show" id="v-pills-settings" role="tabpanel"
+                    aria-labelledby="v-pills-settings-tab">
                     <div class="i-tab">
                         <div class="i-title" style="background-color: #f36500; padding:10px; border-radius: 0.375em;">
                             <h4 style="color: black;">Select Date for Dallas: <span style="color: #fff;">Music
@@ -167,29 +168,32 @@
                         <div class="i-title container-anim"
                             style="background-color: #fff; padding:10px; border-radius: 0.375em; ">
                             <style>
-                                        .text_anim{
-										    height: 45px;
-                                            animation: textscale 3s infinite;
-                                        }
+                                .text_anim {
+                                    height: 45px;
+                                    animation: textscale 3s infinite;
+                                }
 
-                                        @keyframes textscale {
+                                @keyframes textscale {
 
-                                            0% {
-                                                color: #f36500;
-                                                text-shadow: 0 0 50px #f36500;
-                                            }
-                                            50% {
-                                                color: #f36500;
-                                                text-shadow: 0 0 50px #f36500;
-                                                font-size: 25px;
-                                            }
-                                            100% {
-                                                color: black;
-                                                text-shadow: 0 0 50px black;
-                                            }
+                                    0% {
+                                        color: #f36500;
+                                        text-shadow: 0 0 50px #f36500;
+                                    }
 
-                                        }
-                                        /* .text_anim{
+                                    50% {
+                                        color: #f36500;
+                                        text-shadow: 0 0 50px #f36500;
+                                        font-size: 25px;
+                                    }
+
+                                    100% {
+                                        color: black;
+                                        text-shadow: 0 0 50px black;
+                                    }
+
+                                }
+
+                                /* .text_anim{
                                             animation: textscale 1s infinite;
                                         }
 
@@ -204,12 +208,12 @@
                                             }
                                         } */
 
-                                        @media screen and (max-width: 512px) {
-                                            .container-anim{
-                                                margin-bottom: 35px;
-                                            }
-                                        }
-                                    </style>
+                                @media screen and (max-width: 512px) {
+                                    .container-anim {
+                                        margin-bottom: 35px;
+                                    }
+                                }
+                            </style>
                             <!-- <p class="text_anim" style="color: black;">Tickets go on sale 28th May 2024</p> -->
                             <p class="text_anim" style="color: black;">Tickets go on sale 28th May 2024</p>
                         </div>
@@ -218,22 +222,26 @@
 
                             <div class="row">
                                 <div class="col-lg-4 col-md-4 col-12">
-                                    <button class="dates   nav-tic active mt-4"><a href="https://www.ticketmaster.com/event/0C0060B1A40725A4">13th SEP 2024 |
+                                    <button class="dates   nav-tic active mt-4"><a
+                                            href="https://www.ticketmaster.com/event/0C0060B1A40725A4">13th SEP 2024 |
                                             FRI | 7:30 PM</a></button>
 
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-12">
-                                    <button class="dates   nav-tic active mt-4"><a href="https://www.ticketmaster.com/event/0C0060B1A40A25A7">14th SEP 2024 |
+                                    <button class="dates   nav-tic active mt-4"><a
+                                            href="https://www.ticketmaster.com/event/0C0060B1A40A25A7">14th SEP 2024 |
                                             SAT | 2:00 PM </a></button>
 
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-12">
-                                    <button class="dates   nav-tic active mt-4"><a href="https://www.ticketmaster.com/event/0C0060B1A40D25B0">14th SEP 2024 |
+                                    <button class="dates   nav-tic active mt-4"><a
+                                            href="https://www.ticketmaster.com/event/0C0060B1A40D25B0">14th SEP 2024 |
                                             SAT |7:30 PM</a></button>
 
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-12">
-                                    <button class="dates   nav-tic active mt-4"><a href="https://www.ticketmaster.com/event/0C0060B1A41125C1">15th SEP 2024 |
+                                    <button class="dates   nav-tic active mt-4"><a
+                                            href="https://www.ticketmaster.com/event/0C0060B1A41125C1">15th SEP 2024 |
                                             SUN | 2:00 PM</a></button>
 
                                 </div>
