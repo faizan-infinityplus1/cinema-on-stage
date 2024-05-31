@@ -121,37 +121,7 @@
 <div class="fm-movie-details-area soft-greybg section-spacing" style="padding-top: 14px;">
     <div class="container navs-bars p-5" style="background-color: white;">
         <div class="nav-main d-flex align-items-start " id="nav_flex">
-            <!-- <div class=" col-lg-2   col-12 nav flex-column  nav-pills me-3" id="v-pills-tab" role="tablist"
-                        aria-orientation="vertical">
-                        <button class="nav-link   nav-tic active" id="v-pills-home-tab" data-bs-toggle="pill"
-                            data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
-                            aria-selected="true"
-                            style=" padding:15px; color: #df4f06; background-color:white; border:2px solid #df4f06; font-size:1.6rem; font-weight:600;">Houston</button>
-                        <button class="nav-link  nav-tic new_jersey" id="v-pills-profile-tab" data-bs-toggle="pill"
-                            data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
-                            aria-selected="false"
-                            style=" padding:15px; margin-top: 20px; color: #df4f06; background-color:white; border:2px solid #df4f06; font-size:1.6rem; font-weight:600;">New
-                            Jersey</button>
-                        <button class="nav-link nav-tic new_york " id="v-pills-messages-tab" data-bs-toggle="pill"
-                            data-bs-target="#v-pills-messages" type="button" role="tab"
-                            aria-controls="v-pills-messages" aria-selected="false"
-                            style=" padding:15px; margin-top: 20px; color: #df4f06; background-color:white; border:2px solid #df4f06; font-size:1.6rem; font-weight:600;">New
-                            York</button>
-                        <button class="nav-link nav-tic dallas " id="v-pills-settings-tab" data-bs-toggle="pill"
-                            data-bs-target="#v-pills-settings" type="button" role="tab"
-                            aria-controls="v-pills-settings" aria-selected="false"
-                            style=" padding:15px; margin-top: 20px; color: #df4f06; background-color:white; border:2px solid #df4f06; font-size:1.6rem; font-weight:600;">Dallas</button>
-                        <button class="nav-link nav-tic san_jose " id="v-pills-la-tab" data-bs-toggle="pill"
-                            data-bs-target="#v-pills-la" type="button" role="tab" aria-controls="v-pills-settings"
-                            aria-selected="false"
-                            style=" padding:15px; margin-top: 20px; color: #df4f06; background-color:white; border:2px solid #df4f06; font-size:1.6rem; font-weight:600;">San
-                            Jose</button>
-                        <button class="nav-link nav-tic l_a " id="v-pills-new-tab" data-bs-toggle="pill"
-                            data-bs-target="#v-pills-new" type="button" role="tab" aria-controls="v-pills-settings"
-                            aria-selected="false"
-                            style=" padding:15px; margin-top: 20px; color: #df4f06; background-color:white; border:2px solid #df4f06; font-size:1.6rem; font-weight:600;">LA</button>
 
-                    </div> -->
             <div class="col-12 tab-content text-center" id="v-pills-tabContent">
                 <div class="tab-pane fade active show" id="v-pills-profile" role="tabpanel"
                     aria-labelledby="v-pills-profile-tab">
@@ -220,60 +190,55 @@
                             style="background-color: #f36500; padding:10px; border-radius: 0.375em;">
 
                             <div class="row">
-                                {{-- <div class="col-lg-4 col-md-4 col-12">
-                                    <button class="dates   nav-tic active mt-4"><a href="">23rd AUG 2024| FRI | 7:30
+                                <div class="col-lg-4 col-md-4 col-12">
+                                    <button class="dates   nav-tic active mt-4"><a
+                                            href="https://www.ticketmaster.com/event/000060B502A9998D">23rd AUG 2024|
+                                            FRI | 7:00
                                             PM</a></button>
 
-                                </div> --}}
-                                {{-- <div class="col-lg-4 col-md-4 col-12">
-                                    <button class="dates   nav-tic active mt-4"><a href="">24th AUG 2024| SAT | 2:00 PM
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-12">
+                                    <button class="dates   nav-tic active mt-4"><a
+                                            href="https://www.ticketmaster.com/event/000060B502AF9991">24th AUG 2024|
+                                            SAT | 1:00 PM
                                         </a></button>
 
-                                </div> --}}
+                                </div>
                                 <div class="col-lg-4 col-md-4 col-12">
-                                    <button class="dates   nav-tic active mt-4"><a href="">24th AUG 2024| SAT | 7:30
+                                    <button class="dates   nav-tic active mt-4"><a
+                                            href="https://www.ticketmaster.com/event/000060B502AC998F">24th AUG 2024|
+                                            SAT | 7:00
                                             PM</a></button>
 
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-12">
-                                    <button class="dates   nav-tic active mt-4"><a href="">25th AUG 2024 |
-                                            SUN | 2:00 PM</a></button>
-
-                                </div>
-                                <!-- <div class="col-lg-4 col-md-4 col-12">
-                                                  <button class="dates   nav-tic active mt-4"><a href="">26TH AUG 2024 | MON | 0:00 PM </a></button>
-
-                                              </div>
-                                              <div class="col-lg-4 col-md-4 col-12">
-                                                  <button class="dates   nav-tic active mt-4"><a href="">27TH AUG 2024 | TUE | 0:00 PM </a></button>
-
-                                              </div>
-                                              <div class="col-lg-4 col-md-4 col-12">
-                                                  <button class="dates   nav-tic active mt-4"><a href="">28TH AUG 2024 | WED | 0:00 PM </a></button>
-
-                                              </div>
-                                              <div class="col-lg-4 col-md-4 col-12">
-                                                  <button class="dates   nav-tic active mt-4"><a href="">29TH AUG 2024 | THUR | 0:00 PM</a></button>
-
-                                              </div> -->
-                                <div class="col-lg-4 col-md-4 col-12">
-                                    <button class="dates   nav-tic active mt-4"><a href="">30th AUG 2024 |
-                                            FRI | 7:30 PM</a></button>
+                                    <button class="dates   nav-tic active mt-4"><a
+                                            href="https://www.ticketmaster.com/event/000060B502B39993">25th AUG 2024 |
+                                            SUN | 1:00 PM</a></button>
 
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-12">
-                                    <button class="dates   nav-tic active mt-4"><a href="">31st AUG 2024 |
-                                            SAT | 2:00 PM</a></button>
+                                    <button class="dates   nav-tic active mt-4"><a href="https://www.ticketmaster.com/event/000060B502B69996    
+">30th AUG 2024 |
+                                            FRI | 7:00 PM</a></button>
 
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-12">
-                                    <button class="dates   nav-tic active mt-4"><a href="">31st AUG 2024 |
-                                            SAT |7:30 PM</a></button>
+                                    <button class="dates   nav-tic active mt-4"><a
+                                            href="https://www.ticketmaster.com/event/000060B502BE999F">31st AUG 2024 |
+                                            SAT | 1:00 PM</a></button>
 
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-12">
-                                    <button class="dates   nav-tic active mt-4"><a href="">1st SEP 2024 |
-                                            SUN | 2:00 PM</a></button>
+                                    <button class="dates   nav-tic active mt-4"><a
+                                            href="https://www.ticketmaster.com/event/000060B502BA999C">31st AUG 2024 |
+                                            SAT |7:00 PM</a></button>
+
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-12">
+                                    <button class="dates   nav-tic active mt-4"><a
+                                            href="https://www.ticketmaster.com/event/000060B502C299AC">1st SEP 2024 |
+                                            SUN | 1:00 PM</a></button>
 
                                 </div>
                             </div>
