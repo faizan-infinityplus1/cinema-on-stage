@@ -190,55 +190,55 @@
                             style="background-color: #f36500; padding:10px; border-radius: 0.375em;">
 
                             <div class="row">
-                                <div class="col-lg-4 col-md-4 col-12">
+                                <!-- <div class="col-lg-4 col-md-4 col-12">
                                     <button class="dates   nav-tic active mt-4"><a
                                             href="https://www.ticketmaster.com/event/000060B502A9998D">23rd AUG 2024|
                                             FRI | 7:00
                                             PM</a></button>
 
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-12">
+                                </div> -->
+                                <!-- <div class="col-lg-4 col-md-4 col-12">
                                     <button class="dates   nav-tic active mt-4"><a
                                             href="https://www.ticketmaster.com/event/000060B502AF9991">24th AUG 2024|
                                             SAT | 1:00 PM
                                         </a></button>
 
-                                </div>
+                                </div> -->
                                 <div class="col-lg-4 col-md-4 col-12">
                                     <button class="dates   nav-tic active mt-4"><a
                                             href="https://www.ticketmaster.com/event/000060B502AC998F">24th AUG 2024|
-                                            SAT | 7:00
+                                            SAT | 7:30
                                             PM</a></button>
 
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-12">
                                     <button class="dates   nav-tic active mt-4"><a
                                             href="https://www.ticketmaster.com/event/000060B502B39993">25th AUG 2024 |
-                                            SUN | 1:00 PM</a></button>
+                                            SUN | 2:00 PM</a></button>
 
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-12">
                                     <button class="dates   nav-tic active mt-4"><a href="https://www.ticketmaster.com/event/000060B502B69996    
 ">30th AUG 2024 |
-                                            FRI | 7:00 PM</a></button>
+                                            FRI | 7:30 PM</a></button>
 
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-12">
                                     <button class="dates   nav-tic active mt-4"><a
                                             href="https://www.ticketmaster.com/event/000060B502BE999F">31st AUG 2024 |
-                                            SAT | 1:00 PM</a></button>
+                                            SAT | 2:00 PM</a></button>
 
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-12">
                                     <button class="dates   nav-tic active mt-4"><a
                                             href="https://www.ticketmaster.com/event/000060B502BA999C">31st AUG 2024 |
-                                            SAT |7:00 PM</a></button>
+                                            SAT |7:30 PM</a></button>
 
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-12">
                                     <button class="dates   nav-tic active mt-4"><a
                                             href="https://www.ticketmaster.com/event/000060B502C299AC">1st SEP 2024 |
-                                            SUN | 1:00 PM</a></button>
+                                            SUN | 2:00 PM</a></button>
 
                                 </div>
                             </div>
