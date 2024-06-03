@@ -184,7 +184,7 @@
                                     }
                                 }
                             </style>
-                            <p class="text_anim" style="color: black;">Booking open now</p>
+                            <p class="text_anim" style="color: black;">Booking open now Live venue</p>
                         </div>
                         <div class="i-dates i-dates-all mt-5"
                             style="background-color: #f36500; padding:10px; border-radius: 0.375em;">
