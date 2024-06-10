@@ -12,7 +12,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- verification code  -->
     <meta name="google-site-verification" content="siSA-XIq0trjG29MdsE2rYrVbGgFP9XtrsyNzmwxfXY" />
+    <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1043299553313915');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1043299553313915&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
     <!-- Facebook Pixel Code -->
+    <!--Facebook verification code-->
+    <meta name="facebook-domain-verification" content="3av32i6mdko2mt9zymjuhirp8q4z8t" />
     <script>
         ! function (f, b, e, v, n, t, s) {
             if (f.fbq) return;
@@ -976,7 +995,7 @@ font-weight: 600;">LA</a></button>
                                     <li class="has-dropdown" id="button-7">San Jose</li>
                                     <li class="has-dropdown" id="button-7">LA</li>
 
-                                    <li class="has-dropdown">
+                                    <!-- <li class="has-dropdown">
                                         <a href="tour-schedule.php"> Tour Schedule </a>
 
                                     </li> -->
