@@ -153,7 +153,8 @@
 
                     </div> -->
             <div class="col-12 tab-content text-center" id="v-pills-tabContent">
-                <div class="tab-pane fade active show" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                <div class="tab-pane fade active show" id="v-pills-settings" role="tabpanel"
+                    aria-labelledby="v-pills-settings-tab">
                     <div class="i-tab">
                         <div class="i-title" style="background-color: #f36500; padding:10px; border-radius: 0.375em;">
                             <h4 style="color: black;">Select Date for Dallas: <span style="color: #fff;">Music
@@ -167,29 +168,32 @@
                         <div class="i-title container-anim"
                             style="background-color: #fff; padding:10px; border-radius: 0.375em; ">
                             <style>
-                                        .text_anim{
-										    height: 45px;
-                                            animation: textscale 3s infinite;
-                                        }
+                                .text_anim {
+                                    height: 45px;
+                                    animation: textscale 3s infinite;
+                                }
 
-                                        @keyframes textscale {
+                                @keyframes textscale {
 
-                                            0% {
-                                                color: #f36500;
-                                                text-shadow: 0 0 50px #f36500;
-                                            }
-                                            50% {
-                                                color: #f36500;
-                                                text-shadow: 0 0 50px #f36500;
-                                                font-size: 25px;
-                                            }
-                                            100% {
-                                                color: black;
-                                                text-shadow: 0 0 50px black;
-                                            }
+                                    0% {
+                                        color: #f36500;
+                                        text-shadow: 0 0 50px #f36500;
+                                    }
 
-                                        }
-                                        /* .text_anim{
+                                    50% {
+                                        color: #f36500;
+                                        text-shadow: 0 0 50px #f36500;
+                                        font-size: 25px;
+                                    }
+
+                                    100% {
+                                        color: black;
+                                        text-shadow: 0 0 50px black;
+                                    }
+
+                                }
+
+                                /* .text_anim{
                                             animation: textscale 1s infinite;
                                         }
 
@@ -204,12 +208,12 @@
                                             }
                                         } */
 
-                                        @media screen and (max-width: 512px) {
-                                            .container-anim{
-                                                margin-bottom: 35px;
-                                            }
-                                        }
-                                    </style>
+                                @media screen and (max-width: 512px) {
+                                    .container-anim {
+                                        margin-bottom: 35px;
+                                    }
+                                }
+                            </style>
                             <!-- <p class="text_anim" style="color: black;">Tickets go on sale 28th May 2024</p> -->
                             <p class="text_anim" style="color: black;">Tickets go on sale 28th May 2024</p>
                         </div>
@@ -218,29 +222,29 @@
 
                             <div class="row">
                                 <div class="col-lg-4 col-md-4 col-12">
-                                    <button class="dates   nav-tic active mt-4"><a href="https://www.ticketmaster.com/event/0C0060B1A40725A4">13th SEP 2024 |
+                                    <button class="dates   nav-tic active mt-4"><a
+                                            href="https://www.ticketmaster.com/event/0C0060B1A40725A4">13th SEP 2024 |
                                             FRI | 7:30 PM</a></button>
 
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-12">
-                                    <button class="dates   nav-tic active mt-4"><a href="https://www.ticketmaster.com/event/0C0060B1A40A25A7">14th SEP 2024 |
+                                    <button class="dates   nav-tic active mt-4"><a
+                                            href="https://www.ticketmaster.com/event/0C0060B1A40A25A7">14th SEP 2024 |
                                             SAT | 2:00 PM </a></button>
 
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-12">
-                                    <button class="dates   nav-tic active mt-4"><a href="https://www.ticketmaster.com/event/0C0060B1A40D25B0">14th SEP 2024 |
+                                    <button class="dates   nav-tic active mt-4"><a
+                                            href="https://www.ticketmaster.com/event/0C0060B1A40D25B0">14th SEP 2024 |
                                             SAT |7:30 PM</a></button>
 
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-12">
-                                    <button class="dates   nav-tic active mt-4"><a href="https://www.ticketmaster.com/event/0C0060B1A41125C1">15th SEP 2024 |
+                                    <button class="dates   nav-tic active mt-4"><a
+                                            href="https://www.ticketmaster.com/event/0C0060B1A41125C1">15th SEP 2024 |
                                             SUN | 2:00 PM</a></button>
 
                                 </div>
-                                <!-- <div class="col-lg-4 col-md-4 col-12">
-                                                  <button class="dates   nav-tic active mt-4" style=" padding:15px; color:#df4f06; border:1px solid #df4f06;  background-color:white"><a href="">17th SEP 2024 | 2:00 PM</a></button>
-
-                                              </div> -->
                             </div>
                         </div>
                         <!--Carousel Gallery-->
@@ -318,9 +322,6 @@
                                     <h6 class="pt-30">Music Hall at Fairpark</h6>
                                     <p class="pt-30"> 909 1st Ave, Dallas, TX 75210, United States</p>
 
-                                    <!-- <div class="pt-30">
-                                                      <img src="assets/img/Group-383.jpg">
-                                                  </div> -->
                                 </div>
 
                             </div>
@@ -337,8 +338,6 @@
             <p class="mt-20">Mughal-e-Azam: The Musical" is a captivating theatrical experience that brings to
                 life the opulence, romance, and drama of one of Bollywood's most iconic films. </p>
             <ul>
-                <!-- <li style="list-style-type: circle;">
-                              </li> -->
                 <li style="margin-top: 20px;"><strong> Spectacular Production:</strong>&nbsp;The musical boasts
                     lavish sets, extravagant costumes, and stunning visual effects that transport the audience to
                     the grandeur of the Indian heritage.</li>
@@ -393,18 +392,7 @@
         <hr class="mt-30">
         <div class="about-ticket mt-60 term_condition">
             <h5 style="color: #fc6703;">Terms & Conditions</h5>
-            <!-- <p class="mt-20">1. Tickets once booked cannot be exchanged or refunded</p>
-                          <p class="mt-20">2. An Internet handling fee per ticket may be levied. Please check the total amount before payment</p>
-                          <p class="mt-20">3. We recommend that you arrive at-least 30 minutes prior at the venue for a seamless entry</p>
-                          <p class="mt-20">4. It is mandatory to wear masks at all times and follow social distancing norms</p>
-                          <p class="mt-20">5. Please do not purchase tickets if you feel sick</p>
-                          <p class="mt-20">6. Unlawful resale (or attempted unlawful resale) of a ticket would lead to seizure or cancellation of that ticket without refund or other compensation</p>
-                          <p class="mt-20">7. Rights of admission reserved
-                          </p>
-                          <p class="mt-20">8. These terms and conditions are subject to change from time to time at the discretion of the organizer</p> -->
             <ul>
-                <!-- <li style="list-style-type: circle;">
-                              </li> -->
                 <li style="margin-top: 20px;"><strong>Ticket Purchase:</strong>&nbsp;By purchasing a ticket, you
                     agree to abide by all terms and conditions outlined herein.</li>
                 <li><strong>Refunds and Exchanges:</strong>&nbsp;All ticket sales are final. No refunds or exchanges
@@ -822,8 +810,6 @@
                             <p class="mt-10">His film ‘Gandhi- My Father’ Feroz won Several National and
                                 International Awards. Dekh Tamasha Dekh, is a social and political satirical film,
                                 based on a true story.</p>
-
-
                         </div>
                     </div>
                 </div>
@@ -852,44 +838,6 @@
     document.addEventListener("DOMContentLoaded", function () {
         $('[data-fancybox="gallery"]').fancybox();
 
-        // let carousel_gallery = document.querySelectorAll('.carousel-gallery');
-        // console.log(carousel_gallery);
-        // for (let i = 0; i < carousel_gallery.length; i++) {
-        //     new Swiper(".carousel-gallery .swiper-container", {
-        //         effect: "slide",
-        //         speed: 900,
-        //         slidesPerView: 3,
-        //         spaceBetween: 20,
-        //         simulateTouch: true,
-        //         touch: {
-        //             enabled: true, // Enable touch interactions
-        //         },
-        //         autoplay: {
-        //             delay: 5000,
-        //             stopOnLastSlide: false,
-        //             disableOnInteraction: false,
-        //         },
-        //         pagination: {
-        //             el: ".carousel-gallery .swiper-pagination",
-        //             clickable: true,
-        //         },
-        //         loop: true, // Enable looping
-        //         breakpoints: {
-        //             320: {
-        //                 slidesPerView: 1,
-        //                 spaceBetween: 5,
-        //             },
-        //             425: {
-        //                 slidesPerView: 2,
-        //                 spaceBetween: 10,
-        //             },
-        //             768: {
-        //                 slidesPerView: 3,
-        //                 spaceBetween: 20,
-        //             },
-        //         },
-        //     });
-        // }
         new Swiper(".carousel-gallery .swiper-container", {
             effect: "slide",
             speed: 900,

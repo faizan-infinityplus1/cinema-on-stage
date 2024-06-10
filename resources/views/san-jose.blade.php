@@ -121,37 +121,7 @@
 <div class="fm-movie-details-area soft-greybg section-spacing" style="padding-top: 14px;">
     <div class="container navs-bars p-5" style="background-color: white;">
         <div class="nav-main d-flex align-items-start " id="nav_flex">
-            <!-- <div class=" col-lg-2   col-12 nav flex-column  nav-pills me-3" id="v-pills-tab" role="tablist"
-                        aria-orientation="vertical">
-                        <button class="nav-link   nav-tic active" id="v-pills-home-tab" data-bs-toggle="pill"
-                            data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
-                            aria-selected="true"
-                            style=" padding:15px; color: #df4f06; background-color:white; border:2px solid #df4f06; font-size:1.6rem; font-weight:600;">Houston</button>
-                        <button class="nav-link  nav-tic new_jersey" id="v-pills-profile-tab" data-bs-toggle="pill"
-                            data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
-                            aria-selected="false"
-                            style=" padding:15px; margin-top: 20px; color: #df4f06; background-color:white; border:2px solid #df4f06; font-size:1.6rem; font-weight:600;">New
-                            Jersey</button>
-                        <button class="nav-link nav-tic new_york " id="v-pills-messages-tab" data-bs-toggle="pill"
-                            data-bs-target="#v-pills-messages" type="button" role="tab"
-                            aria-controls="v-pills-messages" aria-selected="false"
-                            style=" padding:15px; margin-top: 20px; color: #df4f06; background-color:white; border:2px solid #df4f06; font-size:1.6rem; font-weight:600;">New
-                            York</button>
-                        <button class="nav-link nav-tic dallas " id="v-pills-settings-tab" data-bs-toggle="pill"
-                            data-bs-target="#v-pills-settings" type="button" role="tab"
-                            aria-controls="v-pills-settings" aria-selected="false"
-                            style=" padding:15px; margin-top: 20px; color: #df4f06; background-color:white; border:2px solid #df4f06; font-size:1.6rem; font-weight:600;">Dallas</button>
-                        <button class="nav-link nav-tic san_jose " id="v-pills-la-tab" data-bs-toggle="pill"
-                            data-bs-target="#v-pills-la" type="button" role="tab" aria-controls="v-pills-settings"
-                            aria-selected="false"
-                            style=" padding:15px; margin-top: 20px; color: #df4f06; background-color:white; border:2px solid #df4f06; font-size:1.6rem; font-weight:600;">San
-                            Jose</button>
-                        <button class="nav-link nav-tic l_a " id="v-pills-new-tab" data-bs-toggle="pill"
-                            data-bs-target="#v-pills-new" type="button" role="tab" aria-controls="v-pills-settings"
-                            aria-selected="false"
-                            style=" padding:15px; margin-top: 20px; color: #df4f06; background-color:white; border:2px solid #df4f06; font-size:1.6rem; font-weight:600;">LA</button>
 
-                    </div> -->
             <div class="col-12 tab-content text-center" id="v-pills-tabContent">
 
                 <div class="tab-pane fade active show" id="v-pills-la" role="tabpanel" aria-labelledby="v-pills-la-tab">
@@ -169,29 +139,32 @@
                         <div class="i-title container-anim"
                             style="background-color: #fff; padding:10px; border-radius: 0.375em; ">
                             <style>
-                                        .text_anim{
-										    height: 45px;
-                                            animation: textscale 3s infinite;
-                                        }
+                                .text_anim {
+                                    height: 45px;
+                                    animation: textscale 3s infinite;
+                                }
 
-                                        @keyframes textscale {
+                                @keyframes textscale {
 
-                                            0% {
-                                                color: #f36500;
-                                                text-shadow: 0 0 50px #f36500;
-                                            }
-                                            50% {
-                                                color: #f36500;
-                                                text-shadow: 0 0 50px #f36500;
-                                                font-size: 25px;
-                                            }
-                                            100% {
-                                                color: black;
-                                                text-shadow: 0 0 50px black;
-                                            }
+                                    0% {
+                                        color: #f36500;
+                                        text-shadow: 0 0 50px #f36500;
+                                    }
 
-                                        }
-                                        /* .text_anim{
+                                    50% {
+                                        color: #f36500;
+                                        text-shadow: 0 0 50px #f36500;
+                                        font-size: 25px;
+                                    }
+
+                                    100% {
+                                        color: black;
+                                        text-shadow: 0 0 50px black;
+                                    }
+
+                                }
+
+                                /* .text_anim{
                                             animation: textscale 1s infinite;
                                         }
 
@@ -206,14 +179,13 @@
                                             }
                                         } */
 
-                                        @media screen and (max-width: 512px) {
-                                            .container-anim{
-                                                margin-bottom: 35px;
-                                            }
-                                        }
-                                    </style>
-                            {{-- <p class="text_anim" style="color: black;">Tickets go on sale 28th May 2024</p> --}}
-                            <p class="text_anim" style="color: black;">Booking open now </p>
+                                @media screen and (max-width: 512px) {
+                                    .container-anim {
+                                        margin-bottom: 35px;
+                                    }
+                                }
+                            </style>
+                            <p class="text_anim" style="color: black;">Booking open now Live venue</p>
 
                         </div>
                         <div class="i-dates i-dates-all mt-5"
@@ -222,42 +194,51 @@
                             <div class="row">
 
                                 <div class="col-lg-4 col-md-4 col-12">
-                                    <button class="dates   nav-tic active mt-4"><a href="https://www.goticketspro.com/product-category/san-jose-performing-art-center/?showtime=20-sep-2024-730pm/">20th SEP 2024 |
+                                    <button class="dates   nav-tic active mt-4"><a
+                                            href="https://www.goticketspro.com/product-category/san-jose-performing-art-center/?showtime=20-sep-2024-730pm/">20th
+                                            SEP 2024 |
                                             FRI | 7:30 PM</a></button>
                                 </div>
-                                {{-- <div class="col-lg-4 col-md-4 col-12">
-                                    <button class="dates   nav-tic active mt-4"><a href="">21st SEP 2024 | SAT | 2:00 PM
-                                        </a></button>
-
-                                </div> --}}
                                 <div class="col-lg-4 col-md-4 col-12">
-                                    <button class="dates   nav-tic active mt-4"><a href="https://www.goticketspro.com/product-category/san-jose-performing-art-center/?showtime=21-09-2024-730pm">21st SEP 2024 | SAT | 7:30
+                                    <button class="dates   nav-tic active mt-4"><a
+                                            href="https://www.goticketspro.com/product-category/san-jose-performing-art-center/?showtime=21-09-2024-730pm">21st
+                                            SEP 2024 | SAT | 7:30
                                             PM</a></button>
 
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-12">
-                                    <button class="dates   nav-tic active mt-4"><a href="https://www.goticketspro.com/product-category/san-jose-performing-art-center/?showtime=22-09-2024-2pm">22nd SEP 2024 |
+                                    <button class="dates   nav-tic active mt-4"><a
+                                            href="https://www.goticketspro.com/product-category/san-jose-performing-art-center/?showtime=22-09-2024-2pm">22nd
+                                            SEP 2024 |
                                             SUN | 2:00 PM</a></button>
 
                                 </div>
 
                                 <div class="col-lg-4 col-md-4 col-12">
-                                    <button class="dates   nav-tic active mt-4"><a href="https://www.goticketspro.com/product-category/san-jose-performing-art-center/?showtime=27-09-2024-730pm">27th SEP 2024 |
+                                    <button class="dates   nav-tic active mt-4"><a
+                                            href="https://www.goticketspro.com/product-category/san-jose-performing-art-center/?showtime=27-09-2024-730pm">27th
+                                            SEP 2024 |
                                             FRI | 7:30 PM</a></button>
 
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-12">
-                                    <button class="dates   nav-tic active mt-4"><a href="https://www.goticketspro.com/product-category/san-jose-performing-art-center/?showtime=28-09-2024-2pm">28th SEP 2024 |
+                                    <button class="dates   nav-tic active mt-4"><a
+                                            href="https://www.goticketspro.com/product-category/san-jose-performing-art-center/?showtime=28-09-2024-2pm">28th
+                                            SEP 2024 |
                                             SAT | 2:00 PM </a></button>
 
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-12">
-                                    <button class="dates   nav-tic active mt-4"><a href="https://www.goticketspro.com/product-category/san-jose-performing-art-center/?showtime=28-09-2024-730pm">28th SEP 2024 |
+                                    <button class="dates   nav-tic active mt-4"><a
+                                            href="https://www.goticketspro.com/product-category/san-jose-performing-art-center/?showtime=28-09-2024-730pm">28th
+                                            SEP 2024 |
                                             SAT | 7:30 PM</a></button>
 
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-12">
-                                    <button class="dates   nav-tic active mt-4"><a href="https://www.goticketspro.com/product-category/san-jose-performing-art-center/?showtime=29-09-2024-2pm">29th SEP 2024 |
+                                    <button class="dates   nav-tic active mt-4"><a
+                                            href="https://www.goticketspro.com/product-category/san-jose-performing-art-center/?showtime=29-09-2024-2pm">29th
+                                            SEP 2024 |
                                             SUN | 2:00 PM</a></button>
 
                                 </div>
@@ -340,9 +321,6 @@
                                     <h6 class="pt-30">San Jose Centre For Performing Art </h6>
                                     <p class="pt-30">255 S Almaden Blvd, San Jose, CA 95113, United</p>
 
-                                    <!-- <div class="pt-30">
-                                                      <img src="assets/img/Group-383.jpg">
-                                                  </div> -->
                                 </div>
 
                             </div>
@@ -359,8 +337,6 @@
             <p class="mt-20">Mughal-e-Azam: The Musical" is a captivating theatrical experience that brings to
                 life the opulence, romance, and drama of one of Bollywood's most iconic films. </p>
             <ul>
-                <!-- <li style="list-style-type: circle;">
-                              </li> -->
                 <li style="margin-top: 20px;"><strong> Spectacular Production:</strong>&nbsp;The musical boasts
                     lavish sets, extravagant costumes, and stunning visual effects that transport the audience to
                     the grandeur of the Indian heritage.</li>
@@ -415,18 +391,7 @@
         <hr class="mt-30">
         <div class="about-ticket mt-60 term_condition">
             <h5 style="color: #fc6703;">Terms & Conditions</h5>
-            <!-- <p class="mt-20">1. Tickets once booked cannot be exchanged or refunded</p>
-                          <p class="mt-20">2. An Internet handling fee per ticket may be levied. Please check the total amount before payment</p>
-                          <p class="mt-20">3. We recommend that you arrive at-least 30 minutes prior at the venue for a seamless entry</p>
-                          <p class="mt-20">4. It is mandatory to wear masks at all times and follow social distancing norms</p>
-                          <p class="mt-20">5. Please do not purchase tickets if you feel sick</p>
-                          <p class="mt-20">6. Unlawful resale (or attempted unlawful resale) of a ticket would lead to seizure or cancellation of that ticket without refund or other compensation</p>
-                          <p class="mt-20">7. Rights of admission reserved
-                          </p>
-                          <p class="mt-20">8. These terms and conditions are subject to change from time to time at the discretion of the organizer</p> -->
             <ul>
-                <!-- <li style="list-style-type: circle;">
-                              </li> -->
                 <li style="margin-top: 20px;"><strong>Ticket Purchase:</strong>&nbsp;By purchasing a ticket, you
                     agree to abide by all terms and conditions outlined herein.</li>
                 <li><strong>Refunds and Exchanges:</strong>&nbsp;All ticket sales are final. No refunds or exchanges
@@ -873,45 +838,6 @@
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         $('[data-fancybox="gallery"]').fancybox();
-
-        // let carousel_gallery = document.querySelectorAll('.carousel-gallery');
-        // console.log(carousel_gallery);
-        // for (let i = 0; i < carousel_gallery.length; i++) {
-        //     new Swiper(".carousel-gallery .swiper-container", {
-        //         effect: "slide",
-        //         speed: 900,
-        //         slidesPerView: 3,
-        //         spaceBetween: 20,
-        //         simulateTouch: true,
-        //         touch: {
-        //             enabled: true, // Enable touch interactions
-        //         },
-        //         autoplay: {
-        //             delay: 5000,
-        //             stopOnLastSlide: false,
-        //             disableOnInteraction: false,
-        //         },
-        //         pagination: {
-        //             el: ".carousel-gallery .swiper-pagination",
-        //             clickable: true,
-        //         },
-        //         loop: true, // Enable looping
-        //         breakpoints: {
-        //             320: {
-        //                 slidesPerView: 1,
-        //                 spaceBetween: 5,
-        //             },
-        //             425: {
-        //                 slidesPerView: 2,
-        //                 spaceBetween: 10,
-        //             },
-        //             768: {
-        //                 slidesPerView: 3,
-        //                 spaceBetween: 20,
-        //             },
-        //         },
-        //     });
-        // }
         new Swiper(".carousel-gallery .swiper-container", {
             effect: "slide",
             speed: 900,
