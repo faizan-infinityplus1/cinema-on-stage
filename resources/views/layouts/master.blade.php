@@ -13,29 +13,38 @@
     <!-- verification code  -->
     <meta name="google-site-verification" content="siSA-XIq0trjG29MdsE2rYrVbGgFP9XtrsyNzmwxfXY" />
     <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1043299553313915');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1043299553313915&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1043299553313915');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=1043299553313915&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
     <!-- Facebook Pixel Code -->
     <!--Facebook verification code-->
     <meta name="facebook-domain-verification" content="3av32i6mdko2mt9zymjuhirp8q4z8t" />
     <script>
-        ! function (f, b, e, v, n, t, s) {
+        ! function(f, b, e, v, n, t, s) {
             if (f.fbq) return;
-            n = f.fbq = function () {
+            n = f.fbq = function() {
                 n.callMethod ?
                     n.callMethod.apply(n, arguments) : n.queue.push(arguments)
             };
@@ -55,7 +64,8 @@ src="https://www.facebook.com/tr?id=1043299553313915&ev=PageView&noscript=1"
         fbq('track', 'PageView');
     </script>
     <noscript>
-        <img height="1" width="1" src="https://www.facebook.com/tr?id=316601501322339&ev=PageView
+        <img height="1" width="1"
+            src="https://www.facebook.com/tr?id=316601501322339&ev=PageView
     &noscript=1" />
     </noscript>
     <!-- End Facebook Pixel Code -->
@@ -649,7 +659,8 @@ src="https://www.facebook.com/tr?id=1043299553313915&ev=PageView&noscript=1"
                 margin-left: 10px;
             }
         }
-        .desktop-book-now{
+
+        .desktop-book-now {
             font-weight: 900 !important;
             font-size: 17px;
             color: white !important;
@@ -660,12 +671,15 @@ src="https://www.facebook.com/tr?id=1043299553313915&ev=PageView&noscript=1"
             border-radius: 3.5px;
             background-color: #f35c00;
         }
+
         .book-now {
             position: relative;
         }
-        .book-now:hover ~.city-name-container{
+
+        .book-now:hover~.city-name-container {
             height: 460px;
         }
+
         .city-name-container {
             transition: all 0.5s ease-in-out;
             position: absolute;
@@ -678,9 +692,11 @@ src="https://www.facebook.com/tr?id=1043299553313915&ev=PageView&noscript=1"
             height: 0px;
             overflow: hidden;
         }
-        .city-name-container:hover{
+
+        .city-name-container:hover {
             height: 460px;
         }
+
         .city-name-container .city-name {
             padding: 15px 0px !important;
             margin: 20px auto;
@@ -691,12 +707,14 @@ src="https://www.facebook.com/tr?id=1043299553313915&ev=PageView&noscript=1"
             border: 2px solid #df4f06;
             border-radius: 3.5px;
         }
-        .city-name-container .city-name:hover{
+
+        .city-name-container .city-name:hover {
             background-color: #df4f06;
             color: white !important;
         }
+
         @media(max-width:1199px) {
-            .desktop-book-now{
+            .desktop-book-now {
                 background-color: white !important;
                 color: #bb4015 !important;
                 font-weight: 500 !important;
@@ -710,14 +728,16 @@ src="https://www.facebook.com/tr?id=1043299553313915&ev=PageView&noscript=1"
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
-            .city-name-container{
+
+            .city-name-container {
                 display: none;
             }
-            .mean-expand{
+
+            .mean-expand {
                 margin-top: -38px !important;
             }
 
-            li.has-dropdown.mobile-menu{
+            li.has-dropdown.mobile-menu {
                 display: block !important;
                 margin-bottom: 0px;
                 padding: 10px 30px;
@@ -731,17 +751,21 @@ src="https://www.facebook.com/tr?id=1043299553313915&ev=PageView&noscript=1"
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
-            .mean-container .mean-nav ul li li a{
+
+            .mean-container .mean-nav ul li li a {
                 padding: 0;
                 width: 100%;
             }
-            .mobile-menu.mean-container .mean-nav ul li a{
+
+            .mobile-menu.mean-container .mean-nav ul li a {
                 border-top: none;
             }
-            li.has-dropdown.book-now-container{
+
+            li.has-dropdown.book-now-container {
                 background-color: #f35c00;
             }
-            li.has-dropdown.book-now-container a.book-now{
+
+            li.has-dropdown.book-now-container a.book-now {
                 color: white !important;
                 -webkit-text-fill-color: unset;
                 padding: 10px 14px !important;
@@ -810,7 +834,7 @@ src="https://www.facebook.com/tr?id=1043299553313915&ev=PageView&noscript=1"
                 <div class="header-wrapper">
                     <div class="fm-header-logo-wrapper">
                         <a href="{{ route('home') }}" class="fm-header-logo ">
-                            <img class="" src="{{ asset('assets/img/logo (1).png') }}" alt="img not found" />
+                            <img class="" src="{{ asset('assets/img/logo (1).png') }}" class="lazy img-responsive" alt="img not found" />
                         </a>
 
                         <!-- <span class="separator d-none d-xl-block"></span> -->
@@ -826,14 +850,16 @@ src="https://www.facebook.com/tr?id=1043299553313915&ev=PageView&noscript=1"
                                 <ul>
 
                                     <li class="has-dropdown" id="home_mobile">
-                                        <a href="{{ route('home') }}" class="button upper_menu_margin1" id="button-7">
+                                        <a href="{{ route('home') }}" class="button upper_menu_margin1"
+                                            id="button-7">
                                             <div id="dub-arrow">Home</div>
                                             <button href="{{ route('home') }}">Home</button>
                                         </a>
                                     </li>
 
                                     <li class="active has-dropdown">
-                                        <a href="{{ route('about') }}" class="button upper_menu_margin1" id="button-7">
+                                        <a href="{{ route('about') }}" class="button upper_menu_margin1"
+                                            id="button-7">
                                             <div id="dub-arrow">About Us</div>
                                             <button href="{{ route('about') }}">About Us</button>
                                         </a>
@@ -847,7 +873,8 @@ src="https://www.facebook.com/tr?id=1043299553313915&ev=PageView&noscript=1"
                                         </a>
                                     </li>
                                     <li class="has-dropdown book-now-container">
-                                        <a href="{{ route('book.now') }}" class="book-now desktop-book-now">Book Now</a>
+                                        <a href="{{ route('book.now') }}" class="book-now desktop-book-now">Book
+                                            Now</a>
                                         <!-- <a href="{{ route('book.now') }}" class="button upper_menu_margin1 book-now"
                                             id="button-7">
                                             Book Now
@@ -927,18 +954,30 @@ font-weight: 600;">LA</a></button>
                                     </li>
                                     <li class="mobile-menu-container">
                                         <ul>
-                                            <li class="has-dropdown mobile-menu"><a href="{{ route('houston') }}" style="    background: linear-gradient(to left, #e9c553, #b73510);-webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;"> Houston</a></li>
-                                            <li class="has-dropdown mobile-menu"><a href="{{ route('new.jersey') }}" style="    background: linear-gradient(to left, #e9c553, #b73510);-webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;">New Jersey</a></li>
-                                            <li class="has-dropdown mobile-menu"><a href="{{ route('new.york') }}" style="    background: linear-gradient(to left, #e9c553, #b73510);-webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;"> New York</a></li>
-                                            <li class="has-dropdown mobile-menu"><a href="{{ route('dallas') }} " style="    background: linear-gradient(to left, #e9c553, #b73510);-webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;"> Dallas</a></li>
-                                            <li class="has-dropdown mobile-menu"><a href="{{ route('san.jose') }}" style="    background: linear-gradient(to left, #e9c553, #b73510);-webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;">San Jose </a> </li>
-                                            <li class="has-dropdown mobile-menu"><a href="{{ route('los.angeles') }}" style="    background: linear-gradient(to left, #e9c553, #b73510);-webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;">LA </a></li>
+                                            <li class="has-dropdown mobile-menu"><a href="{{ route('houston') }}"
+                                                    style="    background: linear-gradient(to left, #e9c553, #b73510);-webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;">
+                                                    Houston</a></li>
+                                            <li class="has-dropdown mobile-menu"><a href="{{ route('new.jersey') }}"
+                                                    style="    background: linear-gradient(to left, #e9c553, #b73510);-webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;">New
+                                                    Jersey</a></li>
+                                            <li class="has-dropdown mobile-menu"><a href="{{ route('new.york') }}"
+                                                    style="    background: linear-gradient(to left, #e9c553, #b73510);-webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;">
+                                                    New York</a></li>
+                                            <li class="has-dropdown mobile-menu"><a href="{{ route('dallas') }} "
+                                                    style="    background: linear-gradient(to left, #e9c553, #b73510);-webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;">
+                                                    Dallas</a></li>
+                                            <li class="has-dropdown mobile-menu"><a href="{{ route('san.jose') }}"
+                                                    style="    background: linear-gradient(to left, #e9c553, #b73510);-webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;">San
+                                                    Jose </a> </li>
+                                            <li class="has-dropdown mobile-menu"><a href="{{ route('los.angeles') }}"
+                                                    style="    background: linear-gradient(to left, #e9c553, #b73510);-webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;">LA
+                                                </a></li>
                                         </ul>
                                     </li>
 
@@ -951,7 +990,8 @@ font-weight: 600;">LA</a></button>
                                     </li>
                                     <!-- abdul edited -->
                                     <li class="has-dropdown">
-                                        <a href="{{ route('blog') }}" class="button upper_menu_margin1" id="button-7">
+                                        <a href="{{ route('blog') }}" class="button upper_menu_margin1"
+                                            id="button-7">
                                             <div id="dub-arrow">Blog</div>
                                             <button href="{{ route('blog') }}">Blog</button>
                                         </a>
@@ -1033,7 +1073,8 @@ font-weight: 600;">LA</a></button>
             <div class="fm-header-sidebar-wrapper">
                 <div class="fm-header-sidebar-action mb-75">
                     <div class="fm-header-sidebar-logo">
-                        <a href="#"><img src="{{ asset('assets/img/logo (1).png') }}" alt="img not found" /></a>
+                        <a href="#"><img src="{{ asset('assets/img/logo (1).png') }}"
+                                alt="img not found" /></a>
                     </div>
                     <div class="offcanvas-close">
                         <a class="offcanvas-btn" href="#0">
@@ -1094,8 +1135,8 @@ font-weight: 600;">LA</a></button>
                     <div class="fm-offcanvas-social">
                         <span class="social-text">Follow :</span>
                         <div class="fm-offcanvas-social-icon" style="color: black;">
-                            <a href="https://www.facebook.com/MughalEAzamPlay/" target="_blank" style="color: black;"><i
-                                    class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://www.facebook.com/MughalEAzamPlay/" target="_blank"
+                                style="color: black;"><i class="fa-brands fa-facebook-f"></i></a>
                             <a href="https://twitter.com/mughaleazamplay" target="_blank"><i
                                     class="fa-brands fa-twitter"></i></a>
                             <a href="https://www.instagram.com/mughaleazamplay/" target="_blank"><i
@@ -1186,7 +1227,8 @@ font-weight: 600;">LA</a></button>
                         </div>
                         <ul class="wow zoomInLeft">
                             <li><a href="{{ route('home') }}">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                        viewBox="0 0 24 24">
                                         <path fill="none" stroke="#e04b00" stroke-width="2"
                                             d="M5 9h7V5.483a.2.2 0 0 1 .341-.142L19 12l-6.659 6.659a.2.2 0 0 1-.341-.142V15H5">
                                         </path>
@@ -1194,7 +1236,8 @@ font-weight: 600;">LA</a></button>
                                     <span style="color:white">Home</span>
                                 </a></li>
                             <li><a href="{{ route('about') }}">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                        viewBox="0 0 24 24">
                                         <path fill="none" stroke="#e04b00" stroke-width="2"
                                             d="M5 9h7V5.483a.2.2 0 0 1 .341-.142L19 12l-6.659 6.659a.2.2 0 0 1-.341-.142V15H5">
                                         </path>
@@ -1203,7 +1246,8 @@ font-weight: 600;">LA</a></button>
                                 </a></li>
                             <!-- .php remove kiya bas -->
                             <li><a href="{{ route('about.show') }}">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                        viewBox="0 0 24 24">
                                         <path fill="none" stroke="#e04b00" stroke-width="2"
                                             d="M5 9h7V5.483a.2.2 0 0 1 .341-.142L19 12l-6.659 6.659a.2.2 0 0 1-.341-.142V15H5">
                                         </path>
@@ -1211,7 +1255,8 @@ font-weight: 600;">LA</a></button>
                                     <span style="color:white">About Show</span>
                                 </a></li>
                             <li><a href="{{ route('book.now') }}">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                        viewBox="0 0 24 24">
                                         <path fill="none" stroke="#e04b00" stroke-width="2"
                                             d="M5 9h7V5.483a.2.2 0 0 1 .341-.142L19 12l-6.659 6.659a.2.2 0 0 1-.341-.142V15H5">
                                         </path>
@@ -1219,7 +1264,8 @@ font-weight: 600;">LA</a></button>
                                     <span style="color:white">Book Now</span>
                                 </a></li>
                             <li><a href="{{ route('blog') }}">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                        viewBox="0 0 24 24">
                                         <path fill="none" stroke="#e04b00" stroke-width="2"
                                             d="M5 9h7V5.483a.2.2 0 0 1 .341-.142L19 12l-6.659 6.659a.2.2 0 0 1-.341-.142V15H5">
                                         </path>
@@ -1311,6 +1357,10 @@ font-weight: 600;">LA</a></button>
     <script src="{!! asset('assets/js/fancybox.js') !!}"></script>
     <script src="{!! asset('assets/js/custom.js') !!}"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    {{-- lasy load --}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.7/jquery.lazyload.js"></script>
+
 
 
     <script>
@@ -1359,8 +1409,8 @@ font-weight: 600;">LA</a></button>
             ];
 
             // Loop through each tab ID
-            tabIDs.forEach(function (tabID) {
-                $(tabID).on('click', function () {
+            tabIDs.forEach(function(tabID) {
+                $(tabID).on('click', function() {
                     // Find the element with both id "dynamictabstrp" and class "active"
                     var $target = $(".tab-pane.active");
 
@@ -1392,6 +1442,17 @@ font-weight: 600;">LA</a></button>
                 floatingButton.text('-');
             }
         }
+        
+    //   lasy load
+        <script type = "text/javascript"
+        charset = "utf-8" >
+            $(function() {
+                $("img.lazy").lazyload({
+                    effect: "fadeIn"
+                });
+
+            });
+    </script>
     </script>
     @yield('extrajs')
 

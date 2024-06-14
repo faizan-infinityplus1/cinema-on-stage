@@ -9,17 +9,17 @@
 <div id="carouselExampleControls" class="carousel slide carousel_home" data-ride="carousel" data-interval="3000">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100 lazy" src="assets/img/banner/banner1.png" alt="First slide">
+      <img class="d-block w-100 lazy lazy img-responsive" src="assets/img/banner/banner1.png" alt="First slide">
     </div>
     <div class="carousel-item ">
-      <img class="d-block w-100 lazy" src="assets/img/banner/banner2.png" alt="First slide">
+      <img class="d-block w-100 lazy lazy img-responsive" src="assets/img/banner/banner2.png" alt="First slide">
     </div>
     <div class="carousel-item">
       <img class="d-block w-100 lazy" src="assets/img/banner/banner3.png" alt="Second slide">
     </div>
     <div class="carousel-item">
 
-      <img class="d-block w-100 lazy" src="assets/img/banner/banner4.png" alt="Third slide">
+      <img class="d-block w-100 lazy lazy img-responsive" src="assets/img/banner/banner4.png" alt="Third slide">
     </div>
 
 
@@ -230,7 +230,7 @@
           <div class="swiper-slide">
             <div class="fm-single-featured">
               <div class="fm-featured-thumb">
-                <a href="#"> <img src="assets/img/10.jpg" alt="img not found"></a>
+                <a href="#"> <img src="assets/img/10.jpg" class="lazy img-responsive" alt="img not found"></a>
               </div>
               <div class="fm-featured-content">
                 <div class="fm-featured-content-inner">
@@ -251,7 +251,7 @@
           <div class="swiper-slide">
             <div class="fm-single-featured">
               <div class="fm-featured-thumb">
-                <a href="#"> <img src="assets/img/12.jpg" alt="img not found"></a>
+                <a href="#"> <img src="assets/img/12.jpg" class="lazy img-responsive" alt="img not found"></a>
               </div>
               <div class="fm-featured-content">
                 <div class="fm-featured-content-inner">
@@ -272,7 +272,7 @@
           <div class="swiper-slide">
             <div class="fm-single-featured">
               <div class="fm-featured-thumb">
-                <a href="#"> <img src="assets/img/13.jpg" alt="img not found"></a>
+                <a href="#"> <img src="assets/img/13.jpg" class="lazy img-responsive" alt="img not found"></a>
               </div>
               <div class="fm-featured-content">
                 <div class="fm-featured-content-inner">
@@ -314,7 +314,7 @@
           <div class="swiper-slide">
             <div class="fm-single-featured">
               <div class="fm-featured-thumb">
-                <a href="#"> <img src="assets/img/15.jpg" alt="img not found"></a>
+                <a href="#"> <img src="assets/img/15.jpg" class="lazy img-responsive" alt="img not found"></a>
               </div>
               <div class="fm-featured-content">
                 <div class="fm-featured-content-inner">
@@ -335,7 +335,7 @@
           <div class="swiper-slide">
             <div class="fm-single-featured">
               <div class="fm-featured-thumb">
-                <a href="#"> <img src="assets/img/17.jpg" alt="img not found"></a>
+                <a href="#"> <img src="assets/img/17.jpg" class="lazy img-responsive" alt="img not found"></a>
               </div>
               <div class="fm-featured-content">
                 <div class="fm-featured-content-inner">
@@ -352,7 +352,7 @@
           <div class="swiper-slide">
             <div class="fm-single-featured">
               <div class="fm-featured-thumb">
-                <a href="#"> <img src="assets/img/18.jpg" alt="img not found"></a>
+                <a href="#"> <img src="assets/img/18.jpg" class="lazy img-responsive" alt="img not found"></a>
               </div>
               <div class="fm-featured-content">
                 <div class="fm-featured-content-inner">
