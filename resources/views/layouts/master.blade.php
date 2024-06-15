@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>@yield('page') || Cinema On Stage</title>
-    <meta name="title" content="@yield('title')">
+    <meta name="Mughal-e-Azam Show Tickets in Houton, New Jersey, New York, Dallas, San Jose & LA" content="@yield('title')">
     <link rel="canonical" href="@yield('canonical')">
     <meta name="description" content="@yield('description')">
     <meta name="keywords" content="@yield('keyword')">
