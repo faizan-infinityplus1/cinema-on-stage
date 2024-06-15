@@ -10,6 +10,17 @@
     <meta name="description" content="@yield('description')">
     <meta name="keywords" content="@yield('keyword')">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Hotjar Tracking Code for https://cinemaonstage.com/ -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:5024693,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
     <!-- verification code  -->
     <meta name="google-site-verification" content="siSA-XIq0trjG29MdsE2rYrVbGgFP9XtrsyNzmwxfXY" />
     <!-- Meta Pixel Code -->
