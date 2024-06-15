@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('page', 'Home')
-@section('title', 'Mughal-e-Azam Tickets in Los Angeles & New York | Stage Cinema Shows')
+@section('title', 'Mughal-e-Azam Show Tickets in Houton, New Jersey, New York, Dallas, San Jose & LA')
 @section('canonical', 'https://cinemaonstage.com/')
 @section('description', 'Get your tickets for Mughal-e-Azam shows in Los Angeles, New York, and Houston at Cinema on Stage. Experience the grandeur of the stage and cinema. Book now for an unforgettable experience!')
 @section('keyword', 'cinemaonstage, cinema on stage mughal e azam, mughal e azam show tickets, mughal e azam show los angeles, mughal e azam musical tickets, mughal e azam show new york, stage cinema movies, stage and cinema, mughal e azam houston tickets')
