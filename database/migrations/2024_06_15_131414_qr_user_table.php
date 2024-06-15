@@ -19,8 +19,10 @@ return new class extends Migration
             $table->string('country');
             $table->string('state');
             $table->string('city');
-            $table->timestamp('created_at');
+            $table->timestamp('created_at')->useCurrent();
+            $table->timestamp('updated_at')->useCurrent();
         });
+        
     }
 
     /**

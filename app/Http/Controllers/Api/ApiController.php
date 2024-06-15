@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use App\Events\MyEvent;
 use App\Http\Controllers\Controller;
+use App\Models\QrUser;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
@@ -108,7 +109,18 @@ class ApiController extends Controller
         ]);
     }
     public function qrData(Request $request){
-        $qrUser = ;
-        return response()->json(['status'=>$request->city]);
+        $qrUser = QrUser::create([
+            'country' => $request->country,
+            'state' => $request->region,
+            'city' => $request->city,
+        ]);
+        if($qrUser){
+
+            return response()->json(['status'=>200,'message'=>'Data added successfully','data'=>$qrUser]);
+        }
+        else{
+            return response()->json(['status'=>500,'message'=>'Something went wrong']);
+
+        }
     }
 }
