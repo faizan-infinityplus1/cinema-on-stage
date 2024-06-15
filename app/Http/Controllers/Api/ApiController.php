@@ -107,4 +107,8 @@ class ApiController extends Controller
             'error' => 0,
         ]);
     }
+    public function qrData(Request $request){
+        $qrUser = ;
+        return response()->json(['status'=>$request->city]);
+    }
 }

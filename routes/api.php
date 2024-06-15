@@ -23,3 +23,4 @@ Route::post('/join-meeting', [ApiController::class, 'joinMeeting']);
 Route::get("/send-notifications", [ApiController::class, 'sendNotifications']);
 Route::post('/clear-invitation', [ApiController::class, 'clearInvitation']);
 Route::post('/invitation-action', [ApiController::class, 'invitationAction']);
+Route::post('/qr-user', [ApiController::class, 'qrData'])->name('qr.data');
