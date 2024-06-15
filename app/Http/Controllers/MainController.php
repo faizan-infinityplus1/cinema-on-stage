@@ -24,6 +24,10 @@ class MainController extends Controller
     {
         return view('book-now');
     }
+    // book now qr
+    public function booknowqr(){
+        return view('book-now-qr');
+    }
     public function houston()
     {
         return view('houston');
