@@ -500,7 +500,7 @@ width: 100%;
   gap: 30px;
 }
 .desktop-city-name-container .city-name{
-  padding: 15px 0px !important;
+  padding: 15px 15px !important;
   width: 150px;
   text-align: center;
   color: #df4f06 !important;
@@ -508,7 +508,62 @@ width: 100%;
   border: 2px solid #df4f06;
   border-radius: 3.5px;
 }
+.desktop-city-name-container .city-name:nth-child(1){
+  width: 100%;
+  line-height: 23px;
+}
 .desktop-city-name-container .city-name:hover{
   background-color: #df4f06;
   color: white !important;
+}
+
+.popup-msg{
+  position:fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.815);
+  z-index: 999;
+  text-align: center;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.popup-msg.active{
+  display: flex;
+  font-size: 40px;
+  text-transform: capitalize;
+}
+/* .popup-msg::after{
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  top: 20px;
+  right: 20px;
+} */
+/* .x-btn {
+  position: absolute;
+  content: "\00d7";
+  color: #fff;
+  font-size: 50px;
+  top: 10px;
+  right: 21px;
+  z-index: 1000;
+  height: 30px;
+  margin-top: 10px;
+  cursor: pointer;
+  pointer-events: auto;
+} */
+
+.x-btn{
+  position: absolute;
+  font-size: 30px;
+  font-weight: 700;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  transform: rotate(45deg);
 }

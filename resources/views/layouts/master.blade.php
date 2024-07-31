@@ -11,16 +11,22 @@
     <meta name="keywords" content="@yield('keyword')">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Hotjar Tracking Code for https://cinemaonstage.com/ -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:5024693,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+    <script>
+        (function(h, o, t, j, a, r) {
+            h.hj = h.hj || function() {
+                (h.hj.q = h.hj.q || []).push(arguments)
+            };
+            h._hjSettings = {
+                hjid: 5024693,
+                hjsv: 6
+            };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script');
+            r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
     <!-- verification code  -->
     <meta name="google-site-verification" content="siSA-XIq0trjG29MdsE2rYrVbGgFP9XtrsyNzmwxfXY" />
     <!-- Meta Pixel Code -->
@@ -845,7 +851,8 @@
                 <div class="header-wrapper">
                     <div class="fm-header-logo-wrapper">
                         <a href="{{ route('home') }}" class="fm-header-logo ">
-                            <img class="" src="{{ asset('assets/img/logo (1).png') }}" class="lazy img-responsive" alt="img not found" />
+                            <img class="" src="{{ asset('assets/img/logo (1).png') }}"
+                                class="lazy img-responsive" alt="img not found" />
                         </a>
 
                         <!-- <span class="separator d-none d-xl-block"></span> -->
@@ -1301,8 +1308,8 @@ font-weight: 600;">LA</a></button>
                             <li>
                                 <i class="fa-sharp fa-solid fa-envelope"></i>
                                 <p style="color: white;">
-                                    <a href="mailto:info@cinemaonstage.com" class="text-lowercase"><span
-                                            class="__cf_email__"
+                                    <a href="mailto:info@cinemaonstage.com" class="text-lowercase"
+                                        id='mail-email'><span class="__cf_email__"
                                             data-cfemail="cfa7aaa3a3a08fa9aea6a2aaa2aaaba6aee1aca0a2">info@cinemaonstage.com</span></a>
                                 </p>
                             </li>
@@ -1453,17 +1460,17 @@ font-weight: 600;">LA</a></button>
                 floatingButton.text('-');
             }
         }
-        
-    //   lasy load
-        <script type = "text/javascript"
-        charset = "utf-8" >
-            $(function() {
-                $("img.lazy").lazyload({
-                    effect: "fadeIn"
-                });
 
+        //   lasy load
+        $(function() {
+            $("img.lazy").lazyload({
+                effect: "fadeIn"
             });
-    </script>
+
+        });
+
+        $('#mail-email').text('info@cinemaonstage.com')
+
     </script>
     @yield('extrajs')
 

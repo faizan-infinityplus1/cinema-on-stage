@@ -485,7 +485,7 @@
                             <li>
                                 <i class="fa-sharp fa-solid fa-envelope"></i>
                                 <p style="color: white;">
-                                    <a href="mailto:info@cinemaonstage.com" class="text-lowercase"><span
+                                    <a href="mailto:info@cinemaonstage.com" class="text-lowercase" id='mail-email'><span
                                             class="__cf_email__"
                                             data-cfemail="cfa7aaa3a3a08fa9aea6a2aaa2aaaba6aee1aca0a2">info@cinemaonstage.com</span></a>
                                 </p>
@@ -524,6 +524,12 @@
             </div>
         </div>
     </footer>
+    <script src="{!! asset('assets/js/jquery-3.6.0.min.js') !!}"></script>
+
+    <script>
+                $('#mail-email').text('info@cinemaonstage.com')
+
+    </script>
 </body>
 
 </html>

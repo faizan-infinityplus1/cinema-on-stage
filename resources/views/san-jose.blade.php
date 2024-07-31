@@ -194,24 +194,37 @@
                             <div class="row">
 
                                 <div class="col-lg-4 col-md-4 col-12">
-                                    <button class="dates   nav-tic active mt-4"><a
-                                            href="https://www.goticketspro.com/product-category/san-jose-performing-art-center/?showtime=20-sep-2024-730pm/">20th
+                                    <button class="dates old-btn nav-tic active mt-4">
+                                        {{-- <a href="https://www.goticketspro.com/product-category/san-jose-performing-art-center/?showtime=20-sep-2024-730pm/"> --}}
+                                            20th
                                             SEP 2024 |
-                                            FRI | 7:30 PM</a></button>
+                                            FRI | 7:30 PM
+                                        {{-- </a> --}}
+                                    </button>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-12">
-                                    <button class="dates   nav-tic active mt-4"><a
-                                            href="https://www.goticketspro.com/product-category/san-jose-performing-art-center/?showtime=21-09-2024-730pm">21st
+                                    <button class="dates old-btn nav-tic active mt-4">
+                                        {{-- <a href="https://www.goticketspro.com/product-category/san-jose-performing-art-center/?showtime=21-09-2024-730pm"> --}}
+                                            21st
                                             SEP 2024 | SAT | 7:30
-                                            PM</a></button>
+                                            PM
+                                        {{-- </a> --}}
+                                    </button>
 
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-12">
-                                    <button class="dates   nav-tic active mt-4"><a
-                                            href="https://www.goticketspro.com/product-category/san-jose-performing-art-center/?showtime=22-09-2024-2pm">22nd
+                                    <button class="dates old-btn nav-tic active mt-4">
+                                        {{-- <a href="https://www.goticketspro.com/product-category/san-jose-performing-art-center/?showtime=22-09-2024-2pm"> --}}
+                                            22nd
                                             SEP 2024 |
-                                            SUN | 2:00 PM</a></button>
+                                            SUN | 2:00 PM
+                                        {{-- </a> --}}
+                                    </button>
 
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-12">
+                                    <button class="dates new-btn nav-tic active mt-4">
+                                            26th SEP 2024 | THURS | 7:30 PM </button>
                                 </div>
 
                                 <div class="col-lg-4 col-md-4 col-12">
@@ -822,6 +835,14 @@
     </div>
 
 </div>
+<div class="popup-msg booking-closed">
+    <div class="x-btn">+</div>
+    booking closed
+</div>
+<div class="popup-msg coming-soon">
+    <div class="x-btn">+</div>
+    Coming soon
+</div>
 @endsection
 @section('extrajs')
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/js/swiper.min.js"></script>
@@ -1055,8 +1076,17 @@
                 },
             });
         });
-        // function swiper() {
 
+        $(".old-btn").click(function(){
+            $(".booking-closed").addClass("active");
+        });
+        $(".new-btn").click(function(){
+            $(".coming-soon").addClass("active");
+        });
+        $(".x-btn").click(function(){
+            $(".popup-msg").removeClass("active");
+        });
+        // function swiper() {
 
 
 

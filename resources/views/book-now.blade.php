@@ -126,10 +126,13 @@
     <div class="container navs-bars p-5" style="background-color: white;">
 
         <div class="desktop-city-name-container">
-            <a href="{{ route('houston') }}" class="city-name">Houston</a>
+            <div class="city-name">
+                Houston, New Jersey, New York, Dallas - New dates will be announced soon, till then new booking is closed and current ticket holders will get refunds from original point of purchase within 7 to 10 days, we regret any inconvenience caused.
+            </div>
+            {{-- <a href="{{ route('houston') }}" class="city-name">Houston</a>
             <a href="{{ route('new.jersey') }}" class="city-name">New Jersey</a>
             <a href="{{ route('new.york') }}" class="city-name">New York</a>
-            <a href="{{ route('dallas') }}" class="city-name">Dallas</a>
+            <a href="{{ route('dallas') }}" class="city-name">Dallas</a> --}}
             <a href="{{ route('san.jose') }}" class="city-name">San Jose</a>
             <a href="{{ route('los.angeles') }}" class="city-name">LA</a>
         </div>
