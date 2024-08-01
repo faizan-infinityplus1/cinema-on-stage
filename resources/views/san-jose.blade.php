@@ -224,36 +224,44 @@
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-12">
                                     <button class="dates new-btn nav-tic active mt-4">
-                                            26th SEP 2024 | THURS | 7:30 PM </button>
-                                </div>
-
-                                <div class="col-lg-4 col-md-4 col-12">
-                                    <button class="dates   nav-tic active mt-4"><a
-                                            href="https://www.goticketspro.com/product-category/san-jose-performing-art-center/?showtime=27-09-2024-730pm">27th
-                                            SEP 2024 |
-                                            FRI | 7:30 PM</a></button>
-
+                                        26th SEP 2024 | THURS | 7:30 PM
+                                    </button>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-12">
-                                    <button class="dates   nav-tic active mt-4"><a
-                                            href="https://www.goticketspro.com/product-category/san-jose-performing-art-center/?showtime=28-09-2024-2pm">28th
+                                    <button class="dates nav-tic active mt-4">
+                                        <img src="/assets/img/book_now_notification_img.png" alt="">
+                                        <a href="https://www.goticketspro.com/product-category/san-jose-performing-art-center/?showtime=27-09-2024-730pm">27th
                                             SEP 2024 |
-                                            SAT | 2:00 PM </a></button>
-
+                                            FRI | 7:30 PM
+                                        </a>
+                                    </button>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-12">
-                                    <button class="dates   nav-tic active mt-4"><a
-                                            href="https://www.goticketspro.com/product-category/san-jose-performing-art-center/?showtime=28-09-2024-730pm">28th
+                                    <button class="dates nav-tic active mt-4">
+                                        <img src="/assets/img/book_now_notification_img.png" alt="">
+                                        <a href="https://www.goticketspro.com/product-category/san-jose-performing-art-center/?showtime=28-09-2024-2pm">28th
                                             SEP 2024 |
-                                            SAT | 7:30 PM</a></button>
-
+                                            SAT | 2:00 PM
+                                        </a>
+                                    </button>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-12">
-                                    <button class="dates   nav-tic active mt-4"><a
-                                            href="https://www.goticketspro.com/product-category/san-jose-performing-art-center/?showtime=29-09-2024-2pm">29th
+                                    <button class="dates nav-tic active mt-4">
+                                        <img src="/assets/img/book_now_notification_img.png" alt="">
+                                        <a href="https://www.goticketspro.com/product-category/san-jose-performing-art-center/?showtime=28-09-2024-730pm">28th
                                             SEP 2024 |
-                                            SUN | 2:00 PM</a></button>
-
+                                            SAT | 7:30 PM
+                                        </a>
+                                    </button>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-12">
+                                    <button class="dates nav-tic active mt-4">
+                                        <img src="/assets/img/book_now_notification_img.png" alt="">
+                                        <a href="https://www.goticketspro.com/product-category/san-jose-performing-art-center/?showtime=29-09-2024-2pm">29th
+                                            SEP 2024 |
+                                            SUN | 2:00 PM
+                                        </a>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -270,9 +278,6 @@
                                                 </div>
                                             </div>
                                         </a>
-
-
-
                                     </div>
                                     <div class="swiper-slide">
                                         <a href="/assets/img/book-ticket/san-jose/2.png" data-fancybox="gallery">
@@ -283,14 +288,8 @@
                                                 </div>
                                             </div>
                                         </a>
-
-
-
                                     </div>
                                     <div class="swiper-slide">
-
-
-
                                         <a href="/assets/img/book-ticket/san-jose/3.png" data-fancybox="gallery">
                                             <div class="image"
                                                 style="background-image: url(/assets/img/book-ticket/san-jose/3.png);">
@@ -301,9 +300,6 @@
                                         </a>
                                     </div>
                                     <div class="swiper-slide">
-
-
-
                                         <a href="/assets/img/book-ticket/san-jose/4.png" data-fancybox="gallery">
                                             <div class="image"
                                                 style="background-image: url(/assets/img/book-ticket/san-jose/4.png);">
@@ -338,7 +334,6 @@
 
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
