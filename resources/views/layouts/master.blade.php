@@ -694,7 +694,8 @@
         }
 
         .book-now:hover~.city-name-container {
-            height: 460px;
+            /* height: 460px; */
+            height: 166px;
         }
 
         .city-name-container {
@@ -711,7 +712,8 @@
         }
 
         .city-name-container:hover {
-            height: 460px;
+            /* height: 460px; */
+            height: 166px;
         }
 
         .city-name-container .city-name {
@@ -962,38 +964,38 @@ font-weight: 600;">LA</a></button>
                                         </div> -->
 
                                         <div class="city-name-container">
-                                            <a href="{{ route('houston') }}" class="city-name">Houston</a>
+                                            {{-- <a href="{{ route('houston') }}" class="city-name">Houston</a>
                                             <a href="{{ route('new.jersey') }}" class="city-name">New Jersey</a>
                                             <a href="{{ route('new.york') }}" class="city-name">New York</a>
-                                            <a href="{{ route('dallas') }}" class="city-name">Dallas</a>
+                                            <a href="{{ route('dallas') }}" class="city-name">Dallas</a> --}}
                                             <a href="{{ route('san.jose') }}" class="city-name">San Jose</a>
                                             <a href="{{ route('los.angeles') }}" class="city-name">LA</a>
                                         </div>
                                     </li>
                                     <li class="mobile-menu-container">
                                         <ul>
-                                            <li class="has-dropdown mobile-menu"><a href="{{ route('houston') }}"
-                                                    style="    background: linear-gradient(to left, #e9c553, #b73510);-webkit-background-clip: text;
+                                            {{-- <li class="has-dropdown mobile-menu"><a href="{{ route('houston') }}"
+                                                    style="background: linear-gradient(to left, #e9c553, #b73510);-webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;">
                                                     Houston</a></li>
                                             <li class="has-dropdown mobile-menu"><a href="{{ route('new.jersey') }}"
-                                                    style="    background: linear-gradient(to left, #e9c553, #b73510);-webkit-background-clip: text;
+                                                    style="background: linear-gradient(to left, #e9c553, #b73510);-webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;">New
                                                     Jersey</a></li>
                                             <li class="has-dropdown mobile-menu"><a href="{{ route('new.york') }}"
-                                                    style="    background: linear-gradient(to left, #e9c553, #b73510);-webkit-background-clip: text;
+                                                    style="background: linear-gradient(to left, #e9c553, #b73510);-webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;">
                                                     New York</a></li>
                                             <li class="has-dropdown mobile-menu"><a href="{{ route('dallas') }} "
-                                                    style="    background: linear-gradient(to left, #e9c553, #b73510);-webkit-background-clip: text;
+                                                    style="background: linear-gradient(to left, #e9c553, #b73510);-webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;">
-                                                    Dallas</a></li>
+                                                    Dallas</a></li> --}}
                                             <li class="has-dropdown mobile-menu"><a href="{{ route('san.jose') }}"
-                                                    style="    background: linear-gradient(to left, #e9c553, #b73510);-webkit-background-clip: text;
+                                                    style="background: linear-gradient(to left, #e9c553, #b73510);-webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;">San
                                                     Jose </a> </li>
                                             <li class="has-dropdown mobile-menu"><a href="{{ route('los.angeles') }}"
-                                                    style="    background: linear-gradient(to left, #e9c553, #b73510);-webkit-background-clip: text;
+                                                    style="background: linear-gradient(to left, #e9c553, #b73510);-webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;">LA
                                                 </a></li>
                                         </ul>
