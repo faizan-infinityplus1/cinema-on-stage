@@ -199,6 +199,10 @@
                                             20th
                                             SEP 2024 |
                                             FRI | 7:30 PM
+                                            <br> 
+                                            <span>
+                                                booking closed
+                                            </span>
                                         {{-- </a> --}}
                                     </button>
                                 </div>
@@ -208,9 +212,12 @@
                                             21st
                                             SEP 2024 | SAT | 7:30
                                             PM
+                                            <br> 
+                                            <span>
+                                                booking closed
+                                            </span>
                                         {{-- </a> --}}
                                     </button>
-
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-12">
                                     <button class="dates old-btn nav-tic active mt-4">
@@ -218,12 +225,17 @@
                                             22nd
                                             SEP 2024 |
                                             SUN | 2:00 PM
+                                            <br> 
+                                            <span>
+                                                booking closed
+                                            </span>
                                         {{-- </a> --}}
                                     </button>
 
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-12">
                                     <button class="dates new-btn nav-tic active mt-4">
+                                        <img src="/assets/img/coming_soon_notification_img.png" alt="">
                                         26th SEP 2024 | THURS | 7:30 PM
                                     </button>
                                 </div>
