@@ -135,6 +135,9 @@
                             style="background-color: #fff; padding:10px; border-radius: 0.375em; ">
                             <p style="color: black;">Click on the show date and time Of your choice to proceed for
                                 Booking.</p>
+                                <p style="color: black;">
+                                    (<strong>Note:</strong> if you booked for 20,21,22 please contact <a href="tel:+18552674636">855-267-4636</a> )
+                                </p>
                         </div>
                         <div class="i-title container-anim"
                             style="background-color: #fff; padding:10px; border-radius: 0.375em; ">
@@ -236,7 +239,9 @@
                                 <div class="col-lg-4 col-md-4 col-12">
                                     <button class="dates new-btn nav-tic active mt-4">
                                         <img src="/assets/img/coming_soon_notification_img.png" alt="">
-                                        26th SEP 2024 | THURS | 7:30 PM
+                                        <a href="https://www.goticketspro.com/mughal-e-azam-event/">
+                                            26th SEP 2024 | THURS | 7:30 PM
+                                        </a>
                                     </button>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-12">
