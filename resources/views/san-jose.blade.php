@@ -193,46 +193,46 @@
 
                             <div class="row">
 
-                                <div class="col-lg-4 col-md-4 col-12">
+                                {{-- <div class="col-lg-4 col-md-4 col-12">
                                     <button class="dates old-btn nav-tic active mt-4">
-                                        {{-- <a href="https://www.goticketspro.com/product-category/san-jose-performing-art-center/?showtime=20-sep-2024-730pm/"> --}}
+                                        <a href="https://www.goticketspro.com/product-category/san-jose-performing-art-center/?showtime=20-sep-2024-730pm/">
                                             20th
                                             SEP 2024 |
                                             FRI | 7:30 PM
-                                            <br> 
+                                            <br>
                                             <span>
                                                 booking closed
                                             </span>
-                                        {{-- </a> --}}
+                                        </a>
                                     </button>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-12">
                                     <button class="dates old-btn nav-tic active mt-4">
-                                        {{-- <a href="https://www.goticketspro.com/product-category/san-jose-performing-art-center/?showtime=21-09-2024-730pm"> --}}
+                                        <a href="https://www.goticketspro.com/product-category/san-jose-performing-art-center/?showtime=21-09-2024-730pm">
                                             21st
                                             SEP 2024 | SAT | 7:30
                                             PM
-                                            <br> 
+                                            <br>
                                             <span>
                                                 booking closed
                                             </span>
-                                        {{-- </a> --}}
+                                        </a>
                                     </button>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-12">
                                     <button class="dates old-btn nav-tic active mt-4">
-                                        {{-- <a href="https://www.goticketspro.com/product-category/san-jose-performing-art-center/?showtime=22-09-2024-2pm"> --}}
+                                        <a href="https://www.goticketspro.com/product-category/san-jose-performing-art-center/?showtime=22-09-2024-2pm">
                                             22nd
                                             SEP 2024 |
                                             SUN | 2:00 PM
-                                            <br> 
+                                            <br>
                                             <span>
                                                 booking closed
                                             </span>
-                                        {{-- </a> --}}
+                                        </a>
                                     </button>
 
-                                </div>
+                                </div> --}}
                                 <div class="col-lg-4 col-md-4 col-12">
                                     <button class="dates new-btn nav-tic active mt-4">
                                         <img src="/assets/img/coming_soon_notification_img.png" alt="">
